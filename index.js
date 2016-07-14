@@ -55,8 +55,12 @@ FantasyMetrix.prototype = Object.create(AlexaSkill.prototype);
 FantasyMetrix.prototype.constructor = FantasyMetrix;
 
 FantasyMetrix.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
-    var speechOutput = "<speak><audio src='https://s3-eu-west-1.amazonaws.com/57647285525fb836561944563.samehta91/samehta91gmail.comSiliconValley.mp3'/> Hello and welcome to FantasyMetrix. How can I be of assistance for you today?</speak>";
+    var speechOutput = {
+        speech: "<speak><audio src='https://s3-eu-west-1.amazonaws.com/57647285525fb836561944563.samehta91/samehta91gmail.comSiliconValley.mp3'/><break time = \"0.5s\"/>Hello and welcome to FantasyMetrix. How can I be of assistance for you today?</speak>",
+        type: "SSML"
+    };
     var repromptText = "For instructions on what you can ask, please say help me.";
+
     response.ask(speechOutput, repromptText);
 };
 
@@ -69,7 +73,7 @@ FantasyMetrix.prototype.intentHandlers = {
         if (playerSlot && playerSlot.value){
             playerName = playerSlot.value.toLowerCase();
         } else {
-            getPlayerName(callback);
+            getPlayerName();
         }
 
         var metricSlot = intent.slots.Metric,
@@ -77,7 +81,7 @@ FantasyMetrix.prototype.intentHandlers = {
         if (metricSlot && metricSlot.value){
             metricName = metricSlot.value.toLowerCase();
         } else {
-            getMetricName(callback);
+            getMetricName();
         }
 
         var weekSlot = intent.slots.Week,
@@ -93,7 +97,7 @@ FantasyMetrix.prototype.intentHandlers = {
         if (seasonSlot && seasonSlot.value){
             seasonNumber = seasonSlot.value.toLowerCase();
         } else {
-            getSeasonNumber(callback);
+            getSeasonNumber();
         }
 
         var player;
@@ -169,13 +173,45 @@ FantasyMetrix.prototype.intentHandlers = {
     }
 };
 
+function getPlayerName(intent, session, callback) {
+
+}
+
+function getMetricName(intent, session, callback) {
+    
+}
+
+function getWeekNumber(intent, session, callback) {
+    
+}
+
+function getSeasonNumber(intent, session, callback) {
+    
+}
+
+function buildSpeechletResponseWithoutCard(output, repromptText, shouldEndSession) {
+    return {
+        outputSpeech: {
+            type: "PlainText",
+            text: output
+        },
+        reprompt: {
+            outputSpeech: {
+                type: "PlainText",
+                text: repromptText
+            }
+        },
+        shouldEndSession: shouldEndSession
+    };
+};
+
 function buildResponse(sessionAttributes, speechletResponse) {
     return {
         version: "1.0",
         sessionAttributes: sessionAttributes,
         response: speechletResponse
     };
-}
+};
 
 exports.handler = function (event, context) {
     var skill = new FantasyMetrix();
