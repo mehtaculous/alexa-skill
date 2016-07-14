@@ -1,0 +1,84 @@
+{
+  "intents": [
+    {
+      "intent": "GetMetricIntent",
+      "slots": [
+        {
+          "name": "Player",
+          "type": "LIST_OF_PLAYERS"
+        },
+        {
+          "name": "Metric",
+          "type": "LIST_OF_METRICS"
+        },
+        {
+          "name": "Team",
+          "type": "LIST_OF_TEAMS"
+        },
+        {
+          "name": "FirstWeek",
+          "type": "LIST_OF_WEEKS"
+        },
+        {
+          "name": "SecondWeek",
+          "type": "LIST_OF_WEEKS"
+        },
+        {
+          "name": "Season",
+          "type": "LIST_OF_SEASONS"
+        }
+      ]
+    },
+    {
+      "intent": "GetScheduleIntent",
+      "slots": [
+        {
+          "name": "FirstTeam",
+          "type": "LIST_OF_TEAMS"
+        },
+        {
+          "name": "SecondTeam",
+          "type": "LIST_OF_TEAMS"
+        },
+        {
+          "name": "Week",
+          "type": "LIST_OF_WEEKS"
+        },
+        {
+          "name": "Season",
+          "type": "LIST_OF_SEASONS"
+        }
+      ]
+    },
+    {
+      "intent": "GetProjectionIntent",
+      "slots": [
+        {
+          "name": "FirstPlayer",
+          "type": "LIST_OF_PLAYERS"
+        },
+        {
+          "name": "SecondPlayer",
+          "type": "LIST_OF_PLAYERS"
+        },
+        {
+          "name": "Metric",
+          "type": "LIST_OF_METRICS"
+        },
+        {
+          "name": "Week",
+          "type": "LIST_OF_WEEKS"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.RepeatIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    }
+  ]
+}

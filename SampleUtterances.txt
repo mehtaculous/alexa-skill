@@ -1,0 +1,1690 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} for \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} for \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} for \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} for \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} for \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} for \{Season\} which player had the most \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} in \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} in \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} in \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} in \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} in \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} in \{Season\} which player had the most \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} of \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} of \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} of \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} of \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} of \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent between \{FirstWeek\} and \{SecondWeek\} of \{Season\} which player had the most \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} for \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} for \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} for \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} for \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} for \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} for \{Season\} which player had the most \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} in \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} in \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} in \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} in \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} in \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} in \{Season\} which player had the most \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} of \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} of \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} of \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} of \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} of \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent between \{FirstWeek\} through \{SecondWeek\} of \{Season\} which player had the most \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} for \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} for \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} for \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} for \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} for \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} for \{Season\} which player had the most \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} in \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} in \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} in \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} in \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} in \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} in \{Season\} which player had the most \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} of \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} of \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} of \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} of \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} of \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent between \{FirstWeek\} to \{SecondWeek\} of \{Season\} which player had the most \{Metric\}\
+GetMetricIntent during \{FirstWeek\} for \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent during \{FirstWeek\} for \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent during \{FirstWeek\} for \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent during \{FirstWeek\} for \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent during \{FirstWeek\} for \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent during \{FirstWeek\} for \{Season\} which player had the most \{Metric\}\
+GetMetricIntent during \{FirstWeek\} in \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent during \{FirstWeek\} in \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent during \{FirstWeek\} in \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent during \{FirstWeek\} in \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent during \{FirstWeek\} in \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent during \{FirstWeek\} in \{Season\} which player had the most \{Metric\}\
+GetMetricIntent during \{FirstWeek\} of \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent during \{FirstWeek\} of \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent during \{FirstWeek\} of \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent during \{FirstWeek\} of \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent during \{FirstWeek\} of \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent during \{FirstWeek\} of \{Season\} which player had the most \{Metric\}\
+GetMetricIntent find me the player with the highest total \{Metric\} during \{Season\}\
+GetMetricIntent find me the player with the highest total \{Metric\} for \{Season\}\
+GetMetricIntent find me the player with the highest total \{Metric\} in \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} during \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} for \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent find me the player with the highest \{Metric\} in \{Season\}\
+GetMetricIntent find me the player with the most total \{Metric\} during \{Season\}\
+GetMetricIntent find me the player with the most total \{Metric\} for \{Season\}\
+GetMetricIntent find me the player with the most total \{Metric\} in \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} during \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} for \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent find me the player with the most \{Metric\} in \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent find me \{Player\} \{Metric\} when playing the \{Team\}\
+GetMetricIntent find me \{Player\} \{Metric\} when playing \{Team\}\
+GetMetricIntent find the player with the highest total \{Metric\} during \{Season\}\
+GetMetricIntent find the player with the highest total \{Metric\} for \{Season\}\
+GetMetricIntent find the player with the highest total \{Metric\} in \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} during \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} for \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent find the player with the highest \{Metric\} in \{Season\}\
+GetMetricIntent find the player with the most total \{Metric\} during \{Season\}\
+GetMetricIntent find the player with the most total \{Metric\} for \{Season\}\
+GetMetricIntent find the player with the most total \{Metric\} in \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} during \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} for \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent find the player with the most \{Metric\} in \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent find \{Player\} \{Metric\} when playing the \{Team\}\
+GetMetricIntent find \{Player\} \{Metric\} when playing \{Team\}\
+GetMetricIntent for \{FirstWeek\} for \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent for \{FirstWeek\} for \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent for \{FirstWeek\} for \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent for \{FirstWeek\} for \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent for \{FirstWeek\} for \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent for \{FirstWeek\} for \{Season\} which player had the most \{Metric\}\
+GetMetricIntent for \{FirstWeek\} in \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent for \{FirstWeek\} in \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent for \{FirstWeek\} in \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent for \{FirstWeek\} in \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent for \{FirstWeek\} in \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent for \{FirstWeek\} in \{Season\} which player had the most \{Metric\}\
+GetMetricIntent for \{FirstWeek\} of \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent for \{FirstWeek\} of \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent for \{FirstWeek\} of \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent for \{FirstWeek\} of \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent for \{FirstWeek\} of \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent for \{FirstWeek\} of \{Season\} which player had the most \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} for \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} for \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} for \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} for \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} for \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} for \{Season\} which player had the most \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} in \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} in \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} in \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} in \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} in \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} in \{Season\} which player had the most \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} of \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} of \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} of \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} of \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} of \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent from \{FirstWeek\} and \{SecondWeek\} of \{Season\} which player had the most \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} for \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} for \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} for \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} for \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} for \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} for \{Season\} which player had the most \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} in \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} in \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} in \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} in \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} in \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} in \{Season\} which player had the most \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} of \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} of \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} of \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} of \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} of \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent from \{FirstWeek\} through \{SecondWeek\} of \{Season\} which player had the most \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} for \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} for \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} for \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} for \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} for \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} for \{Season\} which player had the most \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} in \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} in \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} in \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} in \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} in \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} in \{Season\} which player had the most \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} of \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} of \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} of \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} of \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} of \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent from \{FirstWeek\} to \{SecondWeek\} of \{Season\} which player had the most \{Metric\}\
+GetMetricIntent get me the player with the highest total \{Metric\} during \{Season\}\
+GetMetricIntent get me the player with the highest total \{Metric\} for \{Season\}\
+GetMetricIntent get me the player with the highest total \{Metric\} in \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} during \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} for \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent get me the player with the highest \{Metric\} in \{Season\}\
+GetMetricIntent get me the player with the most total \{Metric\} during \{Season\}\
+GetMetricIntent get me the player with the most total \{Metric\} for \{Season\}\
+GetMetricIntent get me the player with the most total \{Metric\} in \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} during \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} for \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent get me the player with the most \{Metric\} in \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent get me \{Player\} \{Metric\} when playing the \{Team\}\
+GetMetricIntent get me \{Player\} \{Metric\} when playing \{Team\}\
+GetMetricIntent get the player with the highest total \{Metric\} during \{Season\}\
+GetMetricIntent get the player with the highest total \{Metric\} for \{Season\}\
+GetMetricIntent get the player with the highest total \{Metric\} in \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} during \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} for \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent get the player with the highest \{Metric\} in \{Season\}\
+GetMetricIntent get the player with the most total \{Metric\} during \{Season\}\
+GetMetricIntent get the player with the most total \{Metric\} for \{Season\}\
+GetMetricIntent get the player with the most total \{Metric\} in \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} during \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} for \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent get the player with the most \{Metric\} in \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent get \{Player\} \{Metric\} when playing the \{Team\}\
+GetMetricIntent get \{Player\} \{Metric\} when playing \{Team\}\
+GetMetricIntent give me the player with the highest total \{Metric\} during \{Season\}\
+GetMetricIntent give me the player with the highest total \{Metric\} for \{Season\}\
+GetMetricIntent give me the player with the highest total \{Metric\} in \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} during \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} for \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent give me the player with the highest \{Metric\} in \{Season\}\
+GetMetricIntent give me the player with the most total \{Metric\} during \{Season\}\
+GetMetricIntent give me the player with the most total \{Metric\} for \{Season\}\
+GetMetricIntent give me the player with the most total \{Metric\} in \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} during \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} for \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent give me the player with the most \{Metric\} in \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent give me \{Player\} \{Metric\} when playing the \{Team\}\
+GetMetricIntent give me \{Player\} \{Metric\} when playing \{Team\}\
+GetMetricIntent give the player with the highest total \{Metric\} during \{Season\}\
+GetMetricIntent give the player with the highest total \{Metric\} for \{Season\}\
+GetMetricIntent give the player with the highest total \{Metric\} in \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} during \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} for \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent give the player with the highest \{Metric\} in \{Season\}\
+GetMetricIntent give the player with the most total \{Metric\} during \{Season\}\
+GetMetricIntent give the player with the most total \{Metric\} for \{Season\}\
+GetMetricIntent give the player with the most total \{Metric\} in \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} during \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} for \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent give the player with the most \{Metric\} in \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent give \{Player\} \{Metric\} when playing the \{Team\}\
+GetMetricIntent give \{Player\} \{Metric\} when playing \{Team\}\
+GetMetricIntent how many total \{Metric\} did \{Player\} have during \{Season\}\
+GetMetricIntent how many total \{Metric\} did \{Player\} have for \{Season\}\
+GetMetricIntent how many total \{Metric\} did \{Player\} have in \{Season\}\
+GetMetricIntent how many \{Metric\} did \{Player\} have during \{Season\}\
+GetMetricIntent how many \{Metric\} did \{Player\} have for \{Season\}\
+GetMetricIntent how many \{Metric\} did \{Player\} have in \{Season\}\
+GetMetricIntent how much total \{Metric\} did \{Player\} have during \{Season\}\
+GetMetricIntent how much total \{Metric\} did \{Player\} have for \{Season\}\
+GetMetricIntent how much total \{Metric\} did \{Player\} have in \{Season\}\
+GetMetricIntent how much \{Metric\} did \{Player\} have during \{Season\}\
+GetMetricIntent how much \{Metric\} did \{Player\} have for \{Season\}\
+GetMetricIntent how much \{Metric\} did \{Player\} have in \{Season\}\
+GetMetricIntent in \{FirstWeek\} for \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent in \{FirstWeek\} for \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent in \{FirstWeek\} for \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent in \{FirstWeek\} for \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent in \{FirstWeek\} for \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent in \{FirstWeek\} for \{Season\} which player had the most \{Metric\}\
+GetMetricIntent in \{FirstWeek\} in \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent in \{FirstWeek\} in \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent in \{FirstWeek\} in \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent in \{FirstWeek\} in \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent in \{FirstWeek\} in \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent in \{FirstWeek\} in \{Season\} which player had the most \{Metric\}\
+GetMetricIntent in \{FirstWeek\} of \{Season\} what are \{Player\} \{Metric\}\
+GetMetricIntent in \{FirstWeek\} of \{Season\} what is \{Player\} \{Metric\}\
+GetMetricIntent in \{FirstWeek\} of \{Season\} what was \{Player\} \{Metric\}\
+GetMetricIntent in \{FirstWeek\} of \{Season\} what were \{Player\} \{Metric\}\
+GetMetricIntent in \{FirstWeek\} of \{Season\} which player had the highest \{Metric\}\
+GetMetricIntent in \{FirstWeek\} of \{Season\} which player had the most \{Metric\}\
+GetMetricIntent tell me the player with the highest total \{Metric\} during \{Season\}\
+GetMetricIntent tell me the player with the highest total \{Metric\} for \{Season\}\
+GetMetricIntent tell me the player with the highest total \{Metric\} in \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} during \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} for \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the highest \{Metric\} in \{Season\}\
+GetMetricIntent tell me the player with the most total \{Metric\} during \{Season\}\
+GetMetricIntent tell me the player with the most total \{Metric\} for \{Season\}\
+GetMetricIntent tell me the player with the most total \{Metric\} in \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} during \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} for \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell me the player with the most \{Metric\} in \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell me \{Player\} \{Metric\} when playing the \{Team\}\
+GetMetricIntent tell me \{Player\} \{Metric\} when playing \{Team\}\
+GetMetricIntent tell the player with the highest total \{Metric\} during \{Season\}\
+GetMetricIntent tell the player with the highest total \{Metric\} for \{Season\}\
+GetMetricIntent tell the player with the highest total \{Metric\} in \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} during \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} for \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell the player with the highest \{Metric\} in \{Season\}\
+GetMetricIntent tell the player with the most total \{Metric\} during \{Season\}\
+GetMetricIntent tell the player with the most total \{Metric\} for \{Season\}\
+GetMetricIntent tell the player with the most total \{Metric\} in \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} during \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} for \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell the player with the most \{Metric\} in \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent tell \{Player\} \{Metric\} when playing the \{Team\}\
+GetMetricIntent tell \{Player\} \{Metric\} when playing \{Team\}\
+GetMetricIntent what are \{Player\} total \{Metric\} during \{Season\}\
+GetMetricIntent what are \{Player\} total \{Metric\} for \{Season\}\
+GetMetricIntent what are \{Player\} total \{Metric\} in \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} during \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} for \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} in \{Season\}\
+GetMetricIntent what are \{Player\} \{Metric\} when he plays the \{Team\}\
+GetMetricIntent what are \{Player\} \{Metric\} when he plays \{Team\}\
+GetMetricIntent what are \{Player\} \{Metric\} when playing the \{Team\}\
+GetMetricIntent what are \{Player\} \{Metric\} when playing \{Team\}\
+GetMetricIntent what is \{Player\} total \{Metric\} during \{Season\}\
+GetMetricIntent what is \{Player\} total \{Metric\} for \{Season\}\
+GetMetricIntent what is \{Player\} total \{Metric\} in \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} during \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} for \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} in \{Season\}\
+GetMetricIntent what is \{Player\} \{Metric\} when he plays the \{Team\}\
+GetMetricIntent what is \{Player\} \{Metric\} when he plays \{Team\}\
+GetMetricIntent what is \{Player\} \{Metric\} when playing the \{Team\}\
+GetMetricIntent what is \{Player\} \{Metric\} when playing \{Team\}\
+GetMetricIntent what was \{Player\} total \{Metric\} during \{Season\}\
+GetMetricIntent what was \{Player\} total \{Metric\} for \{Season\}\
+GetMetricIntent what was \{Player\} total \{Metric\} in \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} during \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} for \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent what was \{Player\} \{Metric\} in \{Season\}\
+GetMetricIntent what were \{Player\} total \{Metric\} during \{Season\}\
+GetMetricIntent what were \{Player\} total \{Metric\} for \{Season\}\
+GetMetricIntent what were \{Player\} total \{Metric\} in \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} during \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} for \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent what were \{Player\} \{Metric\} in \{Season\}\
+GetMetricIntent when he plays the \{Team\} what are \{Player\} \{Metric\}\
+GetMetricIntent when he plays the \{Team\} what is \{Player\} \{Metric\}\
+GetMetricIntent when he plays \{Team\} what are \{Player\} \{Metric\}\
+GetMetricIntent when he plays \{Team\} what is \{Player\} \{Metric\}\
+GetMetricIntent when playing the \{Team\} what are \{Player\} \{Metric\}\
+GetMetricIntent when playing the \{Team\} what is \{Player\} \{Metric\}\
+GetMetricIntent when playing \{Team\} what are \{Player\} \{Metric\}\
+GetMetricIntent when playing \{Team\} what is \{Player\} \{Metric\}\
+GetMetricIntent which player had the highest total \{Metric\} during \{Season\}\
+GetMetricIntent which player had the highest total \{Metric\} for \{Season\}\
+GetMetricIntent which player had the highest total \{Metric\} in \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} during \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} for \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent which player had the highest \{Metric\} in \{Season\}\
+GetMetricIntent which player had the most total \{Metric\} during \{Season\}\
+GetMetricIntent which player had the most total \{Metric\} for \{Season\}\
+GetMetricIntent which player had the most total \{Metric\} in \{Season\}\
+GetMetricIntent which player had the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent which player had the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent which player had the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent which player had the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent which player had the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent which player had the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent which player had the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent which player had the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent which player had the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent which player had the most \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent which player had the most \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent which player had the most \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent which player had the most \{Metric\} during \{Season\}\
+GetMetricIntent which player had the most \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent which player had the most \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent which player had the most \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent which player had the most \{Metric\} for \{Season\}\
+GetMetricIntent which player had the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent which player had the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent which player had the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent which player had the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent which player had the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent which player had the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent which player had the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent which player had the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent which player had the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent which player had the most \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent which player had the most \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent which player had the most \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent which player had the most \{Metric\} in \{Season\}\
+GetMetricIntent who had the highest total \{Metric\} during \{Season\}\
+GetMetricIntent who had the highest total \{Metric\} for \{Season\}\
+GetMetricIntent who had the highest total \{Metric\} in \{Season\}\
+GetMetricIntent who had the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent who had the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent who had the highest \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent who had the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent who had the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent who had the highest \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent who had the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent who had the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent who had the highest \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent who had the highest \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent who had the highest \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent who had the highest \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent who had the highest \{Metric\} during \{Season\}\
+GetMetricIntent who had the highest \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent who had the highest \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent who had the highest \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent who had the highest \{Metric\} for \{Season\}\
+GetMetricIntent who had the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent who had the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent who had the highest \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent who had the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent who had the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent who had the highest \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent who had the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent who had the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent who had the highest \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent who had the highest \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent who had the highest \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent who had the highest \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent who had the highest \{Metric\} in \{Season\}\
+GetMetricIntent who had the most total \{Metric\} during \{Season\}\
+GetMetricIntent who had the most total \{Metric\} for \{Season\}\
+GetMetricIntent who had the most total \{Metric\} in \{Season\}\
+GetMetricIntent who had the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent who had the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent who had the most \{Metric\} between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent who had the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent who had the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent who had the most \{Metric\} between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent who had the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent who had the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent who had the most \{Metric\} between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent who had the most \{Metric\} during \{FirstWeek\} for \{Season\}\
+GetMetricIntent who had the most \{Metric\} during \{FirstWeek\} in \{Season\}\
+GetMetricIntent who had the most \{Metric\} during \{FirstWeek\} of \{Season\}\
+GetMetricIntent who had the most \{Metric\} during \{Season\}\
+GetMetricIntent who had the most \{Metric\} for \{FirstWeek\} for \{Season\}\
+GetMetricIntent who had the most \{Metric\} for \{FirstWeek\} in \{Season\}\
+GetMetricIntent who had the most \{Metric\} for \{FirstWeek\} of \{Season\}\
+GetMetricIntent who had the most \{Metric\} for \{Season\}\
+GetMetricIntent who had the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent who had the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent who had the most \{Metric\} from \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent who had the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent who had the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent who had the most \{Metric\} from \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent who had the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent who had the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent who had the most \{Metric\} from \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent who had the most \{Metric\} in \{FirstWeek\} for \{Season\}\
+GetMetricIntent who had the most \{Metric\} in \{FirstWeek\} in \{Season\}\
+GetMetricIntent who had the most \{Metric\} in \{FirstWeek\} of \{Season\}\
+GetMetricIntent who had the most \{Metric\} in \{Season\}\
+GetMetricIntent whose \{Metric\} were the highest between \{FirstWeek\} and \{SecondWeek\} for \{Season\}\
+GetMetricIntent whose \{Metric\} were the highest between \{FirstWeek\} and \{SecondWeek\} in \{Season\}\
+GetMetricIntent whose \{Metric\} were the highest between \{FirstWeek\} and \{SecondWeek\} of \{Season\}\
+GetMetricIntent whose \{Metric\} were the highest between \{FirstWeek\} through \{SecondWeek\} for \{Season\}\
+GetMetricIntent whose \{Metric\} were the highest between \{FirstWeek\} through \{SecondWeek\} in \{Season\}\
+GetMetricIntent whose \{Metric\} were the highest between \{FirstWeek\} through \{SecondWeek\} of \{Season\}\
+GetMetricIntent whose \{Metric\} were the highest between \{FirstWeek\} to \{SecondWeek\} for \{Season\}\
+GetMetricIntent whose \{Metric\} were the highest between \{FirstWeek\} to \{SecondWeek\} in \{Season\}\
+GetMetricIntent whose \{Metric\} were the highest between \{FirstWeek\} to \{SecondWeek\} of \{Season\}\
+GetMetricIntent whose \{Metric\} were the highest during \{FirstWeek\} for \{Season\}\
+GetMetricIntent whose \{Metric\} were the highest during \{FirstWeek\} in \{Season\}\
+GetMetricIntent whose \{Metric\} were the highest during \{FirstWeek\} of \{Season\}\
+\
+GetScheduleIntent during \{Week\} for \{Season\} who did the \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} for \{Season\} who did \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} for \{Season\} who do the \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} for \{Season\} who do \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} for \{Season\} who does the \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} for \{Season\} who does \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} in \{Season\} who did the \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} in \{Season\} who did \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} in \{Season\} who do the \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} in \{Season\} who do \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} in \{Season\} who does the \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} in \{Season\} who does \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} of \{Season\} who did the \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} of \{Season\} who did \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} of \{Season\} who do the \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} of \{Season\} who do \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} of \{Season\} who does the \{FirstTeam\} play\
+GetScheduleIntent during \{Week\} of \{Season\} who does \{FirstTeam\} play\
+GetScheduleIntent find me the team that played \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent find me the team that played \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent find me the team that played \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent find me the team that played \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent find me the team that played \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent find me the team that played \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent find me the team that played \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent find me the team that played \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent find me the team that played \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent find me the team that plays \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent find me the team that plays \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent find me the team that plays \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent find me the team that plays \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent find me the team that plays \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent find me the team that plays \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent find me the team that plays \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent find me the team that plays \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent find me the team that plays \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent find the team that played \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent find the team that played \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent find the team that played \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent find the team that played \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent find the team that played \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent find the team that played \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent find the team that played \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent find the team that played \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent find the team that played \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent find the team that plays \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent find the team that plays \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent find the team that plays \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent find the team that plays \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent find the team that plays \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent find the team that plays \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent find the team that plays \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent find the team that plays \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent find the team that plays \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent for \{Week\} for \{Season\} who did the \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} for \{Season\} who did \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} for \{Season\} who do the \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} for \{Season\} who do \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} for \{Season\} who does the \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} for \{Season\} who does \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} in \{Season\} who did the \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} in \{Season\} who did \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} in \{Season\} who do the \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} in \{Season\} who do \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} in \{Season\} who does the \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} in \{Season\} who does \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} of \{Season\} who did the \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} of \{Season\} who did \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} of \{Season\} who do the \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} of \{Season\} who do \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} of \{Season\} who does the \{FirstTeam\} play\
+GetScheduleIntent for \{Week\} of \{Season\} who does \{FirstTeam\} play\
+GetScheduleIntent get me the team that played \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent get me the team that played \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent get me the team that played \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent get me the team that played \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent get me the team that played \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent get me the team that played \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent get me the team that played \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent get me the team that played \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent get me the team that played \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent get me the team that plays \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent get me the team that plays \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent get me the team that plays \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent get me the team that plays \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent get me the team that plays \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent get me the team that plays \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent get me the team that plays \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent get me the team that plays \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent get me the team that plays \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent get the team that played \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent get the team that played \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent get the team that played \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent get the team that played \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent get the team that played \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent get the team that played \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent get the team that played \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent get the team that played \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent get the team that played \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent get the team that plays \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent get the team that plays \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent get the team that plays \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent get the team that plays \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent get the team that plays \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent get the team that plays \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent get the team that plays \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent get the team that plays \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent get the team that plays \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent give me the team that played \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent give me the team that played \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent give me the team that played \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent give me the team that played \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent give me the team that played \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent give me the team that played \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent give me the team that played \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent give me the team that played \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent give me the team that played \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent give me the team that plays \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent give me the team that plays \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent give me the team that plays \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent give me the team that plays \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent give me the team that plays \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent give me the team that plays \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent give me the team that plays \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent give me the team that plays \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent give me the team that plays \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent give the team that played \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent give the team that played \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent give the team that played \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent give the team that played \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent give the team that played \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent give the team that played \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent give the team that played \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent give the team that played \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent give the team that played \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent give the team that plays \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent give the team that plays \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent give the team that plays \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent give the team that plays \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent give the team that plays \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent give the team that plays \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent give the team that plays \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent give the team that plays \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent give the team that plays \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent in \{Week\} for \{Season\} who did the \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} for \{Season\} who did \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} for \{Season\} who do the \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} for \{Season\} who do \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} for \{Season\} who does the \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} for \{Season\} who does \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} in \{Season\} who did the \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} in \{Season\} who did \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} in \{Season\} who do the \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} in \{Season\} who do \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} in \{Season\} who does the \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} in \{Season\} who does \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} of \{Season\} who did the \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} of \{Season\} who did \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} of \{Season\} who do the \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} of \{Season\} who do \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} of \{Season\} who does the \{FirstTeam\} play\
+GetScheduleIntent in \{Week\} of \{Season\} who does \{FirstTeam\} play\
+GetScheduleIntent tell me the team that played \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent tell me the team that played \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent tell me the team that played \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent tell me the team that played \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent tell me the team that played \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent tell me the team that played \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent tell me the team that played \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent tell me the team that played \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent tell me the team that played \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent tell me the team that plays \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent tell me the team that plays \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent tell me the team that plays \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent tell me the team that plays \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent tell me the team that plays \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent tell me the team that plays \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent tell me the team that plays \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent tell me the team that plays \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent tell me the team that plays \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent tell the team that played \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent tell the team that played \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent tell the team that played \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent tell the team that played \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent tell the team that played \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent tell the team that played \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent tell the team that played \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent tell the team that played \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent tell the team that played \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent tell the team that plays \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent tell the team that plays \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent tell the team that plays \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent tell the team that plays \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent tell the team that plays \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent tell the team that plays \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent tell the team that plays \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent tell the team that plays \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent tell the team that plays \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent the \{FirstTeam\} play which team during \{Week\} for \{Season\}\
+GetScheduleIntent the \{FirstTeam\} play which team during \{Week\} in \{Season\}\
+GetScheduleIntent the \{FirstTeam\} play which team during \{Week\} of \{Season\}\
+GetScheduleIntent the \{FirstTeam\} play which team for \{Week\} for \{Season\}\
+GetScheduleIntent the \{FirstTeam\} play which team for \{Week\} in \{Season\}\
+GetScheduleIntent the \{FirstTeam\} play which team for \{Week\} of \{Season\}\
+GetScheduleIntent the \{FirstTeam\} play which team in \{Week\} for \{Season\}\
+GetScheduleIntent the \{FirstTeam\} play which team in \{Week\} in \{Season\}\
+GetScheduleIntent the \{FirstTeam\} play which team in \{Week\} of \{Season\}\
+GetScheduleIntent the \{FirstTeam\} played which team during \{Week\} for \{Season\}\
+GetScheduleIntent the \{FirstTeam\} played which team during \{Week\} in \{Season\}\
+GetScheduleIntent the \{FirstTeam\} played which team during \{Week\} of \{Season\}\
+GetScheduleIntent the \{FirstTeam\} played which team for \{Week\} for \{Season\}\
+GetScheduleIntent the \{FirstTeam\} played which team for \{Week\} in \{Season\}\
+GetScheduleIntent the \{FirstTeam\} played which team for \{Week\} of \{Season\}\
+GetScheduleIntent the \{FirstTeam\} played which team in \{Week\} for \{Season\}\
+GetScheduleIntent the \{FirstTeam\} played which team in \{Week\} in \{Season\}\
+GetScheduleIntent the \{FirstTeam\} played which team in \{Week\} of \{Season\}\
+GetScheduleIntent what team played the \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent what team played the \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent what team played the \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent what team played the \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent what team played the \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent what team played the \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent what team played the \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent what team played the \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent what team played the \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent what team played \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent what team played \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent what team played \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent what team played \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent what team played \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent what team played \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent what team played \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent what team played \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent what team played \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent what team plays the \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent what team plays the \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent what team plays the \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent what team plays the \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent what team plays the \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent what team plays the \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent what team plays the \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent what team plays the \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent what team plays the \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent what team plays \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent what team plays \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent what team plays \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent what team plays \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent what team plays \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent what team plays \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent what team plays \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent what team plays \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent what team plays \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent what week do the \{FirstTeam\} play the \{SecondTeam\}\
+GetScheduleIntent what week do the \{FirstTeam\} play \{SecondTeam\}\
+GetScheduleIntent what week do \{FirstTeam\} play the \{SecondTeam\}\
+GetScheduleIntent what week do \{FirstTeam\} play \{SecondTeam\}\
+GetScheduleIntent what week does the \{FirstTeam\} play the \{SecondTeam\}\
+GetScheduleIntent what week does the \{FirstTeam\} play \{SecondTeam\}\
+GetScheduleIntent what week does \{FirstTeam\} play the \{SecondTeam\}\
+GetScheduleIntent what week does \{FirstTeam\} play \{SecondTeam\}\
+GetScheduleIntent when did the \{FirstTeam\} play the \{SecondTeam\} for \{Season\}\
+GetScheduleIntent when did the \{FirstTeam\} play the \{SecondTeam\} in \{Season\}\
+GetScheduleIntent when did the \{FirstTeam\} play the \{SecondTeam\} of \{Season\}\
+GetScheduleIntent when did the \{FirstTeam\} play \{SecondTeam\} for \{Season\}\
+GetScheduleIntent when did the \{FirstTeam\} play \{SecondTeam\} in \{Season\}\
+GetScheduleIntent when did the \{FirstTeam\} play \{SecondTeam\} of \{Season\}\
+GetScheduleIntent when did \{FirstTeam\} play the \{SecondTeam\} for \{Season\}\
+GetScheduleIntent when did \{FirstTeam\} play the \{SecondTeam\} in \{Season\}\
+GetScheduleIntent when did \{FirstTeam\} play the \{SecondTeam\} of \{Season\}\
+GetScheduleIntent when did \{FirstTeam\} play \{SecondTeam\} for \{Season\}\
+GetScheduleIntent when did \{FirstTeam\} play \{SecondTeam\} in \{Season\}\
+GetScheduleIntent when did \{FirstTeam\} play \{SecondTeam\} of \{Season\}\
+GetScheduleIntent when do the \{FirstTeam\} play the \{SecondTeam\} for \{Season\}\
+GetScheduleIntent when do the \{FirstTeam\} play the \{SecondTeam\} in \{Season\}\
+GetScheduleIntent when do the \{FirstTeam\} play the \{SecondTeam\} of \{Season\}\
+GetScheduleIntent when do the \{FirstTeam\} play \{SecondTeam\} for \{Season\}\
+GetScheduleIntent when do the \{FirstTeam\} play \{SecondTeam\} in \{Season\}\
+GetScheduleIntent when do the \{FirstTeam\} play \{SecondTeam\} of \{Season\}\
+GetScheduleIntent when do \{FirstTeam\} play the \{SecondTeam\} for \{Season\}\
+GetScheduleIntent when do \{FirstTeam\} play the \{SecondTeam\} in \{Season\}\
+GetScheduleIntent when do \{FirstTeam\} play the \{SecondTeam\} of \{Season\}\
+GetScheduleIntent when do \{FirstTeam\} play \{SecondTeam\} for \{Season\}\
+GetScheduleIntent when do \{FirstTeam\} play \{SecondTeam\} in \{Season\}\
+GetScheduleIntent when do \{FirstTeam\} play \{SecondTeam\} of \{Season\}\
+GetScheduleIntent when does the \{FirstTeam\} play the \{SecondTeam\} for \{Season\}\
+GetScheduleIntent when does the \{FirstTeam\} play the \{SecondTeam\} in \{Season\}\
+GetScheduleIntent when does the \{FirstTeam\} play the \{SecondTeam\} of \{Season\}\
+GetScheduleIntent when does the \{FirstTeam\} play \{SecondTeam\} for \{Season\}\
+GetScheduleIntent when does the \{FirstTeam\} play \{SecondTeam\} in \{Season\}\
+GetScheduleIntent when does the \{FirstTeam\} play \{SecondTeam\} of \{Season\}\
+GetScheduleIntent when does \{FirstTeam\} play the \{SecondTeam\} for \{Season\}\
+GetScheduleIntent when does \{FirstTeam\} play the \{SecondTeam\} in \{Season\}\
+GetScheduleIntent when does \{FirstTeam\} play the \{SecondTeam\} of \{Season\}\
+GetScheduleIntent when does \{FirstTeam\} play \{SecondTeam\} for \{Season\}\
+GetScheduleIntent when does \{FirstTeam\} play \{SecondTeam\} in \{Season\}\
+GetScheduleIntent when does \{FirstTeam\} play \{SecondTeam\} of \{Season\}\
+GetScheduleIntent which team played the \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent which team played the \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent which team played the \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent which team played the \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent which team played the \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent which team played the \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent which team played the \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent which team played the \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent which team played the \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent which team played \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent which team played \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent which team played \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent which team played \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent which team played \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent which team played \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent which team played \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent which team played \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent which team played \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent which team plays the \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent which team plays the \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent which team plays the \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent which team plays the \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent which team plays the \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent which team plays the \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent which team plays the \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent which team plays the \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent which team plays the \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent which team plays \{FirstTeam\} during \{Week\} for \{Season\}\
+GetScheduleIntent which team plays \{FirstTeam\} during \{Week\} in \{Season\}\
+GetScheduleIntent which team plays \{FirstTeam\} during \{Week\} of \{Season\}\
+GetScheduleIntent which team plays \{FirstTeam\} for \{Week\} for \{Season\}\
+GetScheduleIntent which team plays \{FirstTeam\} for \{Week\} in \{Season\}\
+GetScheduleIntent which team plays \{FirstTeam\} for \{Week\} of \{Season\}\
+GetScheduleIntent which team plays \{FirstTeam\} in \{Week\} for \{Season\}\
+GetScheduleIntent which team plays \{FirstTeam\} in \{Week\} in \{Season\}\
+GetScheduleIntent which team plays \{FirstTeam\} in \{Week\} of \{Season\}\
+GetScheduleIntent which week do the \{FirstTeam\} play the \{SecondTeam\}\
+GetScheduleIntent which week do the \{FirstTeam\} play \{SecondTeam\}\
+GetScheduleIntent which week do \{FirstTeam\} play the \{SecondTeam\}\
+GetScheduleIntent which week do \{FirstTeam\} play \{SecondTeam\}\
+GetScheduleIntent which week does the \{FirstTeam\} play the \{SecondTeam\}\
+GetScheduleIntent which week does the \{FirstTeam\} play \{SecondTeam\}\
+GetScheduleIntent which week does \{FirstTeam\} play the \{SecondTeam\}\
+GetScheduleIntent which week does \{FirstTeam\} play \{SecondTeam\}\
+GetScheduleIntent who did the \{FirstTeam\} play during \{Week\} for \{Season\}\
+GetScheduleIntent who did the \{FirstTeam\} play during \{Week\} in \{Season\}\
+GetScheduleIntent who did the \{FirstTeam\} play during \{Week\} of \{Season\}\
+GetScheduleIntent who did the \{FirstTeam\} play for \{Week\} for \{Season\}\
+GetScheduleIntent who did the \{FirstTeam\} play for \{Week\} in \{Season\}\
+GetScheduleIntent who did the \{FirstTeam\} play for \{Week\} of \{Season\}\
+GetScheduleIntent who did the \{FirstTeam\} play in \{Week\} for \{Season\}\
+GetScheduleIntent who did the \{FirstTeam\} play in \{Week\} in \{Season\}\
+GetScheduleIntent who did the \{FirstTeam\} play in \{Week\} of \{Season\}\
+GetScheduleIntent who did \{FirstTeam\} play during \{Week\} for \{Season\}\
+GetScheduleIntent who did \{FirstTeam\} play during \{Week\} in \{Season\}\
+GetScheduleIntent who did \{FirstTeam\} play during \{Week\} of \{Season\}\
+GetScheduleIntent who did \{FirstTeam\} play for \{Week\} for \{Season\}\
+GetScheduleIntent who did \{FirstTeam\} play for \{Week\} in \{Season\}\
+GetScheduleIntent who did \{FirstTeam\} play for \{Week\} of \{Season\}\
+GetScheduleIntent who did \{FirstTeam\} play in \{Week\} for \{Season\}\
+GetScheduleIntent who did \{FirstTeam\} play in \{Week\} in \{Season\}\
+GetScheduleIntent who did \{FirstTeam\} play in \{Week\} of \{Season\}\
+GetScheduleIntent who do the \{FirstTeam\} play during \{Week\} for \{Season\}\
+GetScheduleIntent who do the \{FirstTeam\} play during \{Week\} in \{Season\}\
+GetScheduleIntent who do the \{FirstTeam\} play during \{Week\} of \{Season\}\
+GetScheduleIntent who do the \{FirstTeam\} play for \{Week\} for \{Season\}\
+GetScheduleIntent who do the \{FirstTeam\} play for \{Week\} in \{Season\}\
+GetScheduleIntent who do the \{FirstTeam\} play for \{Week\} of \{Season\}\
+GetScheduleIntent who do the \{FirstTeam\} play in \{Week\} for \{Season\}\
+GetScheduleIntent who do the \{FirstTeam\} play in \{Week\} in \{Season\}\
+GetScheduleIntent who do the \{FirstTeam\} play in \{Week\} of \{Season\}\
+GetScheduleIntent who do \{FirstTeam\} play during \{Week\} for \{Season\}\
+GetScheduleIntent who do \{FirstTeam\} play during \{Week\} in \{Season\}\
+GetScheduleIntent who do \{FirstTeam\} play during \{Week\} of \{Season\}\
+GetScheduleIntent who do \{FirstTeam\} play for \{Week\} for \{Season\}\
+GetScheduleIntent who do \{FirstTeam\} play for \{Week\} in \{Season\}\
+GetScheduleIntent who do \{FirstTeam\} play for \{Week\} of \{Season\}\
+GetScheduleIntent who do \{FirstTeam\} play in \{Week\} for \{Season\}\
+GetScheduleIntent who do \{FirstTeam\} play in \{Week\} in \{Season\}\
+GetScheduleIntent who do \{FirstTeam\} play in \{Week\} of \{Season\}\
+GetScheduleIntent who does the \{FirstTeam\} play during \{Week\} for \{Season\}\
+GetScheduleIntent who does the \{FirstTeam\} play during \{Week\} in \{Season\}\
+GetScheduleIntent who does the \{FirstTeam\} play during \{Week\} of \{Season\}\
+GetScheduleIntent who does the \{FirstTeam\} play for \{Week\} for \{Season\}\
+GetScheduleIntent who does the \{FirstTeam\} play for \{Week\} in \{Season\}\
+GetScheduleIntent who does the \{FirstTeam\} play for \{Week\} of \{Season\}\
+GetScheduleIntent who does the \{FirstTeam\} play in \{Week\} for \{Season\}\
+GetScheduleIntent who does the \{FirstTeam\} play in \{Week\} in \{Season\}\
+GetScheduleIntent who does the \{FirstTeam\} play in \{Week\} of \{Season\}\
+GetScheduleIntent who does \{FirstTeam\} play during \{Week\} for \{Season\}\
+GetScheduleIntent who does \{FirstTeam\} play during \{Week\} in \{Season\}\
+GetScheduleIntent who does \{FirstTeam\} play during \{Week\} of \{Season\}\
+GetScheduleIntent who does \{FirstTeam\} play for \{Week\} for \{Season\}\
+GetScheduleIntent who does \{FirstTeam\} play for \{Week\} in \{Season\}\
+GetScheduleIntent who does \{FirstTeam\} play for \{Week\} of \{Season\}\
+GetScheduleIntent who does \{FirstTeam\} play in \{Week\} for \{Season\}\
+GetScheduleIntent who does \{FirstTeam\} play in \{Week\} in \{Season\}\
+GetScheduleIntent who does \{FirstTeam\} play in \{Week\} of \{Season\}\
+GetScheduleIntent \{FirstTeam\} play which team during \{Week\} for \{Season\}\
+GetScheduleIntent \{FirstTeam\} play which team during \{Week\} in \{Season\}\
+GetScheduleIntent \{FirstTeam\} play which team during \{Week\} of \{Season\}\
+GetScheduleIntent \{FirstTeam\} play which team for \{Week\} for \{Season\}\
+GetScheduleIntent \{FirstTeam\} play which team for \{Week\} in \{Season\}\
+GetScheduleIntent \{FirstTeam\} play which team for \{Week\} of \{Season\}\
+GetScheduleIntent \{FirstTeam\} play which team in \{Week\} for \{Season\}\
+GetScheduleIntent \{FirstTeam\} play which team in \{Week\} in \{Season\}\
+GetScheduleIntent \{FirstTeam\} play which team in \{Week\} of \{Season\}\
+GetScheduleIntent \{FirstTeam\} played which team during \{Week\} for \{Season\}\
+GetScheduleIntent \{FirstTeam\} played which team during \{Week\} in \{Season\}\
+GetScheduleIntent \{FirstTeam\} played which team during \{Week\} of \{Season\}\
+GetScheduleIntent \{FirstTeam\} played which team for \{Week\} for \{Season\}\
+GetScheduleIntent \{FirstTeam\} played which team for \{Week\} in \{Season\}\
+GetScheduleIntent \{FirstTeam\} played which team for \{Week\} of \{Season\}\
+GetScheduleIntent \{FirstTeam\} played which team in \{Week\} for \{Season\}\
+GetScheduleIntent \{FirstTeam\} played which team in \{Week\} in \{Season\}\
+GetScheduleIntent \{FirstTeam\} played which team in \{Week\} of \{Season\}\
+\
+GetProjectionIntent do you think \{FirstPlayer\} or \{SecondPlayer\} will have a better \{Week\}\
+GetProjectionIntent do you think \{FirstPlayer\} or \{SecondPlayer\} will have a better \{Week\} performance\
+GetProjectionIntent do you think \{FirstPlayer\} or \{SecondPlayer\} will have a bigger \{Week\}\
+GetProjectionIntent do you think \{FirstPlayer\} or \{SecondPlayer\} will have a bigger \{Week\} performance\
+GetProjectionIntent do you think \{FirstPlayer\} or \{SecondPlayer\} will have a higher \{Week\}\
+GetProjectionIntent do you think \{FirstPlayer\} or \{SecondPlayer\} will have a higher \{Week\} performance\
+GetProjectionIntent should I start \{FirstPlayer\} or \{SecondPlayer\} during \{Week\}\
+GetProjectionIntent should I start \{FirstPlayer\} or \{SecondPlayer\} for \{Week\}\
+GetProjectionIntent should I start \{FirstPlayer\} or \{SecondPlayer\} in \{Week\}\
+GetProjectionIntent which player should I start during \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent which player should I start for \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent which player should I start in \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent which player will have a better \{Week\} performance \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent which player will have a better \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent which player will have a bigger \{Week\} performance \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent which player will have a bigger \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent who should I start during \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent who should I start for \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent who should I start in \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent who will have a better \{Metric\} during \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent who will have a better \{Metric\} for \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent who will have a better \{Metric\} in \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent who will have a better \{Week\} performance \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent who will have a better \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent who will have a bigger \{Week\} performance \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent who will have a bigger \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent who will have a higher \{Metric\} during \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent who will have a higher \{Metric\} for \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent who will have a higher \{Metric\} in \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent who will have more \{Metric\} during \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent who will have more \{Metric\} for \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent who will have more \{Metric\} in \{Week\} \{FirstPlayer\} or \{SecondPlayer\}\
+GetProjectionIntent will \{FirstPlayer\} or \{SecondPlayer\} have a better \{Metric\} during \{Week\}\
+GetProjectionIntent will \{FirstPlayer\} or \{SecondPlayer\} have a better \{Metric\} for \{Week\}\
+GetProjectionIntent will \{FirstPlayer\} or \{SecondPlayer\} have a better \{Metric\} in \{Week\}\
+GetProjectionIntent will \{FirstPlayer\} or \{SecondPlayer\} have a higher \{Metric\} during \{Week\}\
+GetProjectionIntent will \{FirstPlayer\} or \{SecondPlayer\} have a higher \{Metric\} for \{Week\}\
+GetProjectionIntent will \{FirstPlayer\} or \{SecondPlayer\} have a higher \{Metric\} in \{Week\}\
+GetProjectionIntent will \{FirstPlayer\} or \{SecondPlayer\} have more \{Metric\} during \{Week\}\
+GetProjectionIntent will \{FirstPlayer\} or \{SecondPlayer\} have more \{Metric\} for \{Week\}\
+GetProjectionIntent will \{FirstPlayer\} or \{SecondPlayer\} have more \{Metric\} in \{Week\}\
+GetProjectionIntent would you start \{FirstPlayer\} or \{SecondPlayer\} during \{Week\}\
+GetProjectionIntent would you start \{FirstPlayer\} or \{SecondPlayer\} for \{Week\}\
+GetProjectionIntent would you start \{FirstPlayer\} or \{SecondPlayer\} in \{Week\}}
