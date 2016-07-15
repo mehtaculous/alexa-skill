@@ -33,6 +33,7 @@ var Fantasy = {
                 "rushing touchdowns": 0,
                 "standard fantasy points": 23.04   
             },
+            "games played": 16,
             "completions": 329,
             "passing attempts": 483,
             "passing yards": 4024,
@@ -196,7 +197,7 @@ function handleMissingSeasonRequest(intent, session, response) {
         player = playerName;
     }
 
-    var speechOutput = "Please provide the year of a valid NFL season, ranging from two thousand and ten through two thousand and fifteen, in which " + player + " played at least one game.",
+    var speechOutput = "Please provide the year of a valid NFL season, ranging from two thousand and ten through two thousand and fifteen, in which " + player + " has played at least one game.",
         repromptText = "You can say something like, Two Thousand and Fifteen."
     response.ask(speechOutput, repromptText);
 };
