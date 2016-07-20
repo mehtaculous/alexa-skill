@@ -45,6 +45,48 @@ var Fantasy = {
             "rushing touchdowns": 1,
             "standard fantasy points": 344.26
         }
+    },
+    "julio jones": {
+        "2015": { 
+            "week 1": {
+                "targets": 11,
+                "receptions": 9,
+                "receiving yards": 141,
+                "yards per reception": 15.7,
+                "receiving touchdowns": 2,
+                "rushing attempts": 0,
+                "rushing yards": 0,
+                "rushing touchdowns": 0,
+                "standard fantasy points": 26.1,
+                "half ppr fantasy points": 30.6, 
+                "full ppr fantasy points": 35.1    
+            },
+            "week 2": {
+                "targets": 15,
+                "receptions": 13,
+                "receiving yards": 135,
+                "yards per reception": 10.4,
+                "receiving touchdowns": 0,
+                "rushing attempts": 0,
+                "rushing yards": 0,
+                "rushing touchdowns": 0,
+                "standard fantasy points": 13.5,
+                "half ppr fantasy points": 20, 
+                "full ppr fantasy points": 26.5     
+            },
+            "games played": 16,
+            "targets": 204,
+            "receptions": 136,
+            "receiving yards": 1871,
+            "yards per reception": 13.8,
+            "receiving touchdowns": 8,
+            "rushing attempts": 0,
+            "rushing yards": 0,
+            "rushing touchdowns": 0,
+            "standard fantasy points": 239.1,
+            "half ppr fantasy points": 307.1, 
+            "full ppr fantasy points": 375.1
+        }
     }
 }
 
@@ -118,9 +160,11 @@ FantasyMetrix.prototype.intentHandlers = {
         var playerSlot = intent.slots.Player,
             metricSlot = intent.slots.Metric,
             seasonSlot = intent.slots.Season,
+            weekSlot = intent.slots.Week,
             playerName,
             metricName,
-            seasonNumber;
+            seasonNumber,
+            weekNumber;
 
         if (playerSlot && playerSlot.value) {
             playerName = playerSlot.value.toLowerCase();
@@ -143,9 +187,15 @@ FantasyMetrix.prototype.intentHandlers = {
             handleMissingSeasonRequest(intent, session, response);
         }
 
-        console.log("MissingPlayerIntent: " + playerSlot.value);
-        console.log("MissingMetricIntent: " + metricSlot.value);
-        console.log("MissingSeasonIntent: " + seasonSlot.value);
+        if (weekSlot && weekSlot.value) {
+            weekNumber = weekSlot.value.toLowerCase();
+            session.attributes.weekNumber = weekNumber; 
+        }
+
+        console.log("MissingPlayerIntent: " + playerName);
+        console.log("MissingMetricIntent: " + metricName);
+        console.log("MissingSeasonIntent: " + seasonNumber);
+        console.log("MissingSeasonIntent: " + weekNumber);
 
         getMetricRequest(intent, session, response);
     },
