@@ -58,8 +58,7 @@ var Fantasy = {
                 "rushing yards": 0,
                 "rushing touchdowns": 0,
                 "standard fantasy points": 26.1,
-                "half ppr fantasy points": 30.6, 
-                "full ppr fantasy points": 35.1    
+                "half ppr fantasy points": 30.6   
             },
             "week 2": {
                 "targets": 15,
@@ -71,8 +70,7 @@ var Fantasy = {
                 "rushing yards": 0,
                 "rushing touchdowns": 0,
                 "standard fantasy points": 13.5,
-                "half ppr fantasy points": 20, 
-                "full ppr fantasy points": 26.5     
+                "half ppr fantasy points": 20    
             },
             "games played": 16,
             "targets": 204,
@@ -84,13 +82,12 @@ var Fantasy = {
             "rushing yards": 0,
             "rushing touchdowns": 0,
             "standard fantasy points": 239.1,
-            "half ppr fantasy points": 307.1, 
-            "full ppr fantasy points": 375.1
+            "half ppr fantasy points": 307.1
         }
     }
 }
 
-var calculations = ["passing attempts per game", "passing yards per game", "receiving yards per game", "receptions per game", "targets per game", "rushing attempts per game", "rushing yards per game", "standard fantasy points per game", "half ppr fantasy points per game", "full ppr fantasy points per game", "completion percentage", "passing yards per attempt", "receiving yards per reception", "receiving yards per target", "rushing yards per attempt"];
+var calculations = ["passing attempts per game", "passing yards per game", "receiving yards per game", "receptions per game", "targets per game", "rushing attempts per game", "rushing yards per game", "standard fantasy points per game", "half ppr fantasy points per game", "completion percentage", "passing yards per attempt", "receiving yards per reception", "receiving yards per target", "rushing yards per attempt"];
 
 var FantasyMetrix = function () {
     AlexaSkill.call(this, APP_ID);
@@ -140,10 +137,10 @@ FantasyMetrix.prototype.intentHandlers = {
             session.attributes.weekNumber = weekNumber;
         }
 
-        console.log("OneShotMetricIntent: " + playerName);
-        console.log("OneShotMetricIntent: " + metricName);
-        console.log("OneShotMetricIntent: " + seasonNumber);
-        console.log("OneShotMetricIntent: " + weekNumber);
+        console.log("oneShotPlayerIntent: " + playerName);
+        console.log("oneShotMetricIntent: " + metricName);
+        console.log("oneShotSeasonIntent: " + seasonNumber);
+        console.log("oneShotWeekIntent: " + weekNumber);
 
         if (playerName === undefined) {
             handleMissingPlayerRequest(intent, session, response);
@@ -169,35 +166,37 @@ FantasyMetrix.prototype.intentHandlers = {
         if (playerSlot && playerSlot.value) {
             playerName = playerSlot.value.toLowerCase();
             session.attributes.playerName = playerName;
-        } else if (session.attributes.playerName === undefined) {
-            handleMissingPlayerRequest(intent, session, response);
         }
 
         if (metricSlot && metricSlot.value) {
             metricName = metricSlot.value.toLowerCase();
             session.attributes.metricName = metricName;
-        } else if (session.attributes.metricName === undefined) {
-            handleMissingMetricRequest(intent, session, response);
         }
 
         if (seasonSlot && seasonSlot.value) {
             seasonNumber = seasonSlot.value.toLowerCase();
             session.attributes.seasonNumber = seasonNumber;
-        } else if (session.attributes.seasonNumber === undefined) {
-            handleMissingSeasonRequest(intent, session, response);
-        }
+        } 
 
         if (weekSlot && weekSlot.value) {
             weekNumber = weekSlot.value.toLowerCase();
-            session.attributes.weekNumber = weekNumber; 
+            session.attributes.weekNumber = weekNumber;
         }
 
-        console.log("MissingPlayerIntent: " + playerName);
-        console.log("MissingMetricIntent: " + metricName);
-        console.log("MissingSeasonIntent: " + seasonNumber);
-        console.log("MissingSeasonIntent: " + weekNumber);
+        console.log("missingPlayerIntent: " + playerName);
+        console.log("missingMetricIntent: " + metricName);
+        console.log("missingSeasonIntent: " + seasonNumber);
+        console.log("missingWeekIntent: " + weekNumber);
 
-        getMetricRequest(intent, session, response);
+        if (session.attributes.playerName === undefined) {
+            handleMissingPlayerRequest(intent, session, response);
+        } else if (session.attributes.metricName === undefined) {
+            handleMissingMetricRequest(intent, session, response);
+        } else if (session.attributes.seasonNumber === undefined) {
+            handleMissingSeasonRequest(intent, session, response);
+        } else {
+            getMetricRequest(intent, session, response);
+        }
     },
 
     "AMAZON.HelpIntent": function (intent, session, response) {
@@ -249,7 +248,7 @@ function handleMissingSeasonRequest(intent, session, response) {
         player = playerName;
     }
 
-    var speechOutput = "Please provide the year of a valid NFL season, ranging from two thousand and ten through two thousand and fifteen, in which " + player + " has played at least one game.",
+    var speechOutput = "Please provide the year of a valid NFL season, ranging from two thousand and thirteen through two thousand and sixteen, in which " + player + " has played at least one game.",
         repromptText = "You can say something like, Two Thousand and Fifteen."
     response.ask(speechOutput, repromptText);
 };
@@ -271,10 +270,10 @@ function getMetricRequest(intent, session, response) {
         cardTitle,
         cardContent;
 
-    console.log("getMetricRequest: " + player);
+    console.log("getPlayerRequest: " + player);
     console.log("getMetricRequest: " + metric);
-    console.log("getMetricRequest: " + season);
-    console.log("getMetricRequest: " + week);
+    console.log("getSeasonRequest: " + season);
+    console.log("getWeekRequest: " + week);
 
     if (player && metric && season && (calculations.indexOf(metric) > -1)) {
         calculateMetricRequest(intent, session, response);
@@ -295,7 +294,7 @@ function getMetricRequest(intent, session, response) {
         cardContent = JSON.stringify(Fantasy[player][season][metric]) + " " + metric;
         response.tellWithCard(speechOutput, cardTitle, cardContent);
     } else {
-        var speech = "I'm sorry, I currently do not know what you are asking for. Please make sure that you are providing the name of a current player who has played at least one season in the National Football League, a valid metric correlating to that player's position, and a valid year pertaining to the NFL season ranging from two thousand and ten through two thousand and sixteen. Providing a regular season week number, ranging from week one through week seventeen, is merely optional.";
+        var speech = "I'm sorry, I currently do not know what you are asking for. Please make sure that you are providing the name of a current player who has played at least one season in the National Football League, a valid metric correlating to that player's position, and a valid year pertaining to the NFL season ranging from two thousand and thirteen through two thousand and sixteen. Providing a regular season week number ranging from one through sixteen is merely optional.";
         speechOutput = {
             speech: speech,
             type: AlexaSkill.speechOutputType.PLAIN_TEXT
@@ -325,10 +324,10 @@ function calculateMetricRequest(intent, session, response) {
         cardTitle,
         cardContent;
 
-    console.log("calculateMetricRequest: " + player);
+    console.log("calculatePlayerRequest: " + player);
     console.log("calculateMetricRequest: " + metric);
-    console.log("calculateMetricRequest: " + season);
-    console.log("calculateMetricRequest: " + week);
+    console.log("calculateSeasonRequest: " + season);
+    console.log("calculateWeekRequest: " + week);
 
     var passingAttemptsPerGame,
         passingYardsPerGame,
@@ -339,7 +338,6 @@ function calculateMetricRequest(intent, session, response) {
         rushingYardsPerGame,
         standardFantasyPointsPerGame,
         halfPprFantasyPointsPerGame,
-        fullPprFantasyPointsPerGame,
         completionPercentage,
         passingYardsPerAttempt,
         receivingYardsPerReception,
@@ -417,14 +415,6 @@ function calculateMetricRequest(intent, session, response) {
             speechOutput = "During the " + season + " season, " + player + " had " + halfPprFantasyPointsPerGame + " " + metric;
             cardTitle = metric + " for " + player + " during the " + season + " season";
             cardContent = halfPprFantasyPointsPerGame + " " + metric;
-            response.tellWithCard(speechOutput, cardTitle, cardContent);
-
-        } else if (metric === "full ppr fantasy points per game" && week === undefined) {
-            fullPprFantasyPointsPerGame = (Fantasy[player][season]["full ppr fantasy points"] / Fantasy[player][season]["games played"]).toFixed(1);
-            console.log(fullPprFantasyPointsPerGame);
-            speechOutput = "During the " + season + " season, " + player + " had " + fullPprFantasyPointsPerGame + " " + metric;
-            cardTitle = metric + " for " + player + " during the " + season + " season";
-            cardContent = fullPprFantasyPointsPerGame + " " + metric;
             response.tellWithCard(speechOutput, cardTitle, cardContent);
 
         } else if (metric === "completion percentage" && week === undefined) {
@@ -508,7 +498,7 @@ function calculateMetricRequest(intent, session, response) {
             response.tellWithCard(speechOutput, cardTitle, cardContent);
         }
     } else {
-        var speech = "I'm sorry, I currently do not know what you are asking for. Please make sure that you are providing the name of a current player who has played at least one season in the National Football League, a valid metric correlating to that player's position, and a valid year pertaining to the NFL season ranging from two thousand and ten through two thousand and sixteen. Providing a regular season week number, ranging from week one through week seventeen, is merely optional.";
+        var speech = "I'm sorry, I currently do not know what you are asking for. Please make sure that you are providing the name of a current player who has played at least one season in the National Football League, a valid metric correlating to that player's position, and a valid year pertaining to the NFL season ranging from two thousand and thirteen through two thousand and sixteen. Providing a regular season week number ranging from week one through week sixteen is merely optional.";
         speechOutput = {
             speech: speech,
             type: AlexaSkill.speechOutputType.PLAIN_TEXT
@@ -520,6 +510,22 @@ function calculateMetricRequest(intent, session, response) {
         response.ask(speechOutput, repromptOutput);
     }
 };
+
+function yahooSearch(query, count, callback_error_data_response){  
+    var webSearchUrl = 'https://yboss.yahooapis.com/ysearch/web';  
+    var consumerKey = 'dj0yJmk9bENVMTdzQ1RWVWFnJmQ9WVdrOVoyeEdkMjFXTjJFbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD03Mg--';
+    var consumerSecret = '25058eadcccfd1f08ad5ae79e287dacf3d096ff9';
+
+    var finalUrl = webSearchUrl + '?' + qs.stringify({  
+        q: query, 
+        format: 'json',  
+        count: count,
+    });
+  
+    var oa = new OAuth(webSearchUrl, webSearchUrl, consumerKey, consumerSecret, "1.0", null, "HMAC-SHA1");  
+    oa.setClientOptions({ requestTokenHttpMethod: 'GET' });  
+    oa.getProtectedResource(finalUrl, "GET", '','', callback_error_data_response); 
+}
 
 exports.handler = function (event, context) {
     var skill = new FantasyMetrix();
