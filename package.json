@@ -1,0 +1,24 @@
+{
+  "name": "fantasymetrix",
+  "version": "1.0.0",
+  "description": "fantasy football",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "request": "^2.74.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehtaculous/fantasy-football-skill.git"
+  },
+  "author": "swaHiiili",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehtaculous/fantasy-football-skill/issues"
+  },
+  "homepage": "https://github.com/mehtaculous/fantasy-football-skill#readme"
+}

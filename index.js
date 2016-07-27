@@ -2,9 +2,43 @@
 
 var AlexaSkill = require('./AlexaSkill');
 
-var https = require('https');
-
 var APP_ID = 'amzn1.echo-sdk-ams.app.c565f60c-9587-49f8-9131-abed9b952cc3';
+
+var OAuth = require('oauth');
+
+var express = require('express');
+
+var request = require('request');
+
+var app = express();
+
+var GA_TRACKING_ID = 'UA-81123913-1';
+
+function trackEvent(category, action, label, value, callbback) {
+  var data = {
+    v: '1',
+    tid: GA_TRACKING_ID,
+    cid: '555',
+    t: 'event',
+    ec: category,
+    ea: action,
+    el: label,
+    ev: value,
+  };
+
+  request.post(
+    'http://www.google-analytics.com/collect', {
+      form: data
+    },
+    function(err, response) {
+      if (err) { return callbback(err); }
+      if (response.statusCode !== 200) {
+        return callbback(new Error('Tracking failed'));
+      }
+      callbback();
+    }
+  );
+}
 
 var Fantasy = {
     "russell wilson": {
@@ -87,7 +121,7 @@ var Fantasy = {
     }
 }
 
-var calculations = ["passing attempts per game", "passing yards per game", "receiving yards per game", "receptions per game", "targets per game", "rushing attempts per game", "rushing yards per game", "standard fantasy points per game", "half ppr fantasy points per game", "completion percentage", "passing yards per attempt", "receiving yards per reception", "receiving yards per target", "rushing yards per attempt"];
+var calculations = ["passing attempts per game", "passing yards per game", "receiving yards per game", "receptions per game", "targets per game", "rushing attempts per game", "rushing yards per game", "standard fantasy points", "standard fantasy points per game", "half ppr fantasy points", "half ppr fantasy points per game", "full ppr fantasy points", "full ppr fantasy points per game", "completion percentage", "passing yards per attempt", "receiving yards per reception", "receiving yards per target", "rushing yards per attempt"];
 
 var FantasyMetrix = function () {
     AlexaSkill.call(this, APP_ID);
@@ -142,18 +176,40 @@ FantasyMetrix.prototype.intentHandlers = {
         console.log("oneShotSeasonIntent: " + seasonNumber);
         console.log("oneShotWeekIntent: " + weekNumber);
 
-        if (playerName === undefined) {
-            handleMissingPlayerRequest(intent, session, response);
-        } else if (metricName === undefined) {
-            handleMissingMetricRequest(intent, session, response);
-        } else if (seasonNumber === undefined) {
-            handleMissingSeasonRequest(intent, session, response);
-        } else {
-            getMetricRequest(intent, session, response);
-        }
+        var strLogData = ["oneShotPlayerIntent: " + playerName, 
+                          "oneShotMetricIntent: " + metricName, 
+                          "oneShotSeasonIntent: " + seasonNumber,
+                          "oneShotWeekIntent: " + weekNumber];
+
+        var strQuery = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20fantasysports.teams.roster.stats%20where%20team_key%3D'314.l.687165.t.1'%20or%20team_key%3D'314.l.687165.t.2'%20or%20team_key%3D'314.l.687165.t.3'%20or%20team_key%3D'314.l.687165.t.4'%20or%20team_key%3D'314.l.687165.t.5'%20or%20team_key%3D'314.l.687165.t.6'%20or%20team_key%3D'314.l.687165.t.7'%20or%20team_key%3D'314.l.687165.t.8'%20or%20team_key%3D'314.l.687165.t.9'%20or%20team_key%3D'314.l.687165.t.10'%20or%20team_key%3D'314.l.687165.t.11'%20or%20team_key%3D'314.l.687165.t.12'%20and%20week%3D'1'&format=json&diagnostics=true&callback=";
+
+        yahooSearch(strQuery, 50, function(results){
+            console.log("oneShotIntent: " + JSON.stringify(results));
+        });
+
+        trackEvent(
+            'Intent',
+            'OneShotMetricIntent',
+            strLogData,
+            '100',
+            function(err) {
+                if (err) {
+                    console.log(err);
+                }
+            if (playerName === undefined) {
+                handleMissingPlayerRequest(intent, session, response);
+            } else if (metricName === undefined) {
+                handleMissingMetricRequest(intent, session, response);
+            } else if (seasonNumber === undefined) {
+                handleMissingSeasonRequest(intent, session, response);
+            } else {
+                getMetricRequest(intent, session, response);
+            }
+        });
     },
 
     "MissingSlotIntent": function (intent, session, response) {
+
         var playerSlot = intent.slots.Player,
             metricSlot = intent.slots.Metric,
             seasonSlot = intent.slots.Season,
@@ -188,34 +244,69 @@ FantasyMetrix.prototype.intentHandlers = {
         console.log("missingSeasonIntent: " + seasonNumber);
         console.log("missingWeekIntent: " + weekNumber);
 
-        if (session.attributes.playerName === undefined) {
-            handleMissingPlayerRequest(intent, session, response);
-        } else if (session.attributes.metricName === undefined) {
-            handleMissingMetricRequest(intent, session, response);
-        } else if (session.attributes.seasonNumber === undefined) {
-            handleMissingSeasonRequest(intent, session, response);
-        } else {
-            getMetricRequest(intent, session, response);
-        }
+        var strLogData = ["missingPlayerIntent: " + playerName,
+                          "missingMetricIntent: " + metricName,
+                          "missingSeasonIntent: " + seasonNumber,
+                          "missingWeekIntent: " + weekNumber];
+
+        trackEvent(
+            'Intent',
+            'MissingSlotIntent',
+            strLogData,
+            '100',
+            function(err) {
+                if (err) {
+                    console.log(err);
+                }
+            if (session.attributes.playerName === undefined) {
+                handleMissingPlayerRequest(intent, session, response);
+            } else if (session.attributes.metricName === undefined) {
+                handleMissingMetricRequest(intent, session, response);
+            } else if (session.attributes.seasonNumber === undefined) {
+                handleMissingSeasonRequest(intent, session, response);
+            } else {
+                getMetricRequest(intent, session, response);
+            }   
+        });
     },
 
     "AMAZON.HelpIntent": function (intent, session, response) {
-        var speechText = "You can ask questions such as <break time = \"0.618s\"/> Get me Russell Wilson's passing touchdowns for week one of two thousand and fifteen? <break time = \"0.618s\"/> Now, what can I help you with?";
-        var repromptText = "You can say things like <break time = \"0.618s\"/> How many receiving yards did Julio Jones have during week two of two thousand and fifteen? <break time = \"0.618s\"/> Now, how can I help you?";
-        var speechOutput = {
-            speech: speechText,
-            type: AlexaSkill.speechOutputType.PLAIN_TEXT
-        };
-        var repromptOutput = {
-            speech: repromptText,
-            type: AlexaSkill.speechOutputType.PLAIN_TEXT
-        };
-        response.ask(speechOutput, repromptOutput);
+        trackEvent(
+            'Intent',
+            'AMAZON.HelpIntent',
+            'na',
+            '100',
+            function(err) {
+                if (err) {
+                    console.log(err);
+                }
+            var speechText = "You can ask questions such as <break time = \"0.618s\"/> Get me Russell Wilson's passing touchdowns for week one of two thousand and fifteen? <break time = \"0.618s\"/> Now, what can I help you with?";
+            var repromptText = "You can say things like <break time = \"0.618s\"/> How many receiving yards did Julio Jones have during week two of two thousand and fifteen? <break time = \"0.618s\"/> Now, how can I help you?";
+            var speechOutput = {
+                speech: speechText,
+                type: AlexaSkill.speechOutputType.PLAIN_TEXT
+            };
+            var repromptOutput = {
+                speech: repromptText,
+                type: AlexaSkill.speechOutputType.PLAIN_TEXT
+            };
+            response.ask(speechOutput, repromptOutput);
+        });
     },
 
     "AMAZON.StopIntent": function (intent, session, response) {
-        var speechOutput = "Thank you for using FantasyMetrix. Goodbye";
-        response.tell(speechOutput);
+        trackEvent(
+            'Intent',
+            'AMAZON.StopIntent',
+            'na',
+            '100',
+            function(err) {
+                if (err) {
+                    console.log(err);
+                }
+            var speechOutput = "Thank you for using FantasyMetrix. Goodbye";
+            response.tell(speechOutput);
+        });
     }
 };
 
@@ -278,6 +369,7 @@ function getMetricRequest(intent, session, response) {
     if (player && metric && season && (calculations.indexOf(metric) > -1)) {
         calculateMetricRequest(intent, session, response);
     } else if (Fantasy[player] && Fantasy[player][season] && Fantasy[player][season][week] && Fantasy[player][season][week][metric]) {
+        console.log("During " + week + " of the " + season + " season, " + player + " had " + JSON.stringify(Fantasy[player][season][week][metric]) + " " + metric);
         speechOutput = {
             speech: "During " + week + " of the " + season + " season, " + player + " had " + JSON.stringify(Fantasy[player][season][week][metric]) + " " + metric,
             type: AlexaSkill.speechOutputType.PLAIN_TEXT
@@ -286,6 +378,7 @@ function getMetricRequest(intent, session, response) {
         cardContent = JSON.stringify(Fantasy[player][season][week][metric]) + " " + metric;
         response.tellWithCard(speechOutput, cardTitle, cardContent);
     } else if (Fantasy[player] && Fantasy[player][season] && Fantasy[player][season][metric]) {
+        console.log("During the " + season + " season, " + player + " had " + JSON.stringify(Fantasy[player][season][metric]) + " " + metric);
         speechOutput = {
             speech: "During the " + season + " season, " + player + " had " + JSON.stringify(Fantasy[player][season][metric]) + " " + metric,
             type: AlexaSkill.speechOutputType.PLAIN_TEXT
@@ -294,6 +387,7 @@ function getMetricRequest(intent, session, response) {
         cardContent = JSON.stringify(Fantasy[player][season][metric]) + " " + metric;
         response.tellWithCard(speechOutput, cardTitle, cardContent);
     } else {
+        console.log("I'm sorry, I currently do not know what you are asking for.");
         var speech = "I'm sorry, I currently do not know what you are asking for. Please make sure that you are providing the name of a current player who has played at least one season in the National Football League, a valid metric correlating to that player's position, and a valid year pertaining to the NFL season ranging from two thousand and thirteen through two thousand and sixteen. Providing a regular season week number ranging from one through sixteen is merely optional.";
         speechOutput = {
             speech: speech,
@@ -338,6 +432,7 @@ function calculateMetricRequest(intent, session, response) {
         rushingYardsPerGame,
         standardFantasyPointsPerGame,
         halfPprFantasyPointsPerGame,
+        fullPprFantasyPointsPerGame,
         completionPercentage,
         passingYardsPerAttempt,
         receivingYardsPerReception,
@@ -415,6 +510,14 @@ function calculateMetricRequest(intent, session, response) {
             speechOutput = "During the " + season + " season, " + player + " had " + halfPprFantasyPointsPerGame + " " + metric;
             cardTitle = metric + " for " + player + " during the " + season + " season";
             cardContent = halfPprFantasyPointsPerGame + " " + metric;
+            response.tellWithCard(speechOutput, cardTitle, cardContent);
+
+        } else if (metric === "full ppr fantasy points per game" && week === undefined) {
+            fullPprFantasyPointsPerGame = (Fantasy[player][season]["full ppr fantasy points"] / Fantasy[player][season]["games played"]).toFixed(1);
+            console.log(fullPprFantasyPointsPerGame);
+            speechOutput = "During the " + season + " season, " + player + " had " + fullPprFantasyPointsPerGame + " " + metric;
+            cardTitle = metric + " for " + player + " during the " + season + " season";
+            cardContent = fullPprFantasyPointsPerGame + " " + metric;
             response.tellWithCard(speechOutput, cardTitle, cardContent);
 
         } else if (metric === "completion percentage" && week === undefined) {
@@ -516,14 +619,15 @@ function yahooSearch(query, count, callback_error_data_response){
     var consumerKey = 'dj0yJmk9bENVMTdzQ1RWVWFnJmQ9WVdrOVoyeEdkMjFXTjJFbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD03Mg--';
     var consumerSecret = '25058eadcccfd1f08ad5ae79e287dacf3d096ff9';
 
-    var finalUrl = webSearchUrl + '?' + qs.stringify({  
+    var finalUrl = webSearchUrl + '?' + JSON.stringify({  
         q: query, 
         format: 'json',  
         count: count,
     });
-  
-    var oa = new OAuth(webSearchUrl, webSearchUrl, consumerKey, consumerSecret, "1.0", null, "HMAC-SHA1");  
-    oa.setClientOptions({ requestTokenHttpMethod: 'GET' });  
+
+    var OAuth2 = OAuth.OAuth2;
+    var oa = new OAuth2(webSearchUrl, webSearchUrl, consumerKey, consumerSecret, "1.0", null, "HMAC-SHA1");  
+    // oa.setClientOptions({ requestTokenHttpMethod: 'GET' });
     oa.getProtectedResource(finalUrl, "GET", '','', callback_error_data_response); 
 }
 
