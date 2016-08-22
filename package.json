@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "fantasy football",
   "main": "index.js",
-  "dependencies": {
-    "express": "^4.14.0",
-    "request": "^2.74.0"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "echo"
