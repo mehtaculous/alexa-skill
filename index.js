@@ -291,9 +291,8 @@ FantasyMetrix.prototype.intentHandlers = {
             } else if (seasonNumber === undefined) {
                 handleMissingSeasonRequest(intent, session, response);
             } else {
-                yahooSearch(intent, session);
-                getMetricRequest(intent, session, response);
-            }   
+                yahooSearch(intent, session, response);
+            }
         });
     },
 
@@ -307,8 +306,8 @@ FantasyMetrix.prototype.intentHandlers = {
                 if (err) {
                     console.log(err);
                 }
-            var speechText = "You can ask questions such as <break time = \"0.618s\"/> Get me Russell Wilson's passing touchdowns for week one of two thousand and fourteen? <break time = \"0.618s\"/> Now, what can I help you with?";
-            var repromptText = "You can say things like <break time = \"0.618s\"/> How many receiving yards did Julio Jones have during week two of two thousand and fifteen? <break time = \"0.618s\"/> Now, how can I help you?";
+            var speechText = "You can ask questions such as <break time = \"0.618s\"/> Get me Russell Wilson's passing touchdowns for week five of two thousand and fourteen? <break time = \"0.618s\"/> Now, what can I help you with?";
+            var repromptText = "You can say things like <break time = \"0.618s\"/> How many receiving yards did Julio Jones have during week twelve of two thousand and fifteen? <break time = \"0.618s\"/> Now, how can I help you?";
             var speechOutput = {
                 speech: speechText,
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
@@ -338,7 +337,7 @@ FantasyMetrix.prototype.intentHandlers = {
 };
 
 function handleMissingPlayerRequest(intent, session, response) {
-    var speechOutput = "Please provide the name of a current player who has played at least one season in the National Football League.",
+    var speechOutput = "Please provide the name of a current player who has played at least one season in the NFL.",
         repromptText = "You can say something like, Russell Wilson";
     response.ask(speechOutput, repromptText);
 }
@@ -427,7 +426,7 @@ function getMetricRequest(intent, session, response) {
             response.tellWithCard(speechOutput, cardTitle, cardContent);
         } else {
             console.log("I'm sorry, I currently do not know what you are asking for.");
-            var speech = "I'm sorry, I currently do not know what you are asking for. Please make sure that you are providing the name of a current player who has played at least one season in the National Football League, a valid metric correlating to that player's position, and a valid year pertaining to the NFL season ranging from two thousand and one through two thousand and sixteen. Providing a regular season week number, ranging from one through seventeen is merely optional.";
+            var speech = "I'm sorry, I currently do not know what you are asking for. Please make sure that you are providing the name of a current player who has played at least one season in the NFL, a valid metric correlating to that player's position, and a valid year pertaining to the NFL season ranging from two thousand and one through two thousand and sixteen. Providing a regular season week number, ranging from one through seventeen, is merely optional.";
             speechOutput = {
                 speech: speech,
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
@@ -453,7 +452,7 @@ function getMetricRequest(intent, session, response) {
     }
 }
 
-function yahooSearch(intent, session) {
+function yahooSearch(intent, session, response) {
     var playerName = session.attributes.playerName,
         metricName = session.attributes.metricName,
         seasonNumber = session.attributes.seasonNumber,
@@ -507,6 +506,17 @@ function yahooSearch(intent, session) {
                 console.log("Bye Week: " + bye_week);
                 console.log("Metric Value: " + metric_value);
                 console.log("Finished calling player weekly stats");
+                trackEvent(
+                    'Intent',
+                    'YahooSearch',
+                    'Weekly Metric',
+                    '100',
+                    function(err) {
+                        if (err) {
+                            console.log(err);
+                        }
+                    getMetricRequest(intent, session, response);
+                });
             }
         );
     } else {
@@ -526,16 +536,27 @@ function yahooSearch(intent, session) {
                 session.attributes.metric_value = metric_value;
                 session.attributes.games_played = games_played;
                 console.log("Player Key: " + player_key);
+                console.log("Games Played: " + games_played);
                 console.log("Metric Value: " + metric_value);
-                console.log("Games Played: " + games_played)
                 console.log("Finished calling player season stats");
+                trackEvent(
+                    'Intent',
+                    'YahooSearch',
+                    'Season Metric',
+                    '100',
+                    function(err) {
+                        if (err) {
+                            console.log(err);
+                        }
+                    getMetricRequest(intent, session, response);
+                });
             }
         );
     }
 }
 
 function calculateMetricRequest(intent, session, response) {
-    
+
 }
 
 exports.handler = function (event, context) {
