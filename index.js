@@ -306,8 +306,8 @@ FantasyMetrix.prototype.intentHandlers = {
                 if (err) {
                     console.log(err);
                 }
-            var speechText = "You can ask questions such as <break time = \"0.618s\"/> Get me Russell Wilson's passing touchdowns for week five of two thousand and fourteen? <break time = \"0.618s\"/> Now, what can I help you with?";
-            var repromptText = "You can say things like <break time = \"0.618s\"/> How many receiving yards did Julio Jones have during week twelve of two thousand and fifteen? <break time = \"0.618s\"/> Now, how can I help you?";
+            var speechText = "You can ask questions such as <break time = \"0.618s\"/> Get me Russell Wilson's passing yards for two thousand and fourteen? <break time = \"0.618s\"/> Now, what can I help you with?";
+            var repromptText = "You can say things like <break time = \"0.618s\"/> How many targets did Julio Jones have during week eight of two thousand and fifteen? <break time = \"0.618s\"/> Now, how can I help you?";
             var speechOutput = {
                 speech: speechText,
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
@@ -337,7 +337,7 @@ FantasyMetrix.prototype.intentHandlers = {
 };
 
 function handleMissingPlayerRequest(intent, session, response) {
-    var speechOutput = "Please provide the name of a current player who has played at least one season in the NFL.",
+    var speechOutput = "Please provide the name of a current player who has played at least one game in the NFL.",
         repromptText = "You can say something like, Russell Wilson";
     response.ask(speechOutput, repromptText);
 }
@@ -365,7 +365,7 @@ function handleMissingSeasonRequest(intent, session, response) {
         player = playerName;
     }
 
-    var speechOutput = "Please provide the year of a valid NFL season, ranging from two thousand and one through two thousand and sixteen, in which " + player + " has played at least one game.",
+    var speechOutput = "Please provide the year of an NFL season, ranging from two thousand and one through two thousand and sixteen, in which " + player + " has played at least one game.",
         repromptText = "You can say something like, Two Thousand and Fifteen.";
     response.ask(speechOutput, repromptText);
 }
@@ -397,6 +397,18 @@ function getMetricRequest(intent, session, response) {
     if (bye_week !== week_value) {
         if (player && metric && season && (calculations.indexOf(metric) > -1)) {
             calculateMetricRequest(intent, session, response);
+        } else if (metric === "targets" && season < parseInt("2014")) {
+            console.log("I'm sorry, but the targets metric is only available for players beginning from the 2014 season.");
+            var speech = "I'm sorry, but the targets metric is only available for players beginning from the 2014 season.";
+            speechOutput = {
+                speech: speech,
+                type: AlexaSkill.speechOutputType.PLAIN_TEXT
+            };
+            repromptOutput = {
+                speech: "Is there anything else I can help you with today?",
+                type: AlexaSkill.speechOutputType.PLAIN_TEXT
+            };
+            response.ask(speechOutput, repromptOutput);   
         } else if (metric_value === games_played && metric === "games played") {
             console.log("During the " + season + " season, " + player + " played " + games_played + " games");
             speechOutput = {
@@ -424,9 +436,33 @@ function getMetricRequest(intent, session, response) {
             cardTitle = metric + " for " + player + " during the " + season + " season";
             cardContent = metric_value + " " + metric;
             response.tellWithCard(speechOutput, cardTitle, cardContent);
+        } else if (Keys[player] && Keys[season] && Keys[metric] && week && metric_value === undefined) {
+            console.log("I'm sorry, but " + player + " did not play in " + week + " of the " + season + " season.")
+            var speech = "I'm sorry, but " + player + " did not play in " + week + " of the " + season + " season.";
+            speechOutput = {
+                speech: speech,
+                type: AlexaSkill.speechOutputType.PLAIN_TEXT
+            };
+            repromptOutput = {
+                speech: "Is there anything else I can help you with today?",
+                type: AlexaSkill.speechOutputType.PLAIN_TEXT
+            };
+            response.ask(speechOutput, repromptOutput);
+        } else if (Keys[player] && Keys[season] && Keys[metric] && metric_value === undefined) {
+            console.log("I'm sorry, but " + player + " did not play in a single game during the " + season + " season.")
+            var speech = "I'm sorry, but " + player + " did not play in a single game during the " + season + " season.";
+            speechOutput = {
+                speech: speech,
+                type: AlexaSkill.speechOutputType.PLAIN_TEXT
+            };
+            repromptOutput = {
+                speech: "Is there anything else I can help you with today?",
+                type: AlexaSkill.speechOutputType.PLAIN_TEXT
+            };
+            response.ask(speechOutput, repromptOutput);        
         } else {
             console.log("I'm sorry, I currently do not know what you are asking for.");
-            var speech = "I'm sorry, I currently do not know what you are asking for. Please make sure that you are providing the name of a current player who has played at least one season in the NFL, a valid metric correlating to that player's position, and a valid year pertaining to the NFL season ranging from two thousand and one through two thousand and sixteen. Providing a regular season week number, ranging from one through seventeen, is merely optional.";
+            var speech = "I'm sorry, I currently do not know what you are asking for. For instructions on what you can ask, please say help me.";
             speechOutput = {
                 speech: speech,
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
