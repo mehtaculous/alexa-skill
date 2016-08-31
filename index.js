@@ -306,17 +306,32 @@ FantasyMetrix.prototype.intentHandlers = {
                 if (err) {
                     console.log(err);
                 }
-            var speechText = "You can ask questions such as <break time = \"0.618s\"/> Get me Russell Wilson's passing yards for two thousand and fourteen? <break time = \"0.618s\"/> Now, what can I help you with?";
-            var repromptText = "You can say things like <break time = \"0.618s\"/> How many targets did Julio Jones have during week eight of two thousand and fifteen? <break time = \"0.618s\"/> Now, how can I help you?";
+            var speechText = "<speak>Please provide the name of a current player who has played at least one season in the NFL, a valid metric correlating to that player's position, and a valid year pertaining to the NFL season ranging from two thousand and one through two thousand and sixteen. Providing a regular season week number, ranging from one through seventeen, is merely optional. <break time=\"0.618s\"/> Now, what can I help you with today?</speak>"
+            var repromptText = "<speak>You can say things like <break time=\"0.618s\"/> How many targets did Julio Jones have during week three of two thousand and fifteen? <break time=\"0.618s\"/> Now, how can I help you?</speak>";
             var speechOutput = {
                 speech: speechText,
-                type: AlexaSkill.speechOutputType.PLAIN_TEXT
+                type: AlexaSkill.speechOutputType.SSML
             };
             var repromptOutput = {
                 speech: repromptText,
-                type: AlexaSkill.speechOutputType.PLAIN_TEXT
+                type: AlexaSkill.speechOutputType.SSML
             };
             response.ask(speechOutput, repromptOutput);
+        });
+    },
+
+    "AMAZON.CancelIntent": function (intent, session, response) {
+        trackEvent(
+            'Intent',
+            'AMAZON.CancelIntent',
+            'na',
+            '100',
+            function(err) {
+                if (err) {
+                    console.log(err);
+                }
+            var speechOutput = "Thank you for using FantasyMetrix. Goodbye";
+            response.tell(speechOutput);
         });
     },
 
@@ -398,8 +413,8 @@ function getMetricRequest(intent, session, response) {
         if (player && metric && season && (calculations.indexOf(metric) > -1)) {
             calculateMetricRequest(intent, session, response);
         } else if (metric === "targets" && season < parseInt("2014")) {
-            console.log("I'm sorry, but the targets metric is only available for players beginning from the 2014 season.");
-            var speech = "I'm sorry, but the targets metric is only available for players beginning from the 2014 season.";
+            console.log("I'm sorry, but the targets metric is only available for eligible players beginning from the 2014 season.");
+            var speech = "I'm sorry, but the targets metric is only available for eligible players beginning from the 2014 season.";
             speechOutput = {
                 speech: speech,
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
@@ -409,7 +424,7 @@ function getMetricRequest(intent, session, response) {
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
             response.ask(speechOutput, repromptOutput);   
-        } else if (metric_value === games_played && metric === "games played") {
+        } else if (metric === "games played" && metric_value === games_played) {
             console.log("During the " + season + " season, " + player + " played " + games_played + " games");
             speechOutput = {
                 speech: "During the " + season + " season, " + player + " played " + games_played + " games",
@@ -436,7 +451,7 @@ function getMetricRequest(intent, session, response) {
             cardTitle = metric + " for " + player + " during the " + season + " season";
             cardContent = metric_value + " " + metric;
             response.tellWithCard(speechOutput, cardTitle, cardContent);
-        } else if (Keys[player] && Keys[season] && Keys[metric] && week && metric_value === undefined) {
+        } else if (Keys[player] && Keys[season] && Keys[metric] && week) {
             console.log("I'm sorry, but " + player + " did not play in " + week + " of the " + season + " season.")
             var speech = "I'm sorry, but " + player + " did not play in " + week + " of the " + season + " season.";
             speechOutput = {
@@ -448,7 +463,7 @@ function getMetricRequest(intent, session, response) {
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
             response.ask(speechOutput, repromptOutput);
-        } else if (Keys[player] && Keys[season] && Keys[metric] && metric_value === undefined) {
+        } else if (Keys[player] && Keys[season] && Keys[metric]) {
             console.log("I'm sorry, but " + player + " did not play in a single game during the " + season + " season.")
             var speech = "I'm sorry, but " + player + " did not play in a single game during the " + season + " season.";
             speechOutput = {

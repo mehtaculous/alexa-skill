@@ -148,6 +148,7 @@ module.exports = {
   "giovani bernard": 26660,
   "golden tate": 24035,
   "greg olsen": 8285,
+  "greg olson": 8285,
   "harry douglas": 8861,
   "hunter henry": 29269,
   "isaiah crowell": 28014,
