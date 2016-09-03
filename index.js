@@ -60,8 +60,8 @@ FantasyMetrix.prototype.constructor = FantasyMetrix;
 
 FantasyMetrix.prototype.eventHandlers.onLaunch = function (launchRequest, session, response) {
     var speechOutput = {
-        speech: "<speak><audio src='https://s3-eu-west-1.amazonaws.com/57647285525fb836561944563.samehta91/samehta91gmail.comSiliconValley.mp3'/> <break time = \"0.618s\"/> Hello and welcome to FantasyMetrix. How can I be of assistance for you today?</speak>",
-        type: AlexaSkill.speechOutputType.SSML
+        speech: "Hello and welcome to FantasyMetrix. How can I be of assistance for you today?",
+        type: AlexaSkill.speechOutputType.PLAIN_TEXT
     };
     var repromptText = "For instructions on what you can ask, please say help me.";
 
@@ -144,42 +144,44 @@ FantasyMetrix.prototype.intentHandlers = {
                 function cb(err, data) {
                     if (err) {
                         console.log(err);
-                    }
-                    console.log("Calling player weekly stats...");
-                    for (var key in data["stats"]["stats"]) {
-                        if (data["stats"]["stats"][key]["stat_id"] === metric_id) {
-                            metric_value = data["stats"]["stats"][key]["value"];
-                        }
-                    }
-                    bye_week = data["bye_weeks"]["week"];
-                    session.attributes.bye_week = bye_week;
-                    session.attributes.week_value = week_value;
-                    session.attributes.metric_value = metric_value;
-                    console.log("Player Key: " + player_key);
-                    console.log("Week: " + week_value);
-                    console.log("Bye Week: " + bye_week);
-                    console.log("Metric Value: " + metric_value);
-                    console.log("Finished calling player weekly stats");
-
-                    trackEvent(
-                        'Intent',
-                        'OneShotMetricIntent',
-                        strLogData,
-                        '100',
-                        function(err) {
-                            if (err) {
-                                console.log(err);
+                        getMetricRequest(intent, session, response);
+                    } else {
+                        console.log("Calling player weekly stats...");
+                        for (var key in data["stats"]["stats"]) {
+                            if (data["stats"]["stats"][key]["stat_id"] === metric_id) {
+                                metric_value = data["stats"]["stats"][key]["value"];
                             }
-                        if (playerName === undefined) {
-                            handleMissingPlayerRequest(intent, session, response);
-                        } else if (metricName === undefined) {
-                            handleMissingMetricRequest(intent, session, response);
-                        } else if (seasonNumber === undefined) {
-                            handleMissingSeasonRequest(intent, session, response);
-                        } else {
-                            getMetricRequest(intent, session, response);
                         }
-                    });
+                        bye_week = data["bye_weeks"]["week"];
+                        session.attributes.bye_week = bye_week;
+                        session.attributes.week_value = week_value;
+                        session.attributes.metric_value = metric_value;
+                        console.log("Player Key: " + player_key);
+                        console.log("Week: " + week_value);
+                        console.log("Bye Week: " + bye_week);
+                        console.log("Metric Value: " + metric_value);
+                        console.log("Finished calling player weekly stats");
+
+                        trackEvent(
+                            'Intent',
+                            'OneShotMetricIntent',
+                            strLogData,
+                            '100',
+                            function(err) {
+                                if (err) {
+                                    console.log(err);
+                                }
+                            if (playerName === undefined) {
+                                handleMissingPlayerRequest(intent, session, response);
+                            } else if (metricName === undefined) {
+                                handleMissingMetricRequest(intent, session, response);
+                            } else if (seasonNumber === undefined) {
+                                handleMissingSeasonRequest(intent, session, response);
+                            } else {
+                                getMetricRequest(intent, session, response);
+                            }
+                        });
+                    }
                 }
             );
         } else {
@@ -188,40 +190,42 @@ FantasyMetrix.prototype.intentHandlers = {
                 function cb(err, data) {
                     if (err) {
                         console.log(err);
-                    }
-                    console.log("Calling player season stats...");
-                    for (var key in data["stats"]["stats"]) {
-                        if (data["stats"]["stats"][key]["stat_id"] === metric_id) {
-                            metric_value = data["stats"]["stats"][key]["value"];
-                        }
-                    }
-                    games_played = data["stats"]["stats"]["0"]["value"];
-                    session.attributes.metric_value = metric_value;
-                    session.attributes.games_played = games_played;
-                    console.log("Player Key: " + player_key);
-                    console.log("Metric Value: " + metric_value);
-                    console.log("Games Played: " + games_played)
-                    console.log("Finished calling player season stats");
-
-                    trackEvent(
-                        'Intent',
-                        'OneShotMetricIntent',
-                        strLogData,
-                        '100',
-                        function(err) {
-                            if (err) {
-                                console.log(err);
+                        getMetricRequest(intent, session, response);
+                    } else {
+                        console.log("Calling player season stats...");
+                        for (var key in data["stats"]["stats"]) {
+                            if (data["stats"]["stats"][key]["stat_id"] === metric_id) {
+                                metric_value = data["stats"]["stats"][key]["value"];
                             }
-                        if (playerName === undefined) {
-                            handleMissingPlayerRequest(intent, session, response);
-                        } else if (metricName === undefined) {
-                            handleMissingMetricRequest(intent, session, response);
-                        } else if (seasonNumber === undefined) {
-                            handleMissingSeasonRequest(intent, session, response);
-                        } else {
-                            getMetricRequest(intent, session, response);
                         }
-                    });
+                        games_played = data["stats"]["stats"]["0"]["value"];
+                        session.attributes.metric_value = metric_value;
+                        session.attributes.games_played = games_played;
+                        console.log("Player Key: " + player_key);
+                        console.log("Metric Value: " + metric_value);
+                        console.log("Games Played: " + games_played)
+                        console.log("Finished calling player season stats");
+
+                        trackEvent(
+                            'Intent',
+                            'OneShotMetricIntent',
+                            strLogData,
+                            '100',
+                            function(err) {
+                                if (err) {
+                                    console.log(err);
+                                }
+                            if (playerName === undefined) {
+                                handleMissingPlayerRequest(intent, session, response);
+                            } else if (metricName === undefined) {
+                                handleMissingMetricRequest(intent, session, response);
+                            } else if (seasonNumber === undefined) {
+                                handleMissingSeasonRequest(intent, session, response);
+                            } else {
+                                getMetricRequest(intent, session, response);
+                            }
+                        });
+                    }
                 }
             );
         }
@@ -367,7 +371,7 @@ function handleMissingMetricRequest(intent, session, response) {
     }
 
     var speechOutput = "Please provide a valid metric which correlates to " + player + " position.",
-        repromptText = "You can say something like, Passing Yards.";
+        repromptText = "You can say something like, passing yards.";
     response.ask(speechOutput, repromptText);
 }
 
@@ -381,7 +385,7 @@ function handleMissingSeasonRequest(intent, session, response) {
     }
 
     var speechOutput = "Please provide the year of an NFL season, ranging from two thousand and one through two thousand and sixteen, in which " + player + " has played at least one game.",
-        repromptText = "You can say something like, Two Thousand and Fifteen.";
+        repromptText = "You can say something like, two thousand and fifteen.";
     response.ask(speechOutput, repromptText);
 }
 
@@ -412,9 +416,9 @@ function getMetricRequest(intent, session, response) {
     if (bye_week !== week_value) {
         if (player && metric && season && (calculations.indexOf(metric) > -1)) {
             calculateMetricRequest(intent, session, response);
-        } else if (metric === "targets" && season < parseInt("2014")) {
-            console.log("I'm sorry, but the targets metric is only available for eligible players beginning from the 2014 season.");
-            var speech = "I'm sorry, but the targets metric is only available for eligible players beginning from the 2014 season.";
+        } else if (metric === "targets" && season < parseInt("2014") && season > parseInt("2000")) {
+            console.log("I'm sorry, but the targets metric is only available for players beginning from the 2014 season.");
+            var speech = "I'm sorry, but the targets metric is only available for players beginning from the 2014 season.";
             speechOutput = {
                 speech: speech,
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
@@ -476,8 +480,8 @@ function getMetricRequest(intent, session, response) {
             };
             response.ask(speechOutput, repromptOutput);        
         } else {
-            console.log("I'm sorry, I currently do not know what you are asking for.");
-            var speech = "I'm sorry, I currently do not know what you are asking for. For instructions on what you can ask, please say help me.";
+            console.log("I'm sorry, but the information you have provided is invalid");
+            var speech = "I'm sorry, but the information you have provided is invalid. I currently do not know what you are asking for. For instructions on what you can ask, please say help me.";
             speechOutput = {
                 speech: speech,
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
@@ -541,33 +545,35 @@ function yahooSearch(intent, session, response) {
             function cb(err, data) {
                 if (err) {
                     console.log(err);
-                }
-                console.log("Calling player weekly stats...");
-                for (var key in data["stats"]["stats"]) {
-                    if (data["stats"]["stats"][key]["stat_id"] === metric_id) {
-                        metric_value = data["stats"]["stats"][key]["value"];
-                    }
-                }
-                bye_week = data["bye_weeks"]["week"];
-                session.attributes.bye_week = bye_week;
-                session.attributes.week_value = week_value;
-                session.attributes.metric_value = metric_value;
-                console.log("Player Key: " + player_key);
-                console.log("Week: " + week_value);
-                console.log("Bye Week: " + bye_week);
-                console.log("Metric Value: " + metric_value);
-                console.log("Finished calling player weekly stats");
-                trackEvent(
-                    'Intent',
-                    'YahooSearch',
-                    'Weekly Metric',
-                    '100',
-                    function(err) {
-                        if (err) {
-                            console.log(err);
-                        }
                     getMetricRequest(intent, session, response);
-                });
+                } else {
+                    console.log("Calling player weekly stats...");
+                    for (var key in data["stats"]["stats"]) {
+                        if (data["stats"]["stats"][key]["stat_id"] === metric_id) {
+                            metric_value = data["stats"]["stats"][key]["value"];
+                        }
+                    }
+                    bye_week = data["bye_weeks"]["week"];
+                    session.attributes.bye_week = bye_week;
+                    session.attributes.week_value = week_value;
+                    session.attributes.metric_value = metric_value;
+                    console.log("Player Key: " + player_key);
+                    console.log("Week: " + week_value);
+                    console.log("Bye Week: " + bye_week);
+                    console.log("Metric Value: " + metric_value);
+                    console.log("Finished calling player weekly stats");
+                    trackEvent(
+                        'Intent',
+                        'YahooSearch',
+                        'Weekly Metric',
+                        '100',
+                        function(err) {
+                            if (err) {
+                                console.log(err);
+                            }
+                        getMetricRequest(intent, session, response);
+                    });
+                }
             }
         );
     } else {
@@ -576,31 +582,33 @@ function yahooSearch(intent, session, response) {
             function cb(err, data) {
                 if (err) {
                     console.log(err);
-                }
-                console.log("Calling player season stats...");
-                for (var key in data["stats"]["stats"]) {
-                    if (data["stats"]["stats"][key]["stat_id"] === metric_id) {
-                        metric_value = data["stats"]["stats"][key]["value"];
-                    }
-                }
-                games_played = data["stats"]["stats"]["0"]["value"];
-                session.attributes.metric_value = metric_value;
-                session.attributes.games_played = games_played;
-                console.log("Player Key: " + player_key);
-                console.log("Games Played: " + games_played);
-                console.log("Metric Value: " + metric_value);
-                console.log("Finished calling player season stats");
-                trackEvent(
-                    'Intent',
-                    'YahooSearch',
-                    'Season Metric',
-                    '100',
-                    function(err) {
-                        if (err) {
-                            console.log(err);
-                        }
                     getMetricRequest(intent, session, response);
-                });
+                } else {
+                    console.log("Calling player season stats...");
+                    for (var key in data["stats"]["stats"]) {
+                        if (data["stats"]["stats"][key]["stat_id"] === metric_id) {
+                            metric_value = data["stats"]["stats"][key]["value"];
+                        }
+                    }
+                    games_played = data["stats"]["stats"]["0"]["value"];
+                    session.attributes.metric_value = metric_value;
+                    session.attributes.games_played = games_played;
+                    console.log("Player Key: " + player_key);
+                    console.log("Games Played: " + games_played);
+                    console.log("Metric Value: " + metric_value);
+                    console.log("Finished calling player season stats");
+                    trackEvent(
+                        'Intent',
+                        'YahooSearch',
+                        'Season Metric',
+                        '100',
+                        function(err) {
+                            if (err) {
+                                console.log(err);
+                            }
+                        getMetricRequest(intent, session, response);
+                    });
+                }
             }
         );
     }

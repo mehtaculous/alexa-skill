@@ -29,6 +29,7 @@ module.exports = {
   "receiving yards": 12,
   "receiving touchdowns": 13,
   "a.j. green": 24791,
+  "aj green": 24791,
   "aaron rodgers": 7200,
   "adrian peterson": 8261,
   "albert wilson": 28046,
