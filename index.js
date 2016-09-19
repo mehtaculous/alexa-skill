@@ -176,7 +176,7 @@ FantasyMetrix.prototype.intentHandlers = {
                         receiving_touchdowns = parseFloat(data["stats"]["stats"]["13"]["value"]);
                         return_touchdowns = parseFloat(data["stats"]["stats"]["15"]["value"]);
                         two_point_conversions = parseFloat(data["stats"]["stats"]["16"]["value"]);
-                        fumbles = parseFloat(data["stats"]["stats"]["18"]["value"]);
+                        fumbles = parseFloat(data["stats"]["stats"]["17"]["value"]);
 
                         fantasy_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
 
@@ -252,7 +252,7 @@ FantasyMetrix.prototype.intentHandlers = {
                         receiving_touchdowns = parseFloat(data["stats"]["stats"]["13"]["value"]);
                         return_touchdowns = parseFloat(data["stats"]["stats"]["15"]["value"]);
                         two_point_conversions = parseFloat(data["stats"]["stats"]["16"]["value"]);
-                        fumbles = parseFloat(data["stats"]["stats"]["18"]["value"]);
+                        fumbles = parseFloat(data["stats"]["stats"]["17"]["value"]);
 
                         fantasy_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
 
@@ -530,6 +530,15 @@ function getMetricRequest(intent, session, response) {
             cardTitle = metric + " for " + player + " during the " + season + " season";
             cardContent = metric_value + " " + metric;
             response.tellWithCard(speechOutput, cardTitle, cardContent);
+        } else if (Keys[player] && Keys[season] && (metric === "fantasy points per game" || metric === "ppr fantasy points per game") && week) {
+            console.log("I'm sorry, but " + metric + " is not a valid metric when providing a week number.")
+            var speech = "I'm sorry, but " + metric + " is not a valid metric when providing a week number.";
+            speechOutput = {
+                speech: speech,
+                type: AlexaSkill.speechOutputType.PLAIN_TEXT
+            };
+            cardTitle = metric + " is not a valid metric when providing a week number";
+            response.tellWithCard(speechOutput, cardTitle);
         } else if (Keys[player] && Keys[season] && metric && week) {
             console.log("I'm sorry, but " + player + " did not play in " + week + " of the " + season + " season.")
             var speech = "I'm sorry, but " + player + " did not play in " + week + " of the " + season + " season.";
@@ -643,7 +652,7 @@ function yahooSearch(intent, session, response) {
                     receiving_touchdowns = parseFloat(data["stats"]["stats"]["13"]["value"]);
                     return_touchdowns = parseFloat(data["stats"]["stats"]["15"]["value"]);
                     two_point_conversions = parseFloat(data["stats"]["stats"]["16"]["value"]);
-                    fumbles = parseFloat(data["stats"]["stats"]["18"]["value"]);
+                    fumbles = parseFloat(data["stats"]["stats"]["17"]["value"]);
 
                     fantasy_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
 
@@ -710,7 +719,7 @@ function yahooSearch(intent, session, response) {
                     receiving_touchdowns = parseFloat(data["stats"]["stats"]["13"]["value"]);
                     return_touchdowns = parseFloat(data["stats"]["stats"]["15"]["value"]);
                     two_point_conversions = parseFloat(data["stats"]["stats"]["16"]["value"]);
-                    fumbles = parseFloat(data["stats"]["stats"]["18"]["value"]);
+                    fumbles = parseFloat(data["stats"]["stats"]["17"]["value"]);
 
                     fantasy_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
 
