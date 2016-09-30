@@ -42,6 +42,7 @@ module.exports = {
   "yards per carry": 29,
   "yards from scrimmage": 30,
   "yards per reception": 31,
+  "yards per target": 32,
   "targets": 78,
   "a.j. green": 24791,
   "aj green": 24791,
