@@ -139,8 +139,9 @@ FantasyMetrix.prototype.intentHandlers = {
             fumbles,
             fantasy_points,
             fantasy_points_per_game,
-            ppr_fantasy_points,
-            ppr_fantasy_points_per_game,
+            ppr_points,
+            ppr_points_per_game,
+            total_touchdowns,
             passing_yards_per_game,
             receiving_yards_per_game,
             receptions_per_game,
@@ -154,13 +155,7 @@ FantasyMetrix.prototype.intentHandlers = {
         var player_key = game_id + '.p.' + player_id;
 
         if (weekNumber) {
-            if (weekNumber.length === 6) {
-                week_split = weekNumber.split("");
-                week_value = week_split[week_split.length - 1];
-            } else if (weekNumber.length === 7) {
-                week_split = weekNumber.split("");
-                week_value = week_split[week_split.length - 2] + week_split[week_split.length - 1];
-            }
+            week_value = Keys[weekNumber];
         }
 
         if (weekNumber) {
@@ -193,7 +188,7 @@ FantasyMetrix.prototype.intentHandlers = {
                         receiving_touchdowns = parseFloat(data["stats"]["stats"]["13"]["value"]);
                         return_touchdowns = parseFloat(data["stats"]["stats"]["15"]["value"]);
                         two_point_conversions = parseFloat(data["stats"]["stats"]["16"]["value"]);
-                        fumbles = parseFloat(data["stats"]["stats"]["17"]["value"]);
+                        fumbles = parseFloat(data["stats"]["stats"]["18"]["value"]);
                         // targets = parseFloat(data["stats"]["stats"]["78"]["value"]);
                         
                         console.log("Bye Week: " + bye_week);
@@ -211,12 +206,13 @@ FantasyMetrix.prototype.intentHandlers = {
                         console.log("Return Touchdowns: " + return_touchdowns);
                         console.log("Two-Point Conversions: " + two_point_conversions);
                         console.log("Fumbles: " + fumbles);
-                        console.log("Target: " + targets);
+                        console.log("Targets: " + targets);
 
                         fantasy_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
 
-                        ppr_fantasy_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receptions * 1) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
+                        ppr_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receptions * 1) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
                         
+                        total_touchdowns = (passing_touchdowns + rushing_touchdowns + receiving_touchdowns + return_touchdowns);
                         yards_from_scrimmage = (rushing_yards + receiving_yards);
                         yards_per_attempt = (passing_yards / passing_attempts).toFixed(1);
                         yards_per_carry = (rushing_yards / rushing_attempts).toFixed(2);
@@ -224,7 +220,8 @@ FantasyMetrix.prototype.intentHandlers = {
                         // yards_per_target = (receiving_yards / targets).toFixed(1);
                         
                         console.log("Fantasy Points: " + fantasy_points);
-                        console.log("PPR Fantasy Points: " + ppr_fantasy_points);
+                        console.log("PPR Points: " + ppr_points);
+                        console.log("Total Touchdowns: " + total_touchdowns);
                         console.log("Yards From Scrimmage: " + yards_from_scrimmage);
                         console.log("Yards Per Attempts: " + yards_per_attempt);
                         console.log("Yards Per Carry: " + yards_per_carry);
@@ -233,8 +230,10 @@ FantasyMetrix.prototype.intentHandlers = {
 
                         if (metricName === "fantasy points") {
                             metric_value = fantasy_points;
-                        } else if (metricName === "ppr fantasy points") {
-                            metric_value = ppr_fantasy_points;
+                        } else if (metricName === "ppr points") {
+                            metric_value = ppr_points;
+                        } else if (metricName === "total touchdowns") {
+                            metric_value = total_touchdowns;
                         } else if (metricName === "yards from scrimmage") {
                             metric_value = yards_from_scrimmage;
                         } else if (metricName === "yards per attempt") {
@@ -254,8 +253,6 @@ FantasyMetrix.prototype.intentHandlers = {
                         session.attributes.bye_week = bye_week;
                         session.attributes.week_value = week_value;
                         session.attributes.metric_value = metric_value;
-                        session.attributes.fantasy_points = fantasy_points;
-                        session.attributes.ppr_fantasy_points = ppr_fantasy_points;
                         console.log("Player Key: " + player_key);
                         console.log("Metric Value: " + metric_value);
                         console.log("Finished calling player weekly stats");
@@ -311,7 +308,7 @@ FantasyMetrix.prototype.intentHandlers = {
                         receiving_touchdowns = parseFloat(data["stats"]["stats"]["13"]["value"]);
                         return_touchdowns = parseFloat(data["stats"]["stats"]["15"]["value"]);
                         two_point_conversions = parseFloat(data["stats"]["stats"]["16"]["value"]);
-                        fumbles = parseFloat(data["stats"]["stats"]["17"]["value"]);
+                        fumbles = parseFloat(data["stats"]["stats"]["18"]["value"]);
                         // targets = parseFloat(data["stats"]["stats"]["78"]["value"]);
                         
                         console.log("Games Played: " + games_played);
@@ -329,14 +326,15 @@ FantasyMetrix.prototype.intentHandlers = {
                         console.log("Return Touchdowns: " + return_touchdowns);
                         console.log("Two-Point Conversions: " + two_point_conversions);
                         console.log("Fumbles: " + fumbles);
-                        console.log("Target: " + targets);
+                        console.log("Targets: " + targets);
 
                         fantasy_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
 
-                        ppr_fantasy_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receptions * 1) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
+                        ppr_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receptions * 1) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
 
+                        total_touchdowns = (passing_touchdowns + rushing_touchdowns + receiving_touchdowns + return_touchdowns);
                         fantasy_points_per_game = (fantasy_points / games_played).toFixed(1);
-                        ppr_fantasy_points_per_game = (ppr_fantasy_points / games_played).toFixed(1);
+                        ppr_points_per_game = (ppr_points / games_played).toFixed(1);
                         passing_yards_per_game = (passing_yards / games_played).toFixed(1);
                         receiving_yards_per_game = (receiving_yards / games_played).toFixed(1);
                         receptions_per_game = (receptions / games_played).toFixed(1);
@@ -348,9 +346,10 @@ FantasyMetrix.prototype.intentHandlers = {
                         // yards_per_target = (receiving_yards / targets).toFixed(1);
                         
                         console.log("Fantasy Points: " + fantasy_points);
-                        console.log("PPR Fantasy Points: " + ppr_fantasy_points);
+                        console.log("PPR Points: " + ppr_points);
+                        console.log("Total Touchdowns: " + total_touchdowns);
                         console.log("Fantasy Points Per Game: " + fantasy_points_per_game);
-                        console.log("PPR Fantasy Points Per Game: " + ppr_fantasy_points_per_game);
+                        console.log("PPR Points Per Game: " + ppr_points_per_game);
                         console.log("Passing Yards Per Game: " + passing_yards_per_game);
                         console.log("Receiving Yards Per Game: " + receiving_yards_per_game);
                         console.log("Receptions Per Game: " + receptions_per_game);
@@ -363,12 +362,14 @@ FantasyMetrix.prototype.intentHandlers = {
 
                         if (metricName === "fantasy points") {
                             metric_value = fantasy_points;
-                        } else if (metricName === "ppr fantasy points") {
-                            metric_value = ppr_fantasy_points;
+                        } else if (metricName === "ppr points") {
+                            metric_value = ppr_points;
+                        } else if (metricName === "total touchdowns") {
+                            metric_value = total_touchdowns;
                         } else if (metricName === "fantasy points per game") {
                             metric_value = fantasy_points_per_game;
-                        } else if (metricName === "ppr fantasy points per game") {
-                            metric_value = ppr_fantasy_points_per_game;
+                        } else if (metricName === "ppr points per game") {
+                            metric_value = ppr_points_per_game;
                         } else if (metricName === "passing yards per game") {
                             metric_value = passing_yards_per_game;
                         } else if (metricName === "receiving yards per game") {
@@ -395,8 +396,6 @@ FantasyMetrix.prototype.intentHandlers = {
 
                         session.attributes.games_played = games_played;
                         session.attributes.metric_value = metric_value;
-                        session.attributes.fantasy_points = fantasy_points;
-                        session.attributes.ppr_fantasy_points = ppr_fantasy_points;
                         console.log("Player Key: " + player_key);
                         console.log("Metric Value: " + metric_value);
                         console.log("Finished calling player season stats");
@@ -590,12 +589,11 @@ function getMetricRequest(intent, session, response) {
         metric = session.attributes.metricName,
         season = session.attributes.seasonNumber,
         week = session.attributes.weekNumber,
-        metric_value = session.attributes.metric_value,
         week_value = session.attributes.week_value,
         bye_week = session.attributes.bye_week,
         games_played = session.attributes.games_played,
+        metric_value = session.attributes.metric_value,
         speechOutput,
-        repromptOutput,
         cardTitle,
         cardContent;
 
@@ -627,7 +625,7 @@ function getMetricRequest(intent, session, response) {
             cardTitle = metric + " for " + player + " during the " + season + " season";
             cardContent = metric_value + " " + metric;
             response.tellWithCard(speechOutput, cardTitle, cardContent);
-        } else if (Keys[player] && Keys[season] && metric && week && metric_value) {
+        } else if (Keys[player] && Keys[season] && Keys[metric] && Keys[week] && metric_value) {
             console.log("During " + week + " of the " + season + " season, " + player + " had " + metric_value + " " + metric);
             speechOutput = {
                 speech: "During " + week + " of the " + season + " season, " + player + " had " + metric_value + " " + metric,
@@ -636,7 +634,7 @@ function getMetricRequest(intent, session, response) {
             cardTitle = metric + " for " + player + " during " + week + " of the " + season + " season";
             cardContent = metric_value + " " + metric;
             response.tellWithCard(speechOutput, cardTitle, cardContent);
-        } else if (Keys[player] && Keys[season] && metric && metric_value) {
+        } else if (Keys[player] && Keys[season] && Keys[metric] && metric_value) {
             console.log("During the " + season + " season, " + player + " had " + metric_value + " " + metric);
             speechOutput = {
                 speech: "During the " + season + " season, " + player + " had " + metric_value + " " + metric,
@@ -645,17 +643,17 @@ function getMetricRequest(intent, session, response) {
             cardTitle = metric + " for " + player + " during the " + season + " season";
             cardContent = metric_value + " " + metric;
             response.tellWithCard(speechOutput, cardTitle, cardContent);
-        } else if (Keys[player] && Keys[season] && (metric === "fantasy points per game" || metric === "ppr fantasy points per game" || metric === "passing yards per game" || metric === "rushing yards per game" || metric === "receiving yards per game" || metric === "receptions per game") && week) {
+        } else if (Keys[player] && Keys[season] && (metric === "fantasy points per game" || metric === "ppr points per game" || metric === "passing yards per game" || metric === "rushing yards per game" || metric === "receiving yards per game" || metric === "receptions per game") && Keys[week]) {
             console.log("I'm sorry, but " + metric + " is not a valid metric when providing a week number.")
             var speech = "I'm sorry, but " + metric + " is not a valid metric when providing a week number.";
             speechOutput = {
                 speech: speech,
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
-            cardTitle = "not a valid metric";
-            cardContent = metric + " is not a valid metric when providing a week number";
+            cardTitle = "not a valid request";
+            cardContent = metric + " is not a valid request when providing a week number";
             response.tellWithCard(speechOutput, cardTitle, cardContent);
-        } else if (Keys[player] && Keys[season] && Keys[metric] && week) {
+        } else if (Keys[player] && Keys[season] && Keys[metric] && Keys[week]) {
             console.log("I'm sorry, but " + player + " did not play in " + week + " of the " + season + " season.");
             var speech = "I'm sorry, but " + player + " did not play in " + week + " of the " + season + " season.";
             speechOutput = {
@@ -677,12 +675,12 @@ function getMetricRequest(intent, session, response) {
             response.tellWithCard(speechOutput, cardTitle, cardContent);        
         } else {
             console.log("I'm sorry, but the information you have provided is invalid");
-            var speech = "I'm sorry, but the information you have provided is invalid. For instructions on what you can ask, please say help me.";
+            var speech = "I'm sorry, but the information you have provided is invalid. Please check the Voice Feedback to make sure Alexa heard you correctly.";
             speechOutput = {
                 speech: speech,
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
-            cardTitle = "please check to see what alexa heard";
+            cardTitle = "please check the voice feedback to see what alexa heard";
             cardContent = "the information you have provided is invalid";
             response.tellWithCard(speechOutput, cardTitle, cardContent);
         }
@@ -734,8 +732,9 @@ function yahooSearch(intent, session, response) {
         fumbles,
         fantasy_points,
         fantasy_points_per_game,
-        ppr_fantasy_points,
-        ppr_fantasy_points_per_game,
+        ppr_points,
+        ppr_points_per_game,
+        total_touchdowns,
         passing_yards_per_game,
         receiving_yards_per_game,
         receptions_per_game,
@@ -749,13 +748,7 @@ function yahooSearch(intent, session, response) {
     var player_key = game_id + '.p.' + player_id;
 
     if (weekNumber) {
-        if (weekNumber.length === 6) {
-            week_split = weekNumber.split("");
-            week_value = week_split[week_split.length - 1];
-        } else if (weekNumber.length === 7) {
-            week_split = weekNumber.split("");
-            week_value = week_split[week_split.length - 2] + week_split[week_split.length - 1];
-        }
+        week_value = Keys[weekNumber];
     }
 
     if (weekNumber) {
@@ -788,7 +781,7 @@ function yahooSearch(intent, session, response) {
                     receiving_touchdowns = parseFloat(data["stats"]["stats"]["13"]["value"]);
                     return_touchdowns = parseFloat(data["stats"]["stats"]["15"]["value"]);
                     two_point_conversions = parseFloat(data["stats"]["stats"]["16"]["value"]);
-                    fumbles = parseFloat(data["stats"]["stats"]["17"]["value"]);
+                    fumbles = parseFloat(data["stats"]["stats"]["18"]["value"]);
                     // targets = parseFloat(data["stats"]["stats"]["78"]["value"]);
                     
                     console.log("Bye Week: " + bye_week);
@@ -810,8 +803,9 @@ function yahooSearch(intent, session, response) {
 
                     fantasy_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
 
-                    ppr_fantasy_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receptions * 1) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
+                    ppr_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receptions * 1) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
                     
+                    total_touchdowns = (passing_touchdowns + rushing_touchdowns + receiving_touchdowns + return_touchdowns);
                     yards_from_scrimmage = (rushing_yards + receiving_yards);
                     yards_per_attempt = (passing_yards / passing_attempts).toFixed(1);
                     yards_per_carry = (rushing_yards / rushing_attempts).toFixed(2);
@@ -819,7 +813,8 @@ function yahooSearch(intent, session, response) {
                     // yards_per_target = (receiving_yards / targets).toFixed(1);
                     
                     console.log("Fantasy Points: " + fantasy_points);
-                    console.log("PPR Fantasy Points: " + ppr_fantasy_points);
+                    console.log("PPR Points: " + ppr_points);
+                    console.log("Total Touchdowns: " + total_touchdowns);
                     console.log("Yards From Scrimmage: " + yards_from_scrimmage);
                     console.log("Yards Per Attempt: " + yards_per_attempt);
                     console.log("Yards Per Carry: " + yards_per_carry);
@@ -828,8 +823,10 @@ function yahooSearch(intent, session, response) {
 
                     if (metricName === "fantasy points") {
                         metric_value = fantasy_points;
-                    } else if (metricName === "ppr fantasy points") {
-                        metric_value = ppr_fantasy_points;
+                    } else if (metricName === "ppr points") {
+                        metric_value = ppr_points;
+                    } else if (metricName === "total touchdowns") {
+                        metric_value = total_touchdowns;
                     } else if (metricName === "yards from scrimmage") {
                         metric_value = yards_from_scrimmage;
                     } else if (metricName === "yards per attempt") {
@@ -849,8 +846,6 @@ function yahooSearch(intent, session, response) {
                     session.attributes.bye_week = bye_week;
                     session.attributes.week_value = week_value;
                     session.attributes.metric_value = metric_value;
-                    session.attributes.fantasy_points = fantasy_points;
-                    session.attributes.ppr_fantasy_points = ppr_fantasy_points;
                     console.log("Player Key: " + player_key);
                     console.log("Metric Value: " + metric_value);
                     console.log("Finished calling player weekly stats");
@@ -897,7 +892,7 @@ function yahooSearch(intent, session, response) {
                     receiving_touchdowns = parseFloat(data["stats"]["stats"]["13"]["value"]);
                     return_touchdowns = parseFloat(data["stats"]["stats"]["15"]["value"]);
                     two_point_conversions = parseFloat(data["stats"]["stats"]["16"]["value"]);
-                    fumbles = parseFloat(data["stats"]["stats"]["17"]["value"]);
+                    fumbles = parseFloat(data["stats"]["stats"]["18"]["value"]);
                     // targets = parseFloat(data["stats"]["stats"]["78"]["value"]);
                     
                     console.log("Games Played: " + games_played);
@@ -919,10 +914,11 @@ function yahooSearch(intent, session, response) {
 
                     fantasy_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
 
-                    ppr_fantasy_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receptions * 1) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
+                    ppr_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receptions * 1) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
 
+                    total_touchdowns = (passing_touchdowns + rushing_touchdowns + receiving_touchdowns + return_touchdowns);
                     fantasy_points_per_game = (fantasy_points / games_played).toFixed(1);
-                    ppr_fantasy_points_per_game = (ppr_fantasy_points / games_played).toFixed(1);
+                    ppr_points_per_game = (ppr_points / games_played).toFixed(1);
                     passing_yards_per_game = (passing_yards / games_played).toFixed(1);
                     receiving_yards_per_game = (receiving_yards / games_played).toFixed(1);
                     receptions_per_game = (receptions / games_played).toFixed(1);
@@ -934,9 +930,10 @@ function yahooSearch(intent, session, response) {
                     // yards_per_target = (receiving_yards / targets).toFixed(1);
                     
                     console.log("Fantasy Points: " + fantasy_points);
-                    console.log("PPR Fantasy Points: " + ppr_fantasy_points);
+                    console.log("PPR Points: " + ppr_points);
+                    console.log("Total Touchdowns: " + total_touchdowns);
                     console.log("Fantasy Points Per Game: " + fantasy_points_per_game);
-                    console.log("PPR Fantasy Points Per Game: " + ppr_fantasy_points_per_game);
+                    console.log("PPR Points Per Game: " + ppr_points_per_game);
                     console.log("Passing Yards Per Game: " + passing_yards_per_game);
                     console.log("Receiving Yards Per Game: " + receiving_yards_per_game);
                     console.log("Receptions Per Game: " + receptions_per_game);
@@ -949,12 +946,14 @@ function yahooSearch(intent, session, response) {
 
                     if (metricName === "fantasy points") {
                         metric_value = fantasy_points;
-                    } else if (metricName === "ppr fantasy points") {
-                        metric_value = ppr_fantasy_points;
+                    } else if (metricName === "ppr points") {
+                        metric_value = ppr_points;
+                    } else if (metricName === "total touchdowns") {
+                        metric_value = total_touchdowns;
                     } else if (metricName === "fantasy points per game") {
                         metric_value = fantasy_points_per_game;
-                    } else if (metricName === "ppr fantasy points per game") {
-                        metric_value = ppr_fantasy_points_per_game;
+                    } else if (metricName === "ppr points per game") {
+                        metric_value = ppr_points_per_game;
                     } else if (metricName === "passing yards per game") {
                         metric_value = passing_yards_per_game;
                     } else if (metricName === "receiving yards per game") {
@@ -981,8 +980,6 @@ function yahooSearch(intent, session, response) {
 
                     session.attributes.games_played = games_played;
                     session.attributes.metric_value = metric_value;
-                    session.attributes.fantasy_points = fantasy_points;
-                    session.attributes.ppr_fantasy_points = ppr_fantasy_points;
                     console.log("Player Key: " + player_key);
                     console.log("Metric Value: " + metric_value);
                     console.log("Finished calling player season stats");
