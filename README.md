@@ -1,13 +1,15 @@
-## FantasyMetrix (http://alexa.amazon.com/spa/index.html#skills/dp/B01L2VFZ5U/?ref=skill_dsk_skb_ca_25)
+## [FantasyMetrix](http://alexa.amazon.com/spa/index.html#skills/dp/B01L2VFZ5U/?ref=skill_dsk_skb_ca_25)
 
 A voice-enabled skill for Amazon's Alexa platform which provides past and present, weekly and season-long, statistics along with advanced metrics derived from NFL players using the Yahoo Fantasy Sports API.
 
+<br>
 Please make sure to include in your request:
-1) The name of a current player who has played at least one game in the NFL
-2) The name of a valid metric which correlates to that player's position
-3) The year pertaining to an NFL season ranging from 2001 – Present
-4) Providing a regular season week number ranging from Week 1 – 17 is merely optional
+* The name of a current player who has played at least one game in the NFL
+* The name of a valid metric which correlates to that player's position
+* The year pertaining to an NFL season ranging from 2001 – Present
+* Providing a regular season week number ranging from Week 1 – 17 is merely optional
 
+<br>
 **Current Metrics**: 
 * Games Played
 * Passing Attempts
