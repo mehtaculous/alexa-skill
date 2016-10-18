@@ -9,8 +9,7 @@ Please make sure to include in your request:
 * The year pertaining to an NFL season ranging from 2001 – Present
 * Providing a regular season week number ranging from Week 1 – 17 is merely optional
 
-<br>
-**Current Metrics**: 
+Current Metrics: 
 * Games Played
 * Passing Attempts
 * Completions
