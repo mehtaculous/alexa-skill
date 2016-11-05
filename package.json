@@ -1,21 +1,24 @@
 {
-  "name": "fantasymetrix",
+  "name": "fantasy-metrix",
   "version": "1.0.0",
   "description": "fantasy football",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
   "scripts": {
-    "test": "echo"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mehtaculous/fantasy-football-skill.git"
+    "url": "git+https://github.com/mehtaculous/alexa-skill.git"
   },
   "author": "swaHiiili",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mehtaculous/fantasy-football-skill/issues"
+    "url": "https://github.com/mehtaculous/alexa-skill/issues"
   },
-  "homepage": "https://github.com/mehtaculous/fantasy-football-skill#readme"
+  "homepage": "https://github.com/mehtaculous/alexa-skill#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "request": "^2.78.0",
+    "yahoo-fantasy": "^1.0.2"
+  }
 }
