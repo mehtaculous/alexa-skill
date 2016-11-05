@@ -669,7 +669,7 @@ function getMetricRequest(intent, session, response) {
             cardTitle = "not a valid request";
             cardContent = metric + " is not a valid request when providing a week number";
             response.tellWithCard(speechOutput, cardTitle, cardContent);
-        }  else if (metric === "games played" && metric_value === games_played) {
+        }  else if (metric === "games played" && metric_value) {
             console.log("During the " + season + " season, " + player + " played " + games_played + " games.");
             speechOutput = {
                 speech: "During the " + season + " season, " + player + " played " + games_played + " games.",
