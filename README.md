@@ -9,7 +9,7 @@ Please make sure to include in your request:
 * The year pertaining to an NFL season ranging from 2001 – Present
 * Providing a regular season week number ranging from Week 1 – 17 is merely optional
 
-Current Metrics: 
+Current Metrics:
 * Games Played
 * Passing Attempts
 * Completions
@@ -26,13 +26,21 @@ Current Metrics:
 * Receptions
 * Receiving Yards
 * Yards Per Reception
+* Yards Per Target
 * Receiving Touchdowns
 * Total Touchdowns
+* Return Touchdowns
+* 2 Point Conversions
+* Fumbles
 * Fantasy Points
 * PPR Points
 * Passing Yards Per Game
 * Rushing Yards Per Game 
 * Receiving Yards Per Game
 * Receptions Per Game
+* Targets Per Game
 * Fantasy Points Per Game
 * PPR Points Per Game
+* Fantasy Points Per Target
+* PPR Points Per Target
+* Catch Rate
