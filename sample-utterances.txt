@@ -1,0 +1,670 @@
+OneShotMetricIntent during {Season} what are {Player} total {Metric}
+OneShotMetricIntent during {Season} what are {Player} {Metric}
+OneShotMetricIntent during {Season} what is {Player} total {Metric}
+OneShotMetricIntent during {Season} what is {Player} {Metric}
+OneShotMetricIntent during {Season} what was {Player} total {Metric}
+OneShotMetricIntent during {Season} what was {Player} {Metric}
+OneShotMetricIntent during {Season} what were {Player} total {Metric}
+OneShotMetricIntent during {Season} what were {Player} {Metric}
+OneShotMetricIntent during {Week} for {Season} what are {Player} {Metric}
+OneShotMetricIntent during {Week} for {Season} what is {Player} {Metric}
+OneShotMetricIntent during {Week} for {Season} what was {Player} {Metric}
+OneShotMetricIntent during {Week} for {Season} what were {Player} {Metric}
+OneShotMetricIntent during {Week} in {Season} what are {Player} {Metric}
+OneShotMetricIntent during {Week} in {Season} what is {Player} {Metric}
+OneShotMetricIntent during {Week} in {Season} what was {Player} {Metric}
+OneShotMetricIntent during {Week} in {Season} what were {Player} {Metric}
+OneShotMetricIntent during {Week} of {Season} what are {Player} {Metric}
+OneShotMetricIntent during {Week} of {Season} what is {Player} {Metric}
+OneShotMetricIntent during {Week} of {Season} what was {Player} {Metric}
+OneShotMetricIntent during {Week} of {Season} what were {Player} {Metric}
+OneShotMetricIntent find me {Player} total {Metric} during {Season}
+OneShotMetricIntent find me {Player} total {Metric} for {Season}
+OneShotMetricIntent find me {Player} total {Metric} in {Season}
+OneShotMetricIntent find me {Player} {Metric} during {Season}
+OneShotMetricIntent find me {Player} {Metric} during {Week} for {Season}
+OneShotMetricIntent find me {Player} {Metric} during {Week} in {Season}
+OneShotMetricIntent find me {Player} {Metric} during {Week} of {Season}
+OneShotMetricIntent find me {Player} {Metric} for {Season}
+OneShotMetricIntent find me {Player} {Metric} for {Week} for {Season}
+OneShotMetricIntent find me {Player} {Metric} for {Week} in {Season}
+OneShotMetricIntent find me {Player} {Metric} for {Week} of {Season}
+OneShotMetricIntent find me {Player} {Metric} in {Season}
+OneShotMetricIntent find me {Player} {Metric} in {Week} for {Season}
+OneShotMetricIntent find me {Player} {Metric} in {Week} in {Season}
+OneShotMetricIntent find me {Player} {Metric} in {Week} of {Season}
+OneShotMetricIntent find {Player} total {Metric} during {Season}
+OneShotMetricIntent find {Player} total {Metric} for {Season}
+OneShotMetricIntent find {Player} total {Metric} in {Season}
+OneShotMetricIntent find {Player} {Metric} during {Season}
+OneShotMetricIntent find {Player} {Metric} during {Week} for {Season}
+OneShotMetricIntent find {Player} {Metric} during {Week} in {Season}
+OneShotMetricIntent find {Player} {Metric} during {Week} of {Season}
+OneShotMetricIntent find {Player} {Metric} for {Season}
+OneShotMetricIntent find {Player} {Metric} for {Week} for {Season}
+OneShotMetricIntent find {Player} {Metric} for {Week} in {Season}
+OneShotMetricIntent find {Player} {Metric} for {Week} of {Season}
+OneShotMetricIntent find {Player} {Metric} in {Season}
+OneShotMetricIntent find {Player} {Metric} in {Week} for {Season}
+OneShotMetricIntent find {Player} {Metric} in {Week} in {Season}
+OneShotMetricIntent find {Player} {Metric} in {Week} of {Season}
+OneShotMetricIntent for {Season} what are {Player} total {Metric}
+OneShotMetricIntent for {Season} what are {Player} {Metric}
+OneShotMetricIntent for {Season} what is {Player} total {Metric}
+OneShotMetricIntent for {Season} what is {Player} {Metric}
+OneShotMetricIntent for {Season} what was {Player} total {Metric}
+OneShotMetricIntent for {Season} what was {Player} {Metric}
+OneShotMetricIntent for {Season} what were {Player} total {Metric}
+OneShotMetricIntent for {Season} what were {Player} {Metric}
+OneShotMetricIntent for {Week} for {Season} what are {Player} {Metric}
+OneShotMetricIntent for {Week} for {Season} what is {Player} {Metric}
+OneShotMetricIntent for {Week} for {Season} what was {Player} {Metric}
+OneShotMetricIntent for {Week} for {Season} what were {Player} {Metric}
+OneShotMetricIntent for {Week} in {Season} what are {Player} {Metric}
+OneShotMetricIntent for {Week} in {Season} what is {Player} {Metric}
+OneShotMetricIntent for {Week} in {Season} what was {Player} {Metric}
+OneShotMetricIntent for {Week} in {Season} what were {Player} {Metric}
+OneShotMetricIntent for {Week} of {Season} what are {Player} {Metric}
+OneShotMetricIntent for {Week} of {Season} what is {Player} {Metric}
+OneShotMetricIntent for {Week} of {Season} what was {Player} {Metric}
+OneShotMetricIntent for {Week} of {Season} what were {Player} {Metric}
+OneShotMetricIntent get me {Player} total {Metric} during {Season}
+OneShotMetricIntent get me {Player} total {Metric} for {Season}
+OneShotMetricIntent get me {Player} total {Metric} in {Season}
+OneShotMetricIntent get me {Player} {Metric} during {Season}
+OneShotMetricIntent get me {Player} {Metric} during {Week} for {Season}
+OneShotMetricIntent get me {Player} {Metric} during {Week} in {Season}
+OneShotMetricIntent get me {Player} {Metric} during {Week} of {Season}
+OneShotMetricIntent get me {Player} {Metric} for {Season}
+OneShotMetricIntent get me {Player} {Metric} for {Week} for {Season}
+OneShotMetricIntent get me {Player} {Metric} for {Week} in {Season}
+OneShotMetricIntent get me {Player} {Metric} for {Week} of {Season}
+OneShotMetricIntent get me {Player} {Metric} in {Season}
+OneShotMetricIntent get me {Player} {Metric} in {Week} for {Season}
+OneShotMetricIntent get me {Player} {Metric} in {Week} in {Season}
+OneShotMetricIntent get me {Player} {Metric} in {Week} of {Season}
+OneShotMetricIntent get {Player} total {Metric} during {Season}
+OneShotMetricIntent get {Player} total {Metric} for {Season}
+OneShotMetricIntent get {Player} total {Metric} in {Season}
+OneShotMetricIntent get {Player} {Metric} during {Season}
+OneShotMetricIntent get {Player} {Metric} during {Week} for {Season}
+OneShotMetricIntent get {Player} {Metric} during {Week} in {Season}
+OneShotMetricIntent get {Player} {Metric} during {Week} of {Season}
+OneShotMetricIntent get {Player} {Metric} for {Season}
+OneShotMetricIntent get {Player} {Metric} for {Week} for {Season}
+OneShotMetricIntent get {Player} {Metric} for {Week} in {Season}
+OneShotMetricIntent get {Player} {Metric} for {Week} of {Season}
+OneShotMetricIntent get {Player} {Metric} in {Season}
+OneShotMetricIntent get {Player} {Metric} in {Week} for {Season}
+OneShotMetricIntent get {Player} {Metric} in {Week} in {Season}
+OneShotMetricIntent get {Player} {Metric} in {Week} of {Season}
+OneShotMetricIntent give me {Player} total {Metric} during {Season}
+OneShotMetricIntent give me {Player} total {Metric} for {Season}
+OneShotMetricIntent give me {Player} total {Metric} in {Season}
+OneShotMetricIntent give me {Player} {Metric} during {Season}
+OneShotMetricIntent give me {Player} {Metric} during {Week} for {Season}
+OneShotMetricIntent give me {Player} {Metric} during {Week} in {Season}
+OneShotMetricIntent give me {Player} {Metric} during {Week} of {Season}
+OneShotMetricIntent give me {Player} {Metric} for {Season}
+OneShotMetricIntent give me {Player} {Metric} for {Week} for {Season}
+OneShotMetricIntent give me {Player} {Metric} for {Week} in {Season}
+OneShotMetricIntent give me {Player} {Metric} for {Week} of {Season}
+OneShotMetricIntent give me {Player} {Metric} in {Season}
+OneShotMetricIntent give me {Player} {Metric} in {Week} for {Season}
+OneShotMetricIntent give me {Player} {Metric} in {Week} in {Season}
+OneShotMetricIntent give me {Player} {Metric} in {Week} of {Season}
+OneShotMetricIntent give {Player} total {Metric} during {Season}
+OneShotMetricIntent give {Player} total {Metric} for {Season}
+OneShotMetricIntent give {Player} total {Metric} in {Season}
+OneShotMetricIntent give {Player} {Metric} during {Season}
+OneShotMetricIntent give {Player} {Metric} during {Week} for {Season}
+OneShotMetricIntent give {Player} {Metric} during {Week} in {Season}
+OneShotMetricIntent give {Player} {Metric} during {Week} of {Season}
+OneShotMetricIntent give {Player} {Metric} for {Season}
+OneShotMetricIntent give {Player} {Metric} for {Week} for {Season}
+OneShotMetricIntent give {Player} {Metric} for {Week} in {Season}
+OneShotMetricIntent give {Player} {Metric} for {Week} of {Season}
+OneShotMetricIntent give {Player} {Metric} in {Season}
+OneShotMetricIntent give {Player} {Metric} in {Week} for {Season}
+OneShotMetricIntent give {Player} {Metric} in {Week} in {Season}
+OneShotMetricIntent give {Player} {Metric} in {Week} of {Season}
+OneShotMetricIntent how many total {Metric} did {Player} have during {Season}
+OneShotMetricIntent how many total {Metric} did {Player} have for {Season}
+OneShotMetricIntent how many total {Metric} did {Player} have in {Season}
+OneShotMetricIntent how many total {Metric} did {Player} make during {Season}
+OneShotMetricIntent how many total {Metric} did {Player} make for {Season}
+OneShotMetricIntent how many total {Metric} did {Player} make in {Season}
+OneShotMetricIntent how many total {Metric} did {Player} score during {Season}
+OneShotMetricIntent how many total {Metric} did {Player} score for {Season}
+OneShotMetricIntent how many total {Metric} did {Player} score in {Season}
+OneShotMetricIntent how many total {Metric} does {Player} have during {Season}
+OneShotMetricIntent how many total {Metric} does {Player} have for {Season}
+OneShotMetricIntent how many total {Metric} does {Player} have in {Season}
+OneShotMetricIntent how many total {Metric} does {Player} make during {Season}
+OneShotMetricIntent how many total {Metric} does {Player} make for {Season}
+OneShotMetricIntent how many total {Metric} does {Player} make in {Season}
+OneShotMetricIntent how many total {Metric} does {Player} score during {Season}
+OneShotMetricIntent how many total {Metric} does {Player} score for {Season}
+OneShotMetricIntent how many total {Metric} does {Player} score in {Season}
+OneShotMetricIntent how many total {Metric} {Player} had during {Season}
+OneShotMetricIntent how many total {Metric} {Player} had for {Season}
+OneShotMetricIntent how many total {Metric} {Player} had in {Season}
+OneShotMetricIntent how many total {Metric} {Player} has during {Season}
+OneShotMetricIntent how many total {Metric} {Player} has for {Season}
+OneShotMetricIntent how many total {Metric} {Player} has in {Season}
+OneShotMetricIntent how many total {Metric} {Player} made during {Season}
+OneShotMetricIntent how many total {Metric} {Player} made for {Season}
+OneShotMetricIntent how many total {Metric} {Player} made in {Season}
+OneShotMetricIntent how many total {Metric} {Player} scored during {Season}
+OneShotMetricIntent how many total {Metric} {Player} scored for {Season}
+OneShotMetricIntent how many total {Metric} {Player} scored in {Season}
+OneShotMetricIntent how many {Metric} did {Player} have during {Season}
+OneShotMetricIntent how many {Metric} did {Player} have during {Week} for {Season}
+OneShotMetricIntent how many {Metric} did {Player} have during {Week} in {Season}
+OneShotMetricIntent how many {Metric} did {Player} have during {Week} of {Season}
+OneShotMetricIntent how many {Metric} did {Player} have for {Season}
+OneShotMetricIntent how many {Metric} did {Player} have for {Week} for {Season}
+OneShotMetricIntent how many {Metric} did {Player} have for {Week} in {Season}
+OneShotMetricIntent how many {Metric} did {Player} have for {Week} of {Season}
+OneShotMetricIntent how many {Metric} did {Player} have in {Season}
+OneShotMetricIntent how many {Metric} did {Player} have in {Week} for {Season}
+OneShotMetricIntent how many {Metric} did {Player} have in {Week} in {Season}
+OneShotMetricIntent how many {Metric} did {Player} have in {Week} of {Season}
+OneShotMetricIntent how many {Metric} did {Player} make during {Season}
+OneShotMetricIntent how many {Metric} did {Player} make during {Week} for {Season}
+OneShotMetricIntent how many {Metric} did {Player} make during {Week} in {Season}
+OneShotMetricIntent how many {Metric} did {Player} make during {Week} of {Season}
+OneShotMetricIntent how many {Metric} did {Player} make for {Season}
+OneShotMetricIntent how many {Metric} did {Player} make for {Week} for {Season}
+OneShotMetricIntent how many {Metric} did {Player} make for {Week} in {Season}
+OneShotMetricIntent how many {Metric} did {Player} make for {Week} of {Season}
+OneShotMetricIntent how many {Metric} did {Player} make in {Season}
+OneShotMetricIntent how many {Metric} did {Player} make in {Week} for {Season}
+OneShotMetricIntent how many {Metric} did {Player} make in {Week} in {Season}
+OneShotMetricIntent how many {Metric} did {Player} make in {Week} of {Season}
+OneShotMetricIntent how many {Metric} did {Player} score during {Season}
+OneShotMetricIntent how many {Metric} did {Player} score during {Week} for {Season}
+OneShotMetricIntent how many {Metric} did {Player} score during {Week} in {Season}
+OneShotMetricIntent how many {Metric} did {Player} score during {Week} of {Season}
+OneShotMetricIntent how many {Metric} did {Player} score for {Season}
+OneShotMetricIntent how many {Metric} did {Player} score for {Week} for {Season}
+OneShotMetricIntent how many {Metric} did {Player} score for {Week} in {Season}
+OneShotMetricIntent how many {Metric} did {Player} score for {Week} of {Season}
+OneShotMetricIntent how many {Metric} did {Player} score in {Season}
+OneShotMetricIntent how many {Metric} did {Player} score in {Week} for {Season}
+OneShotMetricIntent how many {Metric} did {Player} score in {Week} in {Season}
+OneShotMetricIntent how many {Metric} did {Player} score in {Week} of {Season}
+OneShotMetricIntent how many {Metric} does {Player} have during {Season}
+OneShotMetricIntent how many {Metric} does {Player} have during {Week} for {Season}
+OneShotMetricIntent how many {Metric} does {Player} have during {Week} in {Season}
+OneShotMetricIntent how many {Metric} does {Player} have during {Week} of {Season}
+OneShotMetricIntent how many {Metric} does {Player} have for {Season}
+OneShotMetricIntent how many {Metric} does {Player} have for {Week} for {Season}
+OneShotMetricIntent how many {Metric} does {Player} have for {Week} in {Season}
+OneShotMetricIntent how many {Metric} does {Player} have for {Week} of {Season}
+OneShotMetricIntent how many {Metric} does {Player} have in {Season}
+OneShotMetricIntent how many {Metric} does {Player} have in {Week} for {Season}
+OneShotMetricIntent how many {Metric} does {Player} have in {Week} in {Season}
+OneShotMetricIntent how many {Metric} does {Player} have in {Week} of {Season}
+OneShotMetricIntent how many {Metric} does {Player} make during {Season}
+OneShotMetricIntent how many {Metric} does {Player} make during {Week} for {Season}
+OneShotMetricIntent how many {Metric} does {Player} make during {Week} in {Season}
+OneShotMetricIntent how many {Metric} does {Player} make during {Week} of {Season}
+OneShotMetricIntent how many {Metric} does {Player} make for {Season}
+OneShotMetricIntent how many {Metric} does {Player} make for {Week} for {Season}
+OneShotMetricIntent how many {Metric} does {Player} make for {Week} in {Season}
+OneShotMetricIntent how many {Metric} does {Player} make for {Week} of {Season}
+OneShotMetricIntent how many {Metric} does {Player} make in {Season}
+OneShotMetricIntent how many {Metric} does {Player} make in {Week} for {Season}
+OneShotMetricIntent how many {Metric} does {Player} make in {Week} in {Season}
+OneShotMetricIntent how many {Metric} does {Player} make in {Week} of {Season}
+OneShotMetricIntent how many {Metric} does {Player} score during {Season}
+OneShotMetricIntent how many {Metric} does {Player} score during {Week} for {Season}
+OneShotMetricIntent how many {Metric} does {Player} score during {Week} in {Season}
+OneShotMetricIntent how many {Metric} does {Player} score during {Week} of {Season}
+OneShotMetricIntent how many {Metric} does {Player} score for {Season}
+OneShotMetricIntent how many {Metric} does {Player} score for {Week} for {Season}
+OneShotMetricIntent how many {Metric} does {Player} score for {Week} in {Season}
+OneShotMetricIntent how many {Metric} does {Player} score for {Week} of {Season}
+OneShotMetricIntent how many {Metric} does {Player} score in {Season}
+OneShotMetricIntent how many {Metric} does {Player} score in {Week} for {Season}
+OneShotMetricIntent how many {Metric} does {Player} score in {Week} in {Season}
+OneShotMetricIntent how many {Metric} does {Player} score in {Week} of {Season}
+OneShotMetricIntent how many {Metric} {Player} had during {Season}
+OneShotMetricIntent how many {Metric} {Player} had during {Week} for {Season}
+OneShotMetricIntent how many {Metric} {Player} had during {Week} in {Season}
+OneShotMetricIntent how many {Metric} {Player} had during {Week} of {Season}
+OneShotMetricIntent how many {Metric} {Player} had for {Season}
+OneShotMetricIntent how many {Metric} {Player} had for {Week} for {Season}
+OneShotMetricIntent how many {Metric} {Player} had for {Week} in {Season}
+OneShotMetricIntent how many {Metric} {Player} had for {Week} of {Season}
+OneShotMetricIntent how many {Metric} {Player} had in {Season}
+OneShotMetricIntent how many {Metric} {Player} had in {Week} for {Season}
+OneShotMetricIntent how many {Metric} {Player} had in {Week} in {Season}
+OneShotMetricIntent how many {Metric} {Player} had in {Week} of {Season}
+OneShotMetricIntent how many {Metric} {Player} has during {Season}
+OneShotMetricIntent how many {Metric} {Player} has during {Week} for {Season}
+OneShotMetricIntent how many {Metric} {Player} has during {Week} in {Season}
+OneShotMetricIntent how many {Metric} {Player} has during {Week} of {Season}
+OneShotMetricIntent how many {Metric} {Player} has for {Season}
+OneShotMetricIntent how many {Metric} {Player} has for {Week} for {Season}
+OneShotMetricIntent how many {Metric} {Player} has for {Week} in {Season}
+OneShotMetricIntent how many {Metric} {Player} has for {Week} of {Season}
+OneShotMetricIntent how many {Metric} {Player} has in {Season}
+OneShotMetricIntent how many {Metric} {Player} has in {Week} for {Season}
+OneShotMetricIntent how many {Metric} {Player} has in {Week} in {Season}
+OneShotMetricIntent how many {Metric} {Player} has in {Week} of {Season}
+OneShotMetricIntent how many {Metric} {Player} made during {Season}
+OneShotMetricIntent how many {Metric} {Player} made during {Week} for {Season}
+OneShotMetricIntent how many {Metric} {Player} made during {Week} in {Season}
+OneShotMetricIntent how many {Metric} {Player} made during {Week} of {Season}
+OneShotMetricIntent how many {Metric} {Player} made for {Season}
+OneShotMetricIntent how many {Metric} {Player} made for {Week} for {Season}
+OneShotMetricIntent how many {Metric} {Player} made for {Week} in {Season}
+OneShotMetricIntent how many {Metric} {Player} made for {Week} of {Season}
+OneShotMetricIntent how many {Metric} {Player} made in {Season}
+OneShotMetricIntent how many {Metric} {Player} made in {Week} for {Season}
+OneShotMetricIntent how many {Metric} {Player} made in {Week} in {Season}
+OneShotMetricIntent how many {Metric} {Player} made in {Week} of {Season}
+OneShotMetricIntent how many {Metric} {Player} scored during {Season}
+OneShotMetricIntent how many {Metric} {Player} scored during {Week} for {Season}
+OneShotMetricIntent how many {Metric} {Player} scored during {Week} in {Season}
+OneShotMetricIntent how many {Metric} {Player} scored during {Week} of {Season}
+OneShotMetricIntent how many {Metric} {Player} scored for {Season}
+OneShotMetricIntent how many {Metric} {Player} scored for {Week} for {Season}
+OneShotMetricIntent how many {Metric} {Player} scored for {Week} in {Season}
+OneShotMetricIntent how many {Metric} {Player} scored for {Week} of {Season}
+OneShotMetricIntent how many {Metric} {Player} scored in {Season}
+OneShotMetricIntent how many {Metric} {Player} scored in {Week} for {Season}
+OneShotMetricIntent how many {Metric} {Player} scored in {Week} in {Season}
+OneShotMetricIntent how many {Metric} {Player} scored in {Week} of {Season}
+OneShotMetricIntent how much total {Metric} did {Player} have during {Season}
+OneShotMetricIntent how much total {Metric} did {Player} have for {Season}
+OneShotMetricIntent how much total {Metric} did {Player} have in {Season}
+OneShotMetricIntent how much total {Metric} did {Player} make during {Season}
+OneShotMetricIntent how much total {Metric} did {Player} make for {Season}
+OneShotMetricIntent how much total {Metric} did {Player} make in {Season}
+OneShotMetricIntent how much total {Metric} did {Player} score during {Season}
+OneShotMetricIntent how much total {Metric} did {Player} score for {Season}
+OneShotMetricIntent how much total {Metric} did {Player} score in {Season}
+OneShotMetricIntent how much total {Metric} does {Player} have during {Season}
+OneShotMetricIntent how much total {Metric} does {Player} have for {Season}
+OneShotMetricIntent how much total {Metric} does {Player} have in {Season}
+OneShotMetricIntent how much total {Metric} does {Player} make during {Season}
+OneShotMetricIntent how much total {Metric} does {Player} make for {Season}
+OneShotMetricIntent how much total {Metric} does {Player} make in {Season}
+OneShotMetricIntent how much total {Metric} does {Player} score during {Season}
+OneShotMetricIntent how much total {Metric} does {Player} score for {Season}
+OneShotMetricIntent how much total {Metric} does {Player} score in {Season}
+OneShotMetricIntent how much total {Metric} {Player} had during {Season}
+OneShotMetricIntent how much total {Metric} {Player} had for {Season}
+OneShotMetricIntent how much total {Metric} {Player} had in {Season}
+OneShotMetricIntent how much total {Metric} {Player} has during {Season}
+OneShotMetricIntent how much total {Metric} {Player} has for {Season}
+OneShotMetricIntent how much total {Metric} {Player} has in {Season}
+OneShotMetricIntent how much total {Metric} {Player} made during {Season}
+OneShotMetricIntent how much total {Metric} {Player} made for {Season}
+OneShotMetricIntent how much total {Metric} {Player} made in {Season}
+OneShotMetricIntent how much total {Metric} {Player} scored during {Season}
+OneShotMetricIntent how much total {Metric} {Player} scored for {Season}
+OneShotMetricIntent how much total {Metric} {Player} scored in {Season}
+OneShotMetricIntent how much {Metric} did {Player} have during {Season}
+OneShotMetricIntent how much {Metric} did {Player} have during {Week} for {Season}
+OneShotMetricIntent how much {Metric} did {Player} have during {Week} in {Season}
+OneShotMetricIntent how much {Metric} did {Player} have during {Week} of {Season}
+OneShotMetricIntent how much {Metric} did {Player} have for {Season}
+OneShotMetricIntent how much {Metric} did {Player} have for {Week} for {Season}
+OneShotMetricIntent how much {Metric} did {Player} have for {Week} in {Season}
+OneShotMetricIntent how much {Metric} did {Player} have for {Week} of {Season}
+OneShotMetricIntent how much {Metric} did {Player} have in {Season}
+OneShotMetricIntent how much {Metric} did {Player} have in {Week} for {Season}
+OneShotMetricIntent how much {Metric} did {Player} have in {Week} in {Season}
+OneShotMetricIntent how much {Metric} did {Player} have in {Week} of {Season}
+OneShotMetricIntent how much {Metric} did {Player} make during {Season}
+OneShotMetricIntent how much {Metric} did {Player} make during {Week} for {Season}
+OneShotMetricIntent how much {Metric} did {Player} make during {Week} in {Season}
+OneShotMetricIntent how much {Metric} did {Player} make during {Week} of {Season}
+OneShotMetricIntent how much {Metric} did {Player} make for {Season}
+OneShotMetricIntent how much {Metric} did {Player} make for {Week} for {Season}
+OneShotMetricIntent how much {Metric} did {Player} make for {Week} in {Season}
+OneShotMetricIntent how much {Metric} did {Player} make for {Week} of {Season}
+OneShotMetricIntent how much {Metric} did {Player} make in {Season}
+OneShotMetricIntent how much {Metric} did {Player} make in {Week} for {Season}
+OneShotMetricIntent how much {Metric} did {Player} make in {Week} in {Season}
+OneShotMetricIntent how much {Metric} did {Player} make in {Week} of {Season}
+OneShotMetricIntent how much {Metric} did {Player} score during {Season}
+OneShotMetricIntent how much {Metric} did {Player} score during {Week} for {Season}
+OneShotMetricIntent how much {Metric} did {Player} score during {Week} in {Season}
+OneShotMetricIntent how much {Metric} did {Player} score during {Week} of {Season}
+OneShotMetricIntent how much {Metric} did {Player} score for {Season}
+OneShotMetricIntent how much {Metric} did {Player} score for {Week} for {Season}
+OneShotMetricIntent how much {Metric} did {Player} score for {Week} in {Season}
+OneShotMetricIntent how much {Metric} did {Player} score for {Week} of {Season}
+OneShotMetricIntent how much {Metric} did {Player} score in {Season}
+OneShotMetricIntent how much {Metric} did {Player} score in {Week} for {Season}
+OneShotMetricIntent how much {Metric} did {Player} score in {Week} in {Season}
+OneShotMetricIntent how much {Metric} did {Player} score in {Week} of {Season}
+OneShotMetricIntent how much {Metric} does {Player} have during {Season}
+OneShotMetricIntent how much {Metric} does {Player} have during {Week} for {Season}
+OneShotMetricIntent how much {Metric} does {Player} have during {Week} in {Season}
+OneShotMetricIntent how much {Metric} does {Player} have during {Week} of {Season}
+OneShotMetricIntent how much {Metric} does {Player} have for {Season}
+OneShotMetricIntent how much {Metric} does {Player} have for {Week} for {Season}
+OneShotMetricIntent how much {Metric} does {Player} have for {Week} in {Season}
+OneShotMetricIntent how much {Metric} does {Player} have for {Week} of {Season}
+OneShotMetricIntent how much {Metric} does {Player} have in {Season}
+OneShotMetricIntent how much {Metric} does {Player} have in {Week} for {Season}
+OneShotMetricIntent how much {Metric} does {Player} have in {Week} in {Season}
+OneShotMetricIntent how much {Metric} does {Player} have in {Week} of {Season}
+OneShotMetricIntent how much {Metric} does {Player} make during {Season}
+OneShotMetricIntent how much {Metric} does {Player} make during {Week} for {Season}
+OneShotMetricIntent how much {Metric} does {Player} make during {Week} in {Season}
+OneShotMetricIntent how much {Metric} does {Player} make during {Week} of {Season}
+OneShotMetricIntent how much {Metric} does {Player} make for {Season}
+OneShotMetricIntent how much {Metric} does {Player} make for {Week} for {Season}
+OneShotMetricIntent how much {Metric} does {Player} make for {Week} in {Season}
+OneShotMetricIntent how much {Metric} does {Player} make for {Week} of {Season}
+OneShotMetricIntent how much {Metric} does {Player} make in {Season}
+OneShotMetricIntent how much {Metric} does {Player} make in {Week} for {Season}
+OneShotMetricIntent how much {Metric} does {Player} make in {Week} in {Season}
+OneShotMetricIntent how much {Metric} does {Player} make in {Week} of {Season}
+OneShotMetricIntent how much {Metric} does {Player} score during {Season}
+OneShotMetricIntent how much {Metric} does {Player} score during {Week} for {Season}
+OneShotMetricIntent how much {Metric} does {Player} score during {Week} in {Season}
+OneShotMetricIntent how much {Metric} does {Player} score during {Week} of {Season}
+OneShotMetricIntent how much {Metric} does {Player} score for {Season}
+OneShotMetricIntent how much {Metric} does {Player} score for {Week} for {Season}
+OneShotMetricIntent how much {Metric} does {Player} score for {Week} in {Season}
+OneShotMetricIntent how much {Metric} does {Player} score for {Week} of {Season}
+OneShotMetricIntent how much {Metric} does {Player} score in {Season}
+OneShotMetricIntent how much {Metric} does {Player} score in {Week} for {Season}
+OneShotMetricIntent how much {Metric} does {Player} score in {Week} in {Season}
+OneShotMetricIntent how much {Metric} does {Player} score in {Week} of {Season}
+OneShotMetricIntent how much {Metric} {Player} had during {Season}
+OneShotMetricIntent how much {Metric} {Player} had during {Week} for {Season}
+OneShotMetricIntent how much {Metric} {Player} had during {Week} in {Season}
+OneShotMetricIntent how much {Metric} {Player} had during {Week} of {Season}
+OneShotMetricIntent how much {Metric} {Player} had for {Season}
+OneShotMetricIntent how much {Metric} {Player} had for {Week} for {Season}
+OneShotMetricIntent how much {Metric} {Player} had for {Week} in {Season}
+OneShotMetricIntent how much {Metric} {Player} had for {Week} of {Season}
+OneShotMetricIntent how much {Metric} {Player} had in {Season}
+OneShotMetricIntent how much {Metric} {Player} had in {Week} for {Season}
+OneShotMetricIntent how much {Metric} {Player} had in {Week} in {Season}
+OneShotMetricIntent how much {Metric} {Player} had in {Week} of {Season}
+OneShotMetricIntent how much {Metric} {Player} has during {Season}
+OneShotMetricIntent how much {Metric} {Player} has during {Week} for {Season}
+OneShotMetricIntent how much {Metric} {Player} has during {Week} in {Season}
+OneShotMetricIntent how much {Metric} {Player} has during {Week} of {Season}
+OneShotMetricIntent how much {Metric} {Player} has for {Season}
+OneShotMetricIntent how much {Metric} {Player} has for {Week} for {Season}
+OneShotMetricIntent how much {Metric} {Player} has for {Week} in {Season}
+OneShotMetricIntent how much {Metric} {Player} has for {Week} of {Season}
+OneShotMetricIntent how much {Metric} {Player} has in {Season}
+OneShotMetricIntent how much {Metric} {Player} has in {Week} for {Season}
+OneShotMetricIntent how much {Metric} {Player} has in {Week} in {Season}
+OneShotMetricIntent how much {Metric} {Player} has in {Week} of {Season}
+OneShotMetricIntent how much {Metric} {Player} made during {Season}
+OneShotMetricIntent how much {Metric} {Player} made during {Week} for {Season}
+OneShotMetricIntent how much {Metric} {Player} made during {Week} in {Season}
+OneShotMetricIntent how much {Metric} {Player} made during {Week} of {Season}
+OneShotMetricIntent how much {Metric} {Player} made for {Season}
+OneShotMetricIntent how much {Metric} {Player} made for {Week} for {Season}
+OneShotMetricIntent how much {Metric} {Player} made for {Week} in {Season}
+OneShotMetricIntent how much {Metric} {Player} made for {Week} of {Season}
+OneShotMetricIntent how much {Metric} {Player} made in {Season}
+OneShotMetricIntent how much {Metric} {Player} made in {Week} for {Season}
+OneShotMetricIntent how much {Metric} {Player} made in {Week} in {Season}
+OneShotMetricIntent how much {Metric} {Player} made in {Week} of {Season}
+OneShotMetricIntent how much {Metric} {Player} scored during {Season}
+OneShotMetricIntent how much {Metric} {Player} scored during {Week} for {Season}
+OneShotMetricIntent how much {Metric} {Player} scored during {Week} in {Season}
+OneShotMetricIntent how much {Metric} {Player} scored during {Week} of {Season}
+OneShotMetricIntent how much {Metric} {Player} scored for {Season}
+OneShotMetricIntent how much {Metric} {Player} scored for {Week} for {Season}
+OneShotMetricIntent how much {Metric} {Player} scored for {Week} in {Season}
+OneShotMetricIntent how much {Metric} {Player} scored for {Week} of {Season}
+OneShotMetricIntent how much {Metric} {Player} scored in {Season}
+OneShotMetricIntent how much {Metric} {Player} scored in {Week} for {Season}
+OneShotMetricIntent how much {Metric} {Player} scored in {Week} in {Season}
+OneShotMetricIntent how much {Metric} {Player} scored in {Week} of {Season}
+OneShotMetricIntent in {Season} what are {Player} total {Metric}
+OneShotMetricIntent in {Season} what are {Player} {Metric}
+OneShotMetricIntent in {Season} what is {Player} total {Metric}
+OneShotMetricIntent in {Season} what is {Player} {Metric}
+OneShotMetricIntent in {Season} what was {Player} total {Metric}
+OneShotMetricIntent in {Season} what was {Player} {Metric}
+OneShotMetricIntent in {Season} what were {Player} total {Metric}
+OneShotMetricIntent in {Season} what were {Player} {Metric}
+OneShotMetricIntent in {Week} for {Season} what are {Player} {Metric}
+OneShotMetricIntent in {Week} for {Season} what is {Player} {Metric}
+OneShotMetricIntent in {Week} for {Season} what was {Player} {Metric}
+OneShotMetricIntent in {Week} for {Season} what were {Player} {Metric}
+OneShotMetricIntent in {Week} in {Season} what are {Player} {Metric}
+OneShotMetricIntent in {Week} in {Season} what is {Player} {Metric}
+OneShotMetricIntent in {Week} in {Season} what was {Player} {Metric}
+OneShotMetricIntent in {Week} in {Season} what were {Player} {Metric}
+OneShotMetricIntent in {Week} of {Season} what are {Player} {Metric}
+OneShotMetricIntent in {Week} of {Season} what is {Player} {Metric}
+OneShotMetricIntent in {Week} of {Season} what was {Player} {Metric}
+OneShotMetricIntent in {Week} of {Season} what were {Player} {Metric}
+OneShotMetricIntent tell me {Player} total {Metric} during {Season}
+OneShotMetricIntent tell me {Player} total {Metric} for {Season}
+OneShotMetricIntent tell me {Player} total {Metric} in {Season}
+OneShotMetricIntent tell me {Player} {Metric} during {Season}
+OneShotMetricIntent tell me {Player} {Metric} during {Week} for {Season}
+OneShotMetricIntent tell me {Player} {Metric} during {Week} in {Season}
+OneShotMetricIntent tell me {Player} {Metric} during {Week} of {Season}
+OneShotMetricIntent tell me {Player} {Metric} for {Season}
+OneShotMetricIntent tell me {Player} {Metric} for {Week} for {Season}
+OneShotMetricIntent tell me {Player} {Metric} for {Week} in {Season}
+OneShotMetricIntent tell me {Player} {Metric} for {Week} of {Season}
+OneShotMetricIntent tell me {Player} {Metric} in {Season}
+OneShotMetricIntent tell me {Player} {Metric} in {Week} for {Season}
+OneShotMetricIntent tell me {Player} {Metric} in {Week} in {Season}
+OneShotMetricIntent tell me {Player} {Metric} in {Week} of {Season}
+OneShotMetricIntent tell {Player} total {Metric} during {Season}
+OneShotMetricIntent tell {Player} total {Metric} for {Season}
+OneShotMetricIntent tell {Player} total {Metric} in {Season}
+OneShotMetricIntent tell {Player} {Metric} during {Season}
+OneShotMetricIntent tell {Player} {Metric} during {Week} for {Season}
+OneShotMetricIntent tell {Player} {Metric} during {Week} in {Season}
+OneShotMetricIntent tell {Player} {Metric} during {Week} of {Season}
+OneShotMetricIntent tell {Player} {Metric} for {Season}
+OneShotMetricIntent tell {Player} {Metric} for {Week} for {Season}
+OneShotMetricIntent tell {Player} {Metric} for {Week} in {Season}
+OneShotMetricIntent tell {Player} {Metric} for {Week} of {Season}
+OneShotMetricIntent tell {Player} {Metric} in {Season}
+OneShotMetricIntent tell {Player} {Metric} in {Week} for {Season}
+OneShotMetricIntent tell {Player} {Metric} in {Week} in {Season}
+OneShotMetricIntent tell {Player} {Metric} in {Week} of {Season}
+OneShotMetricIntent what are {Player} total {Metric} during {Season}
+OneShotMetricIntent what are {Player} total {Metric} for {Season}
+OneShotMetricIntent what are {Player} total {Metric} in {Season}
+OneShotMetricIntent what are {Player} {Metric} during {Season}
+OneShotMetricIntent what are {Player} {Metric} during {Week} for {Season}
+OneShotMetricIntent what are {Player} {Metric} during {Week} in {Season}
+OneShotMetricIntent what are {Player} {Metric} during {Week} of {Season}
+OneShotMetricIntent what are {Player} {Metric} for {Season}
+OneShotMetricIntent what are {Player} {Metric} for {Week} for {Season}
+OneShotMetricIntent what are {Player} {Metric} for {Week} in {Season}
+OneShotMetricIntent what are {Player} {Metric} for {Week} of {Season}
+OneShotMetricIntent what are {Player} {Metric} in {Season}
+OneShotMetricIntent what are {Player} {Metric} in {Week} for {Season}
+OneShotMetricIntent what are {Player} {Metric} in {Week} in {Season}
+OneShotMetricIntent what are {Player} {Metric} in {Week} of {Season}
+OneShotMetricIntent what is {Player} total {Metric} during {Season}
+OneShotMetricIntent what is {Player} total {Metric} for {Season}
+OneShotMetricIntent what is {Player} total {Metric} in {Season}
+OneShotMetricIntent what is {Player} {Metric} during {Season}
+OneShotMetricIntent what is {Player} {Metric} during {Week} for {Season}
+OneShotMetricIntent what is {Player} {Metric} during {Week} in {Season}
+OneShotMetricIntent what is {Player} {Metric} during {Week} of {Season}
+OneShotMetricIntent what is {Player} {Metric} for {Season}
+OneShotMetricIntent what is {Player} {Metric} for {Week} for {Season}
+OneShotMetricIntent what is {Player} {Metric} for {Week} in {Season}
+OneShotMetricIntent what is {Player} {Metric} for {Week} of {Season}
+OneShotMetricIntent what is {Player} {Metric} in {Season}
+OneShotMetricIntent what is {Player} {Metric} in {Week} for {Season}
+OneShotMetricIntent what is {Player} {Metric} in {Week} in {Season}
+OneShotMetricIntent what is {Player} {Metric} in {Week} of {Season}
+OneShotMetricIntent what was {Player} total {Metric} during {Season}
+OneShotMetricIntent what was {Player} total {Metric} for {Season}
+OneShotMetricIntent what was {Player} total {Metric} in {Season}
+OneShotMetricIntent what was {Player} {Metric} during {Season}
+OneShotMetricIntent what was {Player} {Metric} during {Week} for {Season}
+OneShotMetricIntent what was {Player} {Metric} during {Week} in {Season}
+OneShotMetricIntent what was {Player} {Metric} during {Week} of {Season}
+OneShotMetricIntent what was {Player} {Metric} for {Season}
+OneShotMetricIntent what was {Player} {Metric} for {Week} for {Season}
+OneShotMetricIntent what was {Player} {Metric} for {Week} in {Season}
+OneShotMetricIntent what was {Player} {Metric} for {Week} of {Season}
+OneShotMetricIntent what was {Player} {Metric} in {Season}
+OneShotMetricIntent what was {Player} {Metric} in {Week} for {Season}
+OneShotMetricIntent what was {Player} {Metric} in {Week} in {Season}
+OneShotMetricIntent what was {Player} {Metric} in {Week} of {Season}
+OneShotMetricIntent what were {Player} total {Metric} during {Season}
+OneShotMetricIntent what were {Player} total {Metric} for {Season}
+OneShotMetricIntent what were {Player} total {Metric} in {Season}
+OneShotMetricIntent what were {Player} {Metric} during {Season}
+OneShotMetricIntent what were {Player} {Metric} during {Week} for {Season}
+OneShotMetricIntent what were {Player} {Metric} during {Week} in {Season}
+OneShotMetricIntent what were {Player} {Metric} during {Week} of {Season}
+OneShotMetricIntent what were {Player} {Metric} for {Season}
+OneShotMetricIntent what were {Player} {Metric} for {Week} for {Season}
+OneShotMetricIntent what were {Player} {Metric} for {Week} in {Season}
+OneShotMetricIntent what were {Player} {Metric} for {Week} of {Season}
+OneShotMetricIntent what were {Player} {Metric} in {Season}
+OneShotMetricIntent what were {Player} {Metric} in {Week} for {Season}
+OneShotMetricIntent what were {Player} {Metric} in {Week} in {Season}
+OneShotMetricIntent what were {Player} {Metric} in {Week} of {Season}
+OneShotMetricIntent {Player} total {Metric} during {Season}
+OneShotMetricIntent {Player} total {Metric} for {Season}
+OneShotMetricIntent {Player} total {Metric} in {Season}
+OneShotMetricIntent {Player} {Metric} during {Season}
+OneShotMetricIntent {Player} {Metric} during {Week} for {Season}
+OneShotMetricIntent {Player} {Metric} during {Week} in {Season}
+OneShotMetricIntent {Player} {Metric} during {Week} of {Season}
+OneShotMetricIntent {Player} {Metric} for {Season}
+OneShotMetricIntent {Player} {Metric} for {Week} for {Season}
+OneShotMetricIntent {Player} {Metric} for {Week} in {Season}
+OneShotMetricIntent {Player} {Metric} for {Week} of {Season}
+OneShotMetricIntent {Player} {Metric} in {Season}
+OneShotMetricIntent {Player} {Metric} in {Week} for {Season}
+OneShotMetricIntent {Player} {Metric} in {Week} in {Season}
+OneShotMetricIntent {Player} {Metric} in {Week} of {Season}
+OneShotMetricIntent {Player} {Metric} {Week} in {Season}
+OneShotMetricIntent {Player} {Metric} {Week} of {Season}
+OneShotMetricIntent {Player} {Metric} {Week} for {Season}
+OneShotMetricIntent {Player} {Metric} {Week} during {Season}
+OneShotMetricIntent {Player} {Metric} in {Season}
+OneShotMetricIntent {Player} {Metric} for {Season}
+OneShotMetricIntent {Player} {Metric} during {Season}
+OneShotMetricIntent {Player} {Week} {Metric} in {Season}
+OneShotMetricIntent {Player} {Week} {Metric} for {Season}
+OneShotMetricIntent {Player} {Week} {Metric} during {Season}
+OneShotMetricIntent {Metric} {Player} {Week} in {Season}
+OneShotMetricIntent {Metric} {Player} {Week} of {Season}
+OneShotMetricIntent {Metric} {Player} {Week} for {Season}
+OneShotMetricIntent {Metric} {Player} {Week} during {Season}
+OneShotMetricIntent {Metric} {Player} in {Season}
+OneShotMetricIntent {Metric} {Player} for {Season}
+OneShotMetricIntent {Metric} {Player} during {Season}
+OneShotMetricIntent {Metric} {Week} {Player} in {Season}
+OneShotMetricIntent {Metric} {Week} {Player} for {Season}
+OneShotMetricIntent {Metric} {Week} {Player} during {Season}
+OneShotMetricIntent {Week} {Player} {Metric} in {Season}
+OneShotMetricIntent {Week} {Player} {Metric} for {Season}
+OneShotMetricIntent {Week} {Player} {Metric} during {Season}
+OneShotMetricIntent {Week} {Metric} {Player} in {Season}
+OneShotMetricIntent {Week} {Metric} {Player} for {Season}
+OneShotMetricIntent {Week} {Metric} {Player} during {Season}
+OneShotMetricIntent {Player} {Metric} {Season}
+OneShotMetricIntent {Player} {Metric} {Season} {Week}
+OneShotMetricIntent {Player} {Metric} {Week} {Season}
+OneShotMetricIntent {Player} {Season} {Metric}
+OneShotMetricIntent {Player} {Season} {Metric} {Week}
+OneShotMetricIntent {Player} {Season} {Week} {Metric} 
+OneShotMetricIntent {Player} {Week} {Metric} {Season}
+OneShotMetricIntent {Player} {Week} {Season} {Metric}
+OneShotMetricIntent {Metric} {Player} {Season}
+OneShotMetricIntent {Metric} {Player} {Season} {Week}
+OneShotMetricIntent {Metric} {Player} {Week} {Season}
+OneShotMetricIntent {Metric} {Season} {Player}
+OneShotMetricIntent {Metric} {Season} {Player} {Week}
+OneShotMetricIntent {Metric} {Season} {Week} {Player}
+OneShotMetricIntent {Metric} {Week} {Season} {Player}
+OneShotMetricIntent {Metric} {Week} {Player} {Season}
+OneShotMetricIntent {Season} {Player} {Metric}
+OneShotMetricIntent {Season} {Player} {Metric} {Week}
+OneShotMetricIntent {Season} {Player} {Week} {Metric}
+OneShotMetricIntent {Season} {Metric} {Player}
+OneShotMetricIntent {Season} {Metric} {Player} {Week}
+OneShotMetricIntent {Season} {Metric} {Week} {Player}
+OneShotMetricIntent {Season} {Week} {Player} {Metric}
+OneShotMetricIntent {Season} {Week} {Metric} {Player}
+OneShotMetricIntent {Week} {Player} {Metric} {Season}
+OneShotMetricIntent {Week} {Player} {Season} {Metric}
+OneShotMetricIntent {Week} {Season} {Player} {Metric}
+OneShotMetricIntent {Week} {Season} {Metric} {Player}
+OneShotMetricIntent {Week} {Metric} {Player} {Season}
+OneShotMetricIntent {Week} {Metric} {Season} {Player}
+
+MissingSlotIntent {Player}
+MissingSlotIntent {Metric}
+MissingSlotIntent {Week}
+MissingSlotIntent {Season}
+MissingSlotIntent {Player} {Metric}
+MissingSlotIntent {Player} {Metric} {Week}
+MissingSlotIntent {Player} {Week}
+MissingSlotIntent {Player} {Week} {Metric}
+MissingSlotIntent {Player} {Week} {Season}
+MissingSlotIntent {Player} {Week} in {Season}
+MissingSlotIntent {Player} {Week} of {Season}
+MissingSlotIntent {Player} {Week} for {Season}
+MissingSlotIntent {Player} {Week} during {Season}
+MissingSlotIntent {Player} {Season}
+MissingSlotIntent {Player} in {Season}
+MissingSlotIntent {Player} for {Season}
+MissingSlotIntent {Player} during {Season}
+MissingSlotIntent {Player} {Season} {Week}
+MissingSlotIntent {Metric} {Player}
+MissingSlotIntent {Metric} {Player} {Week}
+MissingSlotIntent {Metric} {Week}
+MissingSlotIntent {Metric} {Week} {Player}
+MissingSlotIntent {Metric} {Week} {Season}
+MissingSlotIntent {Metric} {Week} in {Season}
+MissingSlotIntent {Metric} {Week} of {Season}
+MissingSlotIntent {Metric} {Week} for {Season}
+MissingSlotIntent {Metric} {Week} during {Season}
+MissingSlotIntent {Metric} {Season}
+MissingSlotIntent {Metric} in {Season}
+MissingSlotIntent {Metric} for {Season}
+MissingSlotIntent {Metric} during {Season}
+MissingSlotIntent {Metric} {Season} {Week}
+MissingSlotIntent {Week} {Player}
+MissingSlotIntent {Week} {Player} {Metric}
+MissingSlotIntent {Week} {Player} {Season}
+MissingSlotIntent {Week} {Player} in {Season}
+MissingSlotIntent {Week} {Player} for {Season}
+MissingSlotIntent {Week} {Player} during {Season}
+MissingSlotIntent {Week} {Metric}
+MissingSlotIntent {Week} {Metric} {Player}
+MissingSlotIntent {Week} {Metric} {Season}
+MissingSlotIntent {Week} {Metric} in {Season}
+MissingSlotIntent {Week} {Metric} for {Season}
+MissingSlotIntent {Week} {Metric} during {Season}
+MissingSlotIntent {Week} {Season}
+MissingSlotIntent {Week} in {Season}
+MissingSlotIntent {Week} of {Season}
+MissingSlotIntent {Week} for {Season}
+MissingSlotIntent {Week} during {Season}
+MissingSlotIntent {Week} {Season} {Player}
+MissingSlotIntent {Week} {Season} {Metric}
+MissingSlotIntent {Season} {Player}
+MissingSlotIntent {Season} {Player} {Week}
+MissingSlotIntent {Season} {Metric}
+MissingSlotIntent {Season} {Metric} {Week}
+MissingSlotIntent {Season} {Week}
+MissingSlotIntent {Season} {Week} {Player}
+MissingSlotIntent {Season} {Week} {Metric}
