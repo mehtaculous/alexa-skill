@@ -657,10 +657,11 @@ function getMetricRequest(intent, session, response) {
                 speech: "I'm sorry, but the targets metric is only available for players beginning from the 2014 season.",
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
-            cardTitle = "targets metric is not available for players beginning from the 2014 season";
-            response.tellWithCard(speechOutput, cardTitle);
+            cardTitle = "not a valid request";
+            cardContent = "targets metric is only available for players beginning from the 2014 season";
+            response.tellWithCard(speechOutput, cardTitle, cardContent);
 
-        } else if (metric === "games played" && Keys[week]) {
+        } else if (Keys[player] && Keys[season] && (metric === "fantasy points per game" || metric === "ppr points per game" || metric === "passing yards per game" || metric === "rushing yards per game" || metric === "receiving yards per game" || metric === "receptions per game" || metric === "targets per game" || metric === "games played") && Keys[week]) {
             console.log("I'm sorry, but " + metric + " is not a valid metric when providing a week number.");
             speechOutput = {
                 speech: "I'm sorry, but " + metric + " is not a valid metric when providing a week number.",
@@ -669,6 +670,7 @@ function getMetricRequest(intent, session, response) {
             cardTitle = "not a valid request";
             cardContent = metric + " is not a valid request when providing a week number";
             response.tellWithCard(speechOutput, cardTitle, cardContent);
+            
         }  else if (metric === "games played" && metric_value) {
             console.log("During the " + season + " season, " + player + " played " + games_played + " games.");
             speechOutput = {
@@ -715,16 +717,6 @@ function getMetricRequest(intent, session, response) {
             };
             cardTitle = metric + " for " + player + " during the " + season + " season";
             cardContent = metric_value + " " + metric;
-            response.tellWithCard(speechOutput, cardTitle, cardContent);
-
-        } else if (Keys[player] && Keys[season] && (metric === "fantasy points per game" || metric === "ppr points per game" || metric === "passing yards per game" || metric === "rushing yards per game" || metric === "receiving yards per game" || metric === "receptions per game" || metric === "targets per game") && Keys[week]) {
-            console.log("I'm sorry, but " + metric + " is not a valid metric when providing a week number.");
-            speechOutput = {
-                speech: "I'm sorry, but " + metric + " is not a valid metric when providing a week number.",
-                type: AlexaSkill.speechOutputType.PLAIN_TEXT
-            };
-            cardTitle = "not a valid request";
-            cardContent = metric + " is not a valid request when providing a week number";
             response.tellWithCard(speechOutput, cardTitle, cardContent);
 
         } else if (Keys[player] && Keys[season] && Keys[metric] && Keys[week]) {
