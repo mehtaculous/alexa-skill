@@ -34,13 +34,14 @@ Current Metrics:
 * Fumbles
 * Fantasy Points
 * PPR Points
+* Passing Attempts Per Game
 * Passing Yards Per Game
-* Rushing Yards Per Game 
-* Receiving Yards Per Game
-* Receptions Per Game
+* Rushing Attempts Per Game
+* Rushing Yards Per Game
 * Targets Per Game
+* Receptions Per Game
+* Receiving Yards Per Game
+* Yards From Scrimmage Per Game
 * Fantasy Points Per Game
 * PPR Points Per Game
-* Fantasy Points Per Target
-* PPR Points Per Target
 * Catch Rate
