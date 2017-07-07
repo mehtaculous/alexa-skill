@@ -6,7 +6,7 @@ var API = require('./api_keys');
 
 var Keys = require('./data_keys');
 
-var APP_ID = 'amzn1.echo-sdk-ams.app.c565f60c-9587-49f8-9131-abed9b952cc3';
+var APP_ID = 'amzn1.ask.skill.15466683-4987-4d3a-a83c-e36016015624';
 
 var YahooFantasy = require('yahoo-fantasy');
 
@@ -156,7 +156,8 @@ FantasyMetrix.prototype.intentHandlers = {
             yards_from_scrimmage_per_game,
             yards_per_reception,
             yards_per_target,
-            catch_rate;
+            catch_rate,
+            position;
             
         var player_key = game_id + '.p.' + player_id;
 
@@ -180,6 +181,7 @@ FantasyMetrix.prototype.intentHandlers = {
                             }
                         }
 
+                        position = data["display_position"];
                         bye_week = data["bye_weeks"]["week"];
                         passing_attempts = parseFloat(data["stats"]["stats"]["1"]["value"]);
                         completions = parseFloat(data["stats"]["stats"]["2"]["value"]);
@@ -201,6 +203,7 @@ FantasyMetrix.prototype.intentHandlers = {
                             }
                         }
                         
+                        console.log("Position: " + position);
                         console.log("Bye Week: " + bye_week);
                         console.log("Passing Attempts: " + passing_attempts);
                         console.log("Completions: " + completions);
@@ -310,6 +313,7 @@ FantasyMetrix.prototype.intentHandlers = {
                             }
                         }
 
+                        position = data["display_position"];
                         games_played = data["stats"]["stats"]["0"]["value"];
                         passing_attempts = parseFloat(data["stats"]["stats"]["1"]["value"]);
                         completions = parseFloat(data["stats"]["stats"]["2"]["value"]);
@@ -331,6 +335,7 @@ FantasyMetrix.prototype.intentHandlers = {
                             }
                         }
                         
+                        console.log("Position: " + position);
                         console.log("Games Played: " + games_played);
                         console.log("Passing Attempts: " + passing_attempts);
                         console.log("Completions: " + completions);
@@ -811,7 +816,8 @@ function yahooSearch(intent, session, response) {
         yards_from_scrimmage_per_game,
         yards_per_reception,
         yards_per_target,
-        catch_rate;
+        catch_rate,
+        position;
 
     var player_key = game_id + '.p.' + player_id;
 
@@ -835,6 +841,7 @@ function yahooSearch(intent, session, response) {
                         }
                     }
 
+                    position = data["display_position"];
                     bye_week = data["bye_weeks"]["week"];
                     passing_attempts = parseFloat(data["stats"]["stats"]["1"]["value"]);
                     completions = parseFloat(data["stats"]["stats"]["2"]["value"]);
@@ -856,6 +863,7 @@ function yahooSearch(intent, session, response) {
                         }
                     }
                     
+                    console.log("Position: " + position);
                     console.log("Bye Week: " + bye_week);
                     console.log("Passing Attempts: " + passing_attempts);
                     console.log("Completions: " + completions);
@@ -956,6 +964,7 @@ function yahooSearch(intent, session, response) {
                         }
                     }
 
+                    position = data["display_position"];
                     games_played = data["stats"]["stats"]["0"]["value"];
                     passing_attempts = parseFloat(data["stats"]["stats"]["1"]["value"]);
                     completions = parseFloat(data["stats"]["stats"]["2"]["value"]);
@@ -977,6 +986,7 @@ function yahooSearch(intent, session, response) {
                         }
                     }
                     
+                    console.log("Position: " + position);
                     console.log("Games Played: " + games_played);
                     console.log("Passing Attempts: " + passing_attempts);
                     console.log("Completions: " + completions);

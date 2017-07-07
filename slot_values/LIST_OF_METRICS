@@ -2,17 +2,16 @@ Catch Rate
 Completions
 Fantasy Points
 Fantasy Points Per Game
-Fantasy Points Per Target
 Fumbles
 Games Played
 Interceptions
 Passing Attempts
+Passing Attempts Per Game
 Passing Touchdowns
 Passing Yards
 Passing Yards Per Game
 PPR Points
 PPR Points Per Game
-PPR Points Per Target
 Receiving Touchdowns
 Receiving Yards
 Receiving Yards Per Game
@@ -20,6 +19,7 @@ Receptions
 Receptions Per Game
 Return Touchdowns
 Rushing Attempts
+Rushing Attempts Per Game
 Rushing Touchdowns
 Rushing Yards
 Rushing Yards Per Game
@@ -28,6 +28,7 @@ Targets Per Game
 Total Touchdowns
 Two Point Conversions
 Yards From Scrimmage
+Yards From Scrimmage Per Game
 Yards Per Attempt
 Yards Per Carry
 Yards Per Reception

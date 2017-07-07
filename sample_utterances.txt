@@ -1520,7 +1520,7 @@ OneShotMetricIntent {Player} {Metric} {Season} {Week}
 OneShotMetricIntent {Player} {Metric} {Week} {Season}
 OneShotMetricIntent {Player} {Season} {Metric}
 OneShotMetricIntent {Player} {Season} {Metric} {Week}
-OneShotMetricIntent {Player} {Season} {Week} {Metric} 
+OneShotMetricIntent {Player} {Season} {Week} {Metric}
 OneShotMetricIntent {Player} {Week} {Metric} {Season}
 OneShotMetricIntent {Player} {Week} {Season} {Metric}
 OneShotMetricIntent {Metric} {Player} {Season}
@@ -1545,7 +1545,6 @@ OneShotMetricIntent {Week} {Season} {Player} {Metric}
 OneShotMetricIntent {Week} {Season} {Metric} {Player}
 OneShotMetricIntent {Week} {Metric} {Player} {Season}
 OneShotMetricIntent {Week} {Metric} {Season} {Player}
-
 MissingSlotIntent {Player}
 MissingSlotIntent {Metric}
 MissingSlotIntent {Week}

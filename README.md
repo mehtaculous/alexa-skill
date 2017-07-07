@@ -1,47 +1,48 @@
-## [FantasyMetrix](http://alexa.amazon.com/spa/index.html#skills/dp/B01L2VFZ5U/?ref=skill_dsk_skb_ca_25)
+## [FantasyMetrix](http://alexa.amazon.com)
 
 A voice-enabled skill for Amazon's Alexa platform which provides past and present, weekly and season-long, statistics along with advanced metrics derived from NFL players using the Yahoo Fantasy Sports API.
 
 <br>
-Please make sure to include in your request:
-* The name of a current player who has played at least one game in the NFL
-* The name of a valid metric which correlates to that player's position
-* The year pertaining to an NFL season ranging from 2001 – Present
-* Providing a regular season week number ranging from Week 1 – 17 is merely optional
+5 Simple Rules:
+1) Name of current NFL player who has played at least one game
+2) Valid football metric (See list below)
+3) Year of NFL season ranging from 2001 – Present
+4) Week number is optional (Week 1 – 17)
+5) Targets metric is only available beginning in year 2014 and beyond
 
-Current Metrics:
-* Games Played
-* Passing Attempts
+Football Metrics: 
+* Catch Rate
 * Completions
-* Passing Yards
-* Yards Per Attempt
+* Fantasy Points
+* Fantasy Points Per Game
+* Fumbles
+* Games Played
+* Interceptions
+* Passing Attempts
+* Passing Attempts Per Game
 * Passing Touchdowns
-* Interceptions 
-* Rushing Attempts
-* Rushing Yards
-* Yards Per Carry
-* Yards From Scrimmage
-* Rushing Touchdowns
-* Targets
-* Receptions
+* Passing Yards
+* Passing Yards Per Game
+* PPR Points
+* PPR Points Per Game
+* Receiving Touchdowns
 * Receiving Yards
+* Receiving Yards Per game
+* Receptions
+* Receptions Per Game
+* Return Touchdowns
+* Rushing Attempts
+* Rushing Attempts Per Game
+* Rushing Touchdowns
+* Rushing Yards
+* Rushing Yards Per Game
+* Targets
+* Targets Per Game
+* Total Touchdowns
+* Two Point Conversions
+* Yards From Scrimmage
+* Yards From Scrimmage Per Game
+* Yards Per Attempt
+* Yards Per Carry
 * Yards Per Reception
 * Yards Per Target
-* Receiving Touchdowns
-* Total Touchdowns
-* Return Touchdowns
-* 2 Point Conversions
-* Fumbles
-* Fantasy Points
-* PPR Points
-* Passing Attempts Per Game
-* Passing Yards Per Game
-* Rushing Attempts Per Game
-* Rushing Yards Per Game
-* Targets Per Game
-* Receptions Per Game
-* Receiving Yards Per Game
-* Yards From Scrimmage Per Game
-* Fantasy Points Per Game
-* PPR Points Per Game
-* Catch Rate
