@@ -3,14 +3,14 @@
 A voice-enabled skill for Amazon's Alexa platform which provides past and present, weekly and season-long, statistics along with advanced metrics derived from NFL players using the Yahoo Fantasy Sports API.
 
 <br>
-5 Simple Rules:
-1) Name of current NFL player who has played at least one game
-2) Valid football metric (See list below)
-3) Year of NFL season ranging from 2001 – Present
-4) Week number is optional (Week 1 – 17)
-5) Targets metric is only available beginning in year 2014 and beyond
-
-Football Metrics: 
+**Five Simple Rules:**
+1. Name of current NFL player who has played at least one game
+2. Valid football metric (See list below)
+3. Year of NFL season ranging from 2001 – Present
+4. Week number is optional (Week 1 – 17)
+5. Targets metric is only available beginning in year 2014 and beyond
+<br>
+**Football Metrics:** 
 * Catch Rate
 * Completions
 * Fantasy Points
