@@ -3,7 +3,7 @@
 A voice-enabled skill for Amazon's Alexa platform which provides past and present, weekly and season-long, statistics along with advanced metrics derived from NFL players using the Yahoo Fantasy Sports API.
 
 <br>
-**Five Simple Rules**:
+#### Five Simple Rules:
 
 1. Name of current NFL player who has played at least one game
 2. Valid football metric (See list below)
@@ -12,7 +12,7 @@ A voice-enabled skill for Amazon's Alexa platform which provides past and presen
 5. Targets metric is only available beginning in year 2014 and beyond
 
 <br>
-**Football Metrics**:
+#### Football Metrics:
 
 * Catch Rate
 * Completions
