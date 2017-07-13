@@ -6,7 +6,7 @@ A voice-enabled skill for Amazon's Alexa platform which provides past and presen
 Five Simple Rules:
 
 1. Name of current NFL player who has played at least one game
-2. Valid football metric (See list below)
+2. Valid football metric pertaining to player's position (See list below)
 3. Year of NFL season ranging from 2001 – Present
 4. Week number is optional (Week 1 – 17)
 5. Targets metric is only available beginning in year 2014 and beyond
