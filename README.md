@@ -1,15 +1,15 @@
-## [FantasyMetrix](http://alexa.amazon.com)
+## [FantasyMetrix](http://alexa.amazon.com/spa/index.html#skills/dp/B073XDD8V4/?ref=skill_dsk_skb_sr_4)
 
-A voice-enabled skill for Amazon's Alexa platform which provides past and present, weekly and season-long, statistics along with advanced metrics derived from NFL players using the Yahoo Fantasy Sports API.
+A voice-enabled skill for Amazon's Alexa platform which provides past and present, weekly and season-long, statistics along with advanced metrics derived from NFL players using the Yahoo Fantasy Sports API
 
 <br>
-Five Simple Rules:
+How To Use:
 
-1. Name of current NFL player who has played at least one game
+1. Name of a current NFL player who has played in at least one game
 2. Valid football metric pertaining to player's position (See list below)
-3. Year of NFL season ranging from 2001 – Present
-4. Week number is optional (Week 1 – 17)
-5. Targets metric is only available beginning in year 2014 and beyond
+3. Year of an NFL season ranging from 2001 – Present
+4. Week number is merely optional (Week 1 – 17)
+5. Target metrics are only available beginning from year 2014 - Present
 
 <br>
 Football Metrics:
@@ -20,6 +20,8 @@ Football Metrics:
 * Fantasy Points Per Game
 * Fumbles
 * Games Played
+* Half PPR Points
+* Half PPR Points Per Game
 * Interceptions
 * Passing Attempts
 * Passing Attempts Per Game

@@ -311,15 +311,15 @@ function getMetricRequest(intent, session, response) {
     console.log("getGamesPlayedRequest: " + games_played);
     console.log("getMetricValueRequest: " + metric_value);
 
-    if (bye_week !== week_value) {
-        if ((metric === "targets" || metric === "yards per target" || metric === "targets per game" || metric === "fantasy points per target" || metric === "ppr points per target" || metric === "catch rate") && season < parseInt("2014") && season > parseInt("2000")) {
-            console.log("I'm sorry, but the targets metric is only available for players beginning from the 2014 season.");
+    if (bye_week != week_value) {
+        if ((metric === "targets" || metric === "yards per target" || metric === "targets per game" || metric === "catch rate") && season < parseInt("2014") && season > parseInt("2000")) {
+            console.log("I'm sorry, but target metrics are only available for players beginning from the 2014 season.");
             speechOutput = {
-                speech: "I'm sorry, but the targets metric is only available for players beginning from the 2014 season.",
+                speech: "I'm sorry, but target metrics are only available for players beginning from the 2014 season.",
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
             cardTitle = "not a valid request";
-            cardContent = "targets metric is only available for players beginning from the 2014 season";
+            cardContent = "target metrics are only available for players beginning from the 2014 season";
             response.tellWithCard(speechOutput, cardTitle, cardContent);
 
         } else if (Keys[player] && Keys[season] && (metric === "fantasy points per game" || metric === "ppr points per game" || metric === "passing yards per game" || metric === "rushing yards per game" || metric === "receiving yards per game" || metric === "receptions per game" || metric === "targets per game" || metric === "games played") && Keys[week]) {
@@ -453,6 +453,8 @@ function yahooSearch(intent, session, response) {
         fumbles,
         fantasy_points,
         fantasy_points_per_game,
+        half_ppr_points,
+        half_ppr_points_per_game,
         ppr_points,
         ppr_points_per_game,
         total_touchdowns,
@@ -541,6 +543,8 @@ function yahooSearch(intent, session, response) {
 
                     fantasy_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
 
+                    half_ppr_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receptions * 0.5) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
+
                     ppr_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receptions * 1) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
                     
                     total_touchdowns = (passing_touchdowns + rushing_touchdowns + receiving_touchdowns + return_touchdowns);
@@ -552,6 +556,7 @@ function yahooSearch(intent, session, response) {
                     catch_rate = (receptions / targets).toFixed(2) * 100;
                     
                     console.log("Fantasy Points: " + fantasy_points);
+                    console.log("Half PPR Points: " + half_ppr_points)
                     console.log("PPR Points: " + ppr_points);
                     console.log("Total Touchdowns: " + total_touchdowns);
                     console.log("Yards From Scrimmage: " + yards_from_scrimmage);
@@ -563,7 +568,9 @@ function yahooSearch(intent, session, response) {
 
                     if (metricName === "fantasy points") {
                         metric_value = fantasy_points;
-                    } else if (metricName === "ppr points") {
+                    } else if (metricName === "half ppr points" || metricName === "half p.p.r. points") {
+                        metric_value = half_ppr_points;
+                    } else if (metricName === "ppr points" || metricName === "p.p.r. points") {
                         metric_value = ppr_points;
                     } else if (metricName === "total touchdowns") {
                         metric_value = total_touchdowns;
@@ -668,10 +675,13 @@ function yahooSearch(intent, session, response) {
 
                     fantasy_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
 
+                    half_ppr_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receptions * 0.5) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
+
                     ppr_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receptions * 1) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
 
                     total_touchdowns = (passing_touchdowns + rushing_touchdowns + receiving_touchdowns + return_touchdowns);
                     fantasy_points_per_game = (fantasy_points / games_played).toFixed(1);
+                    half_ppr_points_per_game = (half_ppr_points / games_played).toFixed(1);
                     ppr_points_per_game = (ppr_points / games_played).toFixed(1);
                     passing_attempts_per_game = (passing_attempts / games_played).toFixed(1);
                     passing_yards_per_game = (passing_yards / games_played).toFixed(1);
@@ -690,9 +700,11 @@ function yahooSearch(intent, session, response) {
                     catch_rate = (receptions / targets).toFixed(2) * 100;
                     
                     console.log("Fantasy Points: " + fantasy_points);
+                    console.log("Half PPR Points: " + half_ppr_points);
                     console.log("PPR Points: " + ppr_points);
                     console.log("Total Touchdowns: " + total_touchdowns);
                     console.log("Fantasy Points Per Game: " + fantasy_points_per_game);
+                    console.log("Half PPR Points Per Game: " + half_ppr_points_per_game);
                     console.log("PPR Points Per Game: " + ppr_points_per_game);
                     console.log("Passing Attempts Per Game: " + passing_attempts_per_game);
                     console.log("Passing Yards Per Game: " + passing_yards_per_game);
@@ -712,13 +724,17 @@ function yahooSearch(intent, session, response) {
 
                     if (metricName === "fantasy points") {
                         metric_value = fantasy_points;
-                    } else if (metricName === "ppr points") {
+                    } else if (metricName === "half ppr points" || metricName === "half p.p.r. points") {
+                        metric_value = half_ppr_points;
+                    } else if (metricName === "ppr points" || metricName === "p.p.r. points") {
                         metric_value = ppr_points;
                     } else if (metricName === "total touchdowns") {
                         metric_value = total_touchdowns;
                     } else if (metricName === "fantasy points per game") {
                         metric_value = fantasy_points_per_game;
-                    } else if (metricName === "ppr points per game") {
+                    } else if (metricName === "half ppr points per game" || metricName === "half p.p.r. points per game") {
+                        metric_value = half_ppr_points_per_game;
+                    } else if (metricName === "ppr points per game" || metricName === "p.p.r. points per game") {
                         metric_value = ppr_points_per_game;
                     } else if (metricName === "passing attempts per game") {
                         metric_value = passing_attempts_per_game;
