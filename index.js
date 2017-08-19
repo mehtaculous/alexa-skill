@@ -2,13 +2,34 @@
 
 var AlexaSkill = require('./AlexaSkill');
 
+var APP_ID = 'amzn1.ask.skill.9b2ac00a-9c3e-458e-887a-ec28e96cdf56';
+
 var API = require('./api_keys');
+
+var YahooFantasy = require('yahoo-fantasy');
 
 var Keys = require('./data_keys');
 
-var APP_ID = 'amzn1.ask.skill.9b2ac00a-9c3e-458e-887a-ec28e96cdf56';
+var Teams = require('./teams');
 
-var YahooFantasy = require('yahoo-fantasy');
+var Schedules = {
+    "twenty_two": require('./schedules/2002'),
+    "twenty_three": require('./schedules/2003'),
+    "twenty_four": require('./schedules/2004'),
+    "twenty_five": require('./schedules/2005'),
+    "twenty_six": require('./schedules/2006'),
+    "twenty_seven": require('./schedules/2007'),
+    "twenty_eight": require('./schedules/2008'),
+    "twenty_nine": require('./schedules/2009'),
+    "twenty_ten": require('./schedules/2010'),
+    "twenty_eleven": require('./schedules/2011'),
+    "twenty_twelve": require('./schedules/2012'),
+    "twenty_thirteen": require('./schedules/2013'),
+    "twenty_fourteen": require('./schedules/2014'),
+    "twenty_fifteen": require('./schedules/2015'),
+    "twenty_sixteen": require('./schedules/2016'),
+    "twenty_seventeen": require('./schedules/2017')
+};
 
 var yf = new YahooFantasy(
     API.consumer_key,
@@ -68,7 +89,6 @@ FantasyMetrix.prototype.eventHandlers.onLaunch = function (launchRequest, sessio
 };
 
 FantasyMetrix.prototype.intentHandlers = {
-
     "OneShotMetricIntent": function (intent, session, response) {
         var playerSlot = intent.slots.Player,
             metricSlot = intent.slots.Metric,
@@ -200,6 +220,57 @@ FantasyMetrix.prototype.intentHandlers = {
         });
     },
 
+    "ScheduleIntent": function(intent, session, response) {
+        var teamSlot = intent.slots.Team,
+            weekSlot = intent.slots.Week,
+            seasonSlot = intent.slots.Season,
+            teamName,
+            weekNumber,
+            seasonNumber;
+
+        if (teamSlot && teamSlot.value) {
+            teamName = teamSlot.value.toLowerCase();
+            session.attributes.teamName = teamName;
+        }
+
+        if (weekSlot && weekSlot.value) {
+            weekNumber = weekSlot.value.toLowerCase();
+            session.attributes.weekNumber = weekNumber;
+        }
+
+        if (seasonSlot && seasonSlot.value) {
+            seasonNumber = seasonSlot.value.toLowerCase();
+            session.attributes.seasonNumber = seasonNumber;
+        }
+
+        console.log("scheduleTeamIntent: " + teamName);
+        console.log("scheduleWeekIntent: " + weekNumber);
+        console.log("scheduleSeasonIntent: " + seasonNumber);
+
+        var strLogData = ["scheduleTeamIntent: " + teamName, "scheduleWeekIntent: " + weekNumber, "scheduleSeasonIntent: " + seasonNumber];
+
+        if (teamName === undefined || weekNumber === undefined || seasonNumber === undefined || (parseInt(seasonNumber) < 2002 || parseInt(seasonNumber) > 2017)) {
+            var speechOutput = "I'm sorry, but the information you have provided is invalid. Please check the Voice Feedback in the Alexa App to make sure I heard you correctly.",
+                cardTitle = "the information you have provided is invalid",
+                cardContent = "please check the voice feedback to see what alexa heard";
+            response.tellWithCard(speechOutput, cardTitle, cardContent);
+        }
+
+        trackEvent(
+            'Intent',
+            'ScheduleIntent',
+            strLogData,
+            '100',
+            function(err) {
+                if (err) {
+                    console.log(err);
+                }
+            if (teamName && weekNumber && seasonNumber) {
+                scheduleSearch(intent, session, response);
+            }
+        });
+    },
+
     "AMAZON.HelpIntent": function (intent, session, response) {
         trackEvent(
             'Intent',
@@ -210,16 +281,20 @@ FantasyMetrix.prototype.intentHandlers = {
                 if (err) {
                     console.log(err);
                 }
-            var speechText = "<speak>Please provide the name of a current player who has played in at least one game in the NFL, a valid metric correlating to that player's position, and a valid year pertaining to the NFL season ranging from two thousand and one through two thousand and seventeen. Providing a regular season week number, ranging from one through seventeen, is merely optional. <break time=\"0.618s\"/> Now, what can I help you with today?</speak>"
-            var repromptText = "<speak>You can say things like <break time=\"0.618s\"/> How many targets did Julio Jones have during week three of two thousand and fifteen? <break time=\"0.618s\"/> Now, how can I help you?</speak>";
+            var speechText = "<speak>Please provide the name of a current NFL player who has played in at least one game, a valid metric correlating to that player's position, and a valid year pertaining to the NFL season ranging from two thousand and one through two thousand and seventeen. Providing a regular season week number, ranging from one through seventeen, is merely optional. You can say something like <break time=\"0.618s\"/> How many passing touchdowns did Tom Brady have in two thousand and seven?</speak>"
+
+            var repromptText = "<speak>Here is the entire list of available metrics: Carries, Catch Rate, Completions, Completion Percentage, Fantasy Points, Fantasy Points Per Game, Fumbles, Games Played, Half PPR Points, Half PPR Points Per Game, Interceptions, Passing Attempts, Passing Attempts Per Game, Passing Touchdowns, Passing Yards, Passing Yards Per Game, PPR Points, PPR Points Per Game, Receiving Touchdowns, Receiving Yards, Receiving Yards Per Game, Receptions, Receptions Per Game, Return Touchdowns, Rushing Attempts, Rushing Attempts Per Game, Rushing Touchdowns, Rushing Yards, Rushing Yards Per Game, Stats, Targets, Targets Per Game, Total Touchdowns, Two Point Conversions, Yards From Scrimmage, Yards From Scrimmage Per Game, Yards Per Attempt, Yards Per Carry, Yards Per Reception, Yards Per Target. <break time=\"0.618s\"/> Now, what can I help you with today?</speak>";
+
             var speechOutput = {
                 speech: speechText,
                 type: AlexaSkill.speechOutputType.SSML
             };
+
             var repromptOutput = {
                 speech: repromptText,
                 type: AlexaSkill.speechOutputType.SSML
             };
+
             response.ask(speechOutput, repromptOutput);
         });
     },
@@ -256,8 +331,8 @@ FantasyMetrix.prototype.intentHandlers = {
 };
 
 function handleMissingPlayerRequest(intent, session, response) {
-    var speechOutput = "Please provide the name of a current player who has played at least one game in the NFL.",
-        repromptText = "You can say something like, Russell Wilson";
+    var speechOutput = "Please provide the name of a current NFL player who has played in at least one game.",
+        repromptText = "You can say something like, Tom Brady";
     response.ask(speechOutput, repromptText);
 }
 
@@ -271,7 +346,7 @@ function handleMissingMetricRequest(intent, session, response) {
     }
 
     var speechOutput = "Please provide a valid metric which correlates to " + player + " position.",
-        repromptText = "You can say something like, passing yards.";
+        repromptText = "You can say something like, passing touchdowns";
     response.ask(speechOutput, repromptText);
 }
 
@@ -284,8 +359,8 @@ function handleMissingSeasonRequest(intent, session, response) {
         player = playerName;
     }
 
-    var speechOutput = "Please provide the year of an NFL season, ranging from two thousand and one through two thousand and sixteen, in which " + player + " has played at least one game.",
-        repromptText = "You can say something like, two thousand and fifteen.";
+    var speechOutput = "Please provide the year of an NFL season, ranging from two thousand and one through two thousand and seventeen, in which " + player + " has played in at least one game.",
+        repromptText = "You can say something like, two thousand and seven.";
     response.ask(speechOutput, repromptText);
 }
 
@@ -295,25 +370,143 @@ function getMetricRequest(intent, session, response) {
         season = session.attributes.seasonNumber,
         week = session.attributes.weekNumber,
         week_value = session.attributes.week_value,
-        bye_week = session.attributes.bye_week,
+        team = session.attributes.team,
+        position = session.attributes.position,
+        did_not_play = session.attributes.did_not_play,
         games_played = session.attributes.games_played,
         metric_value = session.attributes.metric_value,
+        passing_attempts = session.attributes.passing_attempts,
+        completions = session.attributes.completions,
+        passing_yards = session.attributes.passing_yards,
+        passing_touchdowns = session.attributes.passing_touchdowns,
+        targets = session.attributes.targets,
+        receptions = session.attributes.receptions,
+        receiving_yards = session.attributes.receiving_yards,
+        receiving_touchdowns = session.attributes.receiving_touchdowns,
+        rushing_attempts = session.attributes.rushing_attempts,
+        rushing_yards = session.attributes.rushing_yards,
+        rushing_touchdowns = session.attributes.rushing_touchdowns,
+        fantasy_points = session.attributes.fantasy_points,
+        half_ppr_points = session.attributes.half_ppr_points,
+        ppr_points = session.attributes.ppr_points,
+        fantasy_points_per_game = session.attributes.fantasy_points_per_game,
         speechOutput,
         cardTitle,
         cardContent;
 
-    console.log("getPlayerRequest: " + player);
-    console.log("getMetricRequest: " + metric);
-    console.log("getSeasonRequest: " + season);
-    console.log("getWeekRequest: " + week);
-    console.log("getWeekValueRequest: " + week_value);
-    console.log("getByeWeekValueRequest: " + bye_week);
-    console.log("getGamesPlayedRequest: " + games_played);
-    console.log("getMetricValueRequest: " + metric_value);
+    console.log("Get Metric Request...");
+    console.log("Player: " + player);
+    console.log("Metric: " + metric);
+    console.log("Season: " + season);
+    console.log("Week: " + week);
+    console.log("Week Value: " + week_value);
+    console.log("Team: " + team);
+    console.log("Position: " + position);
+    console.log("Games Played: " + games_played);
+    console.log("Did Not Play: " + did_not_play);
+    console.log("Metric Value: " + metric_value);
+    console.log("Passing Attempts: " + passing_attempts);
+    console.log("Completions: " + completions);
+    console.log("Passing Yards: " + passing_yards);
+    console.log("Passing Touchdowns: " + passing_touchdowns);
+    console.log("Targets: " + targets);
+    console.log("Receptions: " + receptions);
+    console.log("Receiving Yards: " + receiving_yards);
+    console.log("Receiving Touchdowns: " + receiving_touchdowns);
+    console.log("Rushing Attempts: " + rushing_attempts);
+    console.log("Rushing Yards: " + rushing_yards);
+    console.log("Rushing Touchdowns: " + rushing_touchdowns);
+    console.log("Fantasy Points: " + fantasy_points);
+    console.log("Half PPR Points: " + half_ppr_points);
+    console.log("PPR Points: " + ppr_points);
+    console.log("Fantasy Points Per Game: " + fantasy_points_per_game);
 
-    if (bye_week != week_value) {
+    if (metric === "stats") {
+        if (position === "QB") {
+            if (week) {
+                speechOutput = {
+                    speech: "During " + week + " of the " + season + " season, " + player + " had " + completions + " completions, on " + passing_attempts + " passing attempts, for " + passing_yards + " passing yards, and " + passing_touchdowns + " passing touchdowns, along with " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " rushing touchdowns, to finish with " + fantasy_points + " total fantasy points.",
+                    type: AlexaSkill.speechOutputType.PLAIN_TEXT
+                }
+                cardTitle = "stats for " + player + " in " + week + " of " + season;
+                cardContent = completions + " completions, " + passing_attempts + " passing attempts, " + passing_yards + " passing yards, " + passing_touchdowns + " passing touchdowns, " + rushing_yards + " rushing yards, " + rushing_touchdowns + " rushing touchdowns, " + fantasy_points + " fantasy points";
+                response.tellWithCard(speechOutput, cardTitle, cardContent);
+            } else {
+                speechOutput = {
+                    speech: "During the " + season + " season, " + player + " had " + completions + " completions, on " + passing_attempts + " passing attempts, for " + passing_yards + " passing yards, and " + passing_touchdowns + " passing touchdowns, along with " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " rushing touchdowns, to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.",
+                    type: AlexaSkill.speechOutputType.PLAIN_TEXT
+                }
+                cardTitle = "stats for " + player + " in " + season;
+                cardContent = completions + " completions, " + passing_attempts + " passing attempts, " + passing_yards + " passing yards, " + passing_touchdowns + " passing touchdowns, " + rushing_yards + " rushing yards, " + rushing_touchdowns + " rushing touchdowns, " + fantasy_points + " fantasy points, " + fantasy_points_per_game + " fantasy points per game";
+                response.tellWithCard(speechOutput, cardTitle, cardContent);
+            }
+        } else if (position === "RB") {
+            if (week) {
+                speechOutput = {
+                    speech: "During " + week + " of the " + season + " season, " + player + " had " + rushing_attempts + " rushing attempts, for " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " rushing touchdowns, along with " + receptions + " receptions, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + " fantasy points, and " + ppr_points + " ppr points.",
+                    type: AlexaSkill.speechOutputType.PLAIN_TEXT
+                }
+                cardTitle = "stats for " + player + " in " + week + " of " + season;
+                cardContent = rushing_attempts + " rushing attempts, " + rushing_yards + " rushing yards, " + rushing_touchdowns + " rushing touchdowns, " + receptions + " receptions, " + receiving_yards + " receiving yards, " + receiving_touchdowns + " receiving touchdowns, " + fantasy_points + " fantasy points, " + ppr_points + " ppr points";
+                response.tellWithCard(speechOutput, cardTitle, cardContent);
+            } else {
+                speechOutput = {
+                    speech: "During the " + season + " season, " + player + " had " + rushing_attempts + " rushing attempts, for " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " rushing touchdowns, along with " + receptions + " receptions, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + "  total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.",
+                    type: AlexaSkill.speechOutputType.PLAIN_TEXT
+                }
+                cardTitle = "stats for " + player + " in " + season;
+                cardContent = rushing_attempts + " rushing attempts, " + rushing_yards + " rushing yards, " + rushing_touchdowns + " rushing touchdowns, " + receptions + " receptions, " + receiving_yards + " receiving yards, " + receiving_touchdowns + " receiving touchdowns, " + fantasy_points + " fantasy points, " + fantasy_points_per_game + " fantasy points per game";
+                response.tellWithCard(speechOutput, cardTitle, cardContent);
+            }
+        } else if (position === "WR" || position === "TE") {
+            if (season < parseInt("2014") && season > parseInt("2000")) {
+                if (week) {
+                    speechOutput = {
+                        speech: "During " + week + " of the " + season + " season, " + player + " had " + receptions + " receptions, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + " fantasy points, and " + ppr_points + " ppr points.",
+                        type: AlexaSkill.speechOutputType.PLAIN_TEXT
+                    }
+                    cardTitle = "stats for " + player + " in " + week + " of " + season;
+                    cardContent = receptions + " receptions, " + receiving_yards + " receiving yards, " + receiving_touchdowns + " receiving touchdowns, " + fantasy_points + " fantasy points, " + ppr_points + " ppr points";
+                    response.tellWithCard(speechOutput, cardTitle, cardContent);
+                } else {
+                    speechOutput = {
+                        speech: "During the " + season + " season, " + player + " had " + receptions + " receptions, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.",
+                        type: AlexaSkill.speechOutputType.PLAIN_TEXT
+                    }
+                    cardTitle = "stats for " + player + " in " + season;
+                    cardContent = receptions + " receptions, " + receiving_yards + " receiving yards, " + receiving_touchdowns + " receiving touchdowns, " + fantasy_points + " fantasy points, " + fantasy_points_per_game + " fantasy points per game";
+                    response.tellWithCard(speechOutput, cardTitle, cardContent);
+                }
+            } else {
+                if (week) {
+                    speechOutput = {
+                        speech: "During " + week + " of the " + season + " season, " + player + " had " + receptions + " receptions, on " + targets + " targets, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + " fantasy points, and " + ppr_points + " ppr points.",
+                        type: AlexaSkill.speechOutputType.PLAIN_TEXT
+                    }
+                    cardTitle = "stats for " + player + " in " + week + " of " + season;
+                    cardContent = receptions + " receptions, " + targets + " targets, " + receiving_yards + " receiving yards, " + receiving_touchdowns + " receiving touchdowns, " + fantasy_points + " fantasy points, " + ppr_points + " ppr points";
+                    response.tellWithCard(speechOutput, cardTitle, cardContent);
+                } else {
+                    speechOutput = {
+                        speech: "During the " + season + " season, " + player + " had " + receptions + " receptions, on " + targets + " targets, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.",
+                        type: AlexaSkill.speechOutputType.PLAIN_TEXT
+                    }
+                    cardTitle = "stats for " + player + " in " + season;
+                    cardContent = receptions + " receptions, " + targets + " targets, " + receiving_yards + " receiving yards, " + receiving_touchdowns + " receiving touchdowns, " + fantasy_points + " fantasy points, " + fantasy_points_per_game + " fantasy points per game";
+                    response.tellWithCard(speechOutput, cardTitle, cardContent);
+                }
+            }
+        } else {
+            speechOutput = {
+                speech: "I'm sorry, but the information you have provided is invalid. Please check the Voice Feedback in the Alexa App to make sure I heard you correctly.",
+                type: AlexaSkill.speechOutputType.PLAIN_TEXT
+            };
+            cardTitle = "the information you have provided is invalid";
+            cardContent = "please check the voice feedback to see what alexa heard";
+            response.tellWithCard(speechOutput, cardTitle, cardContent);
+        }
+    } else {
         if ((metric === "targets" || metric === "yards per target" || metric === "targets per game" || metric === "catch rate") && season < parseInt("2014") && season > parseInt("2000")) {
-            console.log("I'm sorry, but target metrics are only available for players beginning from the 2014 season.");
             speechOutput = {
                 speech: "I'm sorry, but target metrics are only available for players beginning from the 2014 season.",
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
@@ -322,8 +515,7 @@ function getMetricRequest(intent, session, response) {
             cardContent = "target metrics are only available for players beginning from the 2014 season";
             response.tellWithCard(speechOutput, cardTitle, cardContent);
 
-        } else if (Keys[player] && Keys[season] && (metric === "fantasy points per game" || metric === "ppr points per game" || metric === "passing yards per game" || metric === "rushing yards per game" || metric === "receiving yards per game" || metric === "receptions per game" || metric === "targets per game" || metric === "games played") && Keys[week]) {
-            console.log("I'm sorry, but " + metric + " is not a valid metric when providing a week number.");
+        } else if ((metric === "fantasy points per game" || metric === "half ppr points per game" || metric === "ppr points per game" || metric === "passing yards per game" || metric === "rushing yards per game" || metric === "receiving yards per game" || metric === "receptions per game" || metric === "targets per game" || metric === "games played") && Keys[player] && Keys[season] && Keys[week]) {
             speechOutput = {
                 speech: "I'm sorry, but " + metric + " is not a valid metric when providing a week number.",
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
@@ -333,63 +525,56 @@ function getMetricRequest(intent, session, response) {
             response.tellWithCard(speechOutput, cardTitle, cardContent);
             
         }  else if (metric === "games played" && metric_value) {
-            console.log("During the " + season + " season, " + player + " played in " + games_played + " games.");
             speechOutput = {
                 speech: "During the " + season + " season, " + player + " played in " + games_played + " games.",
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
-            cardTitle = metric + " for " + player + " during the " + season + " season";
+            cardTitle = metric + " for " + player + " in " + season;
             cardContent = metric_value + " " + metric;
             response.tellWithCard(speechOutput, cardTitle, cardContent);
 
-        } else if (metric === "catch rate" && Keys[week] && metric_value) {
-            console.log("During " + week + " of the " + season + " season, " + player + " had a " + metric_value + "% " + metric);
+        } else if ((metric === "catch rate" || metric === "completion percentage") && Keys[week] && metric_value) {
             speechOutput = {
                 speech: "During " + week + " of the " + season + " season, " + player + " had a " + metric_value + "% " + metric,
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
-            cardTitle = metric + " for " + player + " during " + week + " of the " + season + " season";
+            cardTitle = metric + " for " + player + " during " + week + " of " + season;
             cardContent = metric_value + "% " + metric;
             response.tellWithCard(speechOutput, cardTitle, cardContent);
-        } else if (metric === "catch rate" && metric_value) {
-            console.log("During the " + season + " season, " + player + " had a " + metric_value + "% " + metric);
+        } else if ((metric === "catch rate" || metric === "completion percentage") && metric_value) {
             speechOutput = {
                 speech: "During the " + season + " season, " + player + " had a " + metric_value + "% " + metric,
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
-            cardTitle = metric + " for " + player + " during the " + season + " season";
+            cardTitle = metric + " for " + player + " in " + season;
             cardContent = metric_value + "% " + metric;
             response.tellWithCard(speechOutput, cardTitle, cardContent);
 
-        } else if (Keys[player] && Keys[season] && Keys[metric] && Keys[week] && metric_value) {
-            console.log("During " + week + " of the " + season + " season, " + player + " had " + metric_value + " " + metric);
+        } else if (Keys[player] && Keys[metric] && Keys[season] && Keys[week] && metric_value) {
             speechOutput = {
                 speech: "During " + week + " of the " + season + " season, " + player + " had " + metric_value + " " + metric,
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
-            cardTitle = metric + " for " + player + " during " + week + " of the " + season + " season";
+            cardTitle = metric + " for " + player + " during " + week + " of " + season;
             cardContent = metric_value + " " + metric;
             response.tellWithCard(speechOutput, cardTitle, cardContent);
-        } else if (Keys[player] && Keys[season] && Keys[metric] && metric_value) {
-            console.log("During the " + season + " season, " + player + " had " + metric_value + " " + metric);
+        } else if (Keys[player] && Keys[metric] && Keys[season] && metric_value) {
             speechOutput = {
                 speech: "During the " + season + " season, " + player + " had " + metric_value + " " + metric,
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
-            cardTitle = metric + " for " + player + " during the " + season + " season";
+            cardTitle = metric + " for " + player + " in " + season;
             cardContent = metric_value + " " + metric;
             response.tellWithCard(speechOutput, cardTitle, cardContent);
 
-        } else if (Keys[player] && Keys[season] && Keys[metric] && Keys[week]) {
-            console.log("I'm sorry, but " + player + " did not play in " + week + " of the " + season + " season.");
+        } else if (Keys[player] && Keys[metric] && Keys[season] && Keys[week]) {
             speechOutput = {
                 speech: "I'm sorry, but " + player + " did not play in " + week + " of the " + season + " season.",
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
-            cardContent = player + " did not play in " + week + " of the " + season + " season.";
+            cardContent = player + " did not play in " + week + " of " + season;
             response.tellWithCard(speechOutput, cardContent);
-        } else if (Keys[player] && Keys[season] && Keys[metric]) {
-            console.log("I'm sorry, but " + player + " did not play in a single game during the " + season + " season.");
+        } else if (Keys[player] && Keys[metric] && Keys[season] ) {
             speechOutput = {
                 speech: "I'm sorry, but " + player + " did not play in a single game during the " + season + " season.",
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
@@ -398,24 +583,160 @@ function getMetricRequest(intent, session, response) {
             response.tellWithCard(speechOutput, cardContent);   
 
         } else {
-            console.log("I'm sorry, but the information you have provided is invalid.");
             speechOutput = {
-                speech: "I'm sorry, but the information you have provided is invalid. Please check the Voice Feedback to make sure I heard you correctly.",
+                speech: "I'm sorry, but the information you have provided is invalid. Please check the Voice Feedback in the Alexa App to make sure I heard you correctly.",
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
-            cardTitle = "please check the voice feedback to see what alexa heard";
-            cardContent = "the information you have provided is invalid";
+            cardTitle = "the information you have provided is invalid";
+            cardContent = "please check the voice feedback in the alexa app to see what I heard";
             response.tellWithCard(speechOutput, cardTitle, cardContent);
         }
-    } else {
-        console.log("I'm sorry, but " + player + " was on a Bye for " + week + " of the " + season + " season.");
-        speechOutput = {
-            speech: "I'm sorry, but " + player + " was on a Bye for " + week + " of the " + season + " season. Please try using a different week.",
-            type: AlexaSkill.speechOutputType.PLAIN_TEXT
-        };
-        cardContent = player + " was on a Bye for " + week + " of the " + season + " season";
-        response.tellWithCard(speechOutput, cardContent);
     }
+}
+
+function getScheduleRequest(intent, session, response) {
+    var teamName = session.attributes.teamName,
+        weekNumber = session.attributes.weekNumber,
+        seasonNumber = session.attributes.seasonNumber,
+        team_abbr = session.attributes.team_abbr,
+        team_city = session.attributes.team_city,
+        opponent_abbr = session.attributes.opponent_abbr,
+        opponent_name = session.attributes.opponent_name,
+        opponent_city = session.attributes.opponent_city,
+        away = session.attributes.away,
+        speechOutput,
+        cardTitle,
+        cardContent;
+
+    console.log("Get Schedule Request...");
+    console.log("Team: " + teamName);
+    console.log("Week: " + weekNumber);
+    console.log("Season: " + seasonNumber);
+    console.log("Team Abbr: " + team_abbr);
+    console.log("Team City: " + team_city);
+    console.log("Opponent Name: " + opponent_name);
+    console.log("Opponent Abbr: " + opponent_abbr);
+    console.log("Opponent City: " + opponent_city);
+    console.log("Away: " + away);
+
+    if (seasonNumber === "2017") {
+        if (opponent_abbr != "BYE") {
+            if (away) {
+                speechOutput = {
+                    speech: "For " + weekNumber + " of the " + seasonNumber + " season, the " + teamName + " play the " + opponent_name + " in " + opponent_city + ".",
+                    type: AlexaSkill.speechOutputType.PLAIN_TEXT
+                };
+                cardTitle = "schedule for the " + teamName + " in " + weekNumber + " of " + seasonNumber;
+                cardContent = team_abbr + " @ " + opponent_abbr;
+                response.tellWithCard(speechOutput, cardTitle, cardContent);
+            } else {
+                speechOutput = {
+                    speech: "For " + weekNumber + " of the " + seasonNumber + " season, the " + teamName + " play the " + opponent_name + " in " + team_city + ".",
+                    type: AlexaSkill.speechOutputType.PLAIN_TEXT
+                };
+                cardTitle = "schedule for the " + teamName + " in " + weekNumber + " of " + seasonNumber;
+                cardContent = team_abbr + " vs " + opponent_abbr;
+                response.tellWithCard(speechOutput, cardTitle, cardContent);
+            }
+        } else {
+            speechOutput = {
+                speech: "I'm sorry, but the " + teamName + " are on a Bye for " + weekNumber + " of the " + seasonNumber + " season.",
+                type: AlexaSkill.speechOutputType.PLAIN_TEXT
+            };
+            cardContent = teamName + " are on a Bye for " + weekNumber + " of " + seasonNumber;
+            response.tellWithCard(speechOutput, cardContent);
+        }
+    } else {
+        if (opponent_abbr != "BYE") {
+            if (away) {
+                speechOutput = {
+                    speech: "During " + weekNumber + " of the " + seasonNumber + " season, the " + teamName + " played the " + opponent_name + " in " + opponent_city + ".",
+                    type: AlexaSkill.speechOutputType.PLAIN_TEXT
+                };
+                cardTitle = "schedule for the " + teamName + " in " + weekNumber + " of " + seasonNumber;
+                cardContent = team_abbr + " @ " + opponent_abbr;
+                response.tellWithCard(speechOutput, cardTitle, cardContent);
+            } else {
+                speechOutput = {
+                    speech: "During " + weekNumber + " of the " + seasonNumber + " season, the " + teamName + " played the " + opponent_name + " in " + team_city + ".",
+                    type: AlexaSkill.speechOutputType.PLAIN_TEXT
+                };
+                cardTitle = "schedule for the " + teamName + " in " + weekNumber + " of " + seasonNumber;
+                cardContent = team_abbr + " vs " + opponent_abbr;
+                response.tellWithCard(speechOutput, cardTitle, cardContent);
+            }
+        } else {
+            speechOutput = {
+                speech: "I'm sorry, but the " + teamName + " were on a Bye for " + weekNumber + " of the " + seasonNumber + " season.",
+                type: AlexaSkill.speechOutputType.PLAIN_TEXT
+            };
+            cardContent = teamName + " were on a Bye for " + weekNumber + " of " + seasonNumber;
+            response.tellWithCard(speechOutput, cardContent);
+        }
+    }
+}
+
+function scheduleSearch(intent, session, response) {
+    var teamName = session.attributes.teamName,
+        weekNumber = session.attributes.weekNumber,
+        seasonNumber = session.attributes.seasonNumber;
+
+    var team_abbr,
+        team_city,
+        opponent_abbr,
+        opponent_name,
+        opponent_city,
+        week_value,
+        season_name,
+        away;
+
+    week_value = Keys[weekNumber];
+    season_name = Teams["years"][seasonNumber];
+    team_abbr = Teams["team_abbr"][teamName];
+    team_city = Teams["team_city"][team_abbr];
+    teamName = Teams["team_name"][team_abbr];
+
+    opponent_abbr = Schedules[season_name][team_abbr][week_value];
+
+    if (opponent_abbr[0] === "@") {
+        away = opponent_abbr[0];
+        opponent_abbr = opponent_abbr.slice(1);
+    }
+
+    opponent_city = Teams["team_city"][opponent_abbr];
+    opponent_name = Teams["team_name"][opponent_abbr];
+
+    console.log("Schedule Search...");
+    console.log("Week Value: " + week_value);
+    console.log("Season Name: " + season_name);
+    console.log("Team Abbr: " + team_abbr);
+    console.log("Team City: " + team_city);
+    console.log("Team Name: " + teamName);
+    console.log("Opponent Abbr: " + opponent_abbr);
+    console.log("Opponent City: " + opponent_city);
+    console.log("Opponent Name: " + opponent_name);
+
+    session.attributes.teamName = teamName;
+    session.attributes.weekNumber = weekNumber;
+    session.attributes.seasonNumber = seasonNumber;
+    session.attributes.team_abbr = team_abbr;
+    session.attributes.team_city = team_city;
+    session.attributes.opponent_abbr = opponent_abbr;
+    session.attributes.opponent_name = opponent_name;
+    session.attributes.opponent_city = opponent_city;
+    session.attributes.away = away;
+
+    trackEvent(
+        'Intent',
+        'ScheduleSearch',
+        'NA',
+        '100',
+        function(err) {
+            if (err) {
+                console.log(err);
+            }
+        getScheduleRequest(intent, session, response);
+    });
 }
 
 function yahooSearch(intent, session, response) {
@@ -424,20 +745,17 @@ function yahooSearch(intent, session, response) {
         seasonNumber = session.attributes.seasonNumber,
         weekNumber = session.attributes.weekNumber;
 
-    var week_value = 1,
-        bye_week = 2;
-
-    session.attributes.week_value = week_value;
-    session.attributes.bye_week = bye_week;
-
     var game_id = JSON.stringify(Keys[seasonNumber]),
         player_id = JSON.stringify(Keys[playerName]),
         metric_id = JSON.stringify(Keys[metricName]),
-        week_split,
+        week_value,
+        bye_week,
         metric_value,
         games_played,
+        did_not_play,
         passing_attempts,
         completions,
+        completion_percentage,
         passing_yards,
         passing_touchdowns,
         interceptions,
@@ -474,7 +792,8 @@ function yahooSearch(intent, session, response) {
         yards_per_target,
         catch_rate,
         position,
-        team;
+        team,
+        stats;
 
     var player_key = game_id + '.p.' + player_id;
 
@@ -491,7 +810,6 @@ function yahooSearch(intent, session, response) {
                     console.log(err);
                     getMetricRequest(intent, session, response);
                 } else {
-                    console.log("Calling player weekly stats...");
                     for (var key in data["stats"]["stats"]) {
                         if (data["stats"]["stats"][key]["stat_id"] === metric_id) {
                             metric_value = data["stats"]["stats"][key]["value"];
@@ -522,9 +840,11 @@ function yahooSearch(intent, session, response) {
                         }
                     }
                     
+                    console.log("Yahoo Search weekly stats...");
                     console.log("Team: " + team);
                     console.log("Position: " + position);
                     console.log("Bye Week: " + bye_week);
+                    console.log("Did Not Play: " + did_not_play);
                     console.log("Passing Attempts: " + passing_attempts);
                     console.log("Completions: " + completions);
                     console.log("Passing Yards: " + passing_yards);
@@ -547,6 +867,7 @@ function yahooSearch(intent, session, response) {
 
                     ppr_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receptions * 1) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
                     
+                    completion_percentage = (completions / passing_attempts).toFixed(2) * 100;
                     total_touchdowns = (passing_touchdowns + rushing_touchdowns + receiving_touchdowns + return_touchdowns);
                     yards_from_scrimmage = (rushing_yards + receiving_yards);
                     yards_per_attempt = (passing_yards / passing_attempts).toFixed(1);
@@ -558,6 +879,7 @@ function yahooSearch(intent, session, response) {
                     console.log("Fantasy Points: " + fantasy_points);
                     console.log("Half PPR Points: " + half_ppr_points)
                     console.log("PPR Points: " + ppr_points);
+                    console.log("Completion Percentage: " + completion_percentage);
                     console.log("Total Touchdowns: " + total_touchdowns);
                     console.log("Yards From Scrimmage: " + yards_from_scrimmage);
                     console.log("Yards Per Attempt: " + yards_per_attempt);
@@ -572,6 +894,8 @@ function yahooSearch(intent, session, response) {
                         metric_value = half_ppr_points;
                     } else if (metricName === "ppr points" || metricName === "p.p.r. points") {
                         metric_value = ppr_points;
+                    } else if (metricName === "compeltion percentage") {
+                        metric_value = completion_percentage;
                     } else if (metricName === "total touchdowns") {
                         metric_value = total_touchdowns;
                     } else if (metricName === "yards from scrimmage") {
@@ -588,18 +912,39 @@ function yahooSearch(intent, session, response) {
                         metric_value = catch_rate;
                     }
 
-                    if (metric_value === "0.0") {
-                        metric_value = "0";
-                    } else if (metric_value === "NaN") {
+                    if (metric_value === "0.0" || metric_value === "NaN") {
                         metric_value = "0";
                     }
 
-                    session.attributes.bye_week = bye_week;
+                    if (fantasy_points == "0.0") {
+                        fantasy_points = "0";
+                        half_ppr_points = "0";
+                        ppr_points = "0";
+                    }
+
                     session.attributes.week_value = week_value;
                     session.attributes.metric_value = metric_value;
+                    session.attributes.team = team;
+                    session.attributes.position = position;
+                    session.attributes.did_not_play = did_not_play;
+                    session.attributes.passing_attempts = passing_attempts;
+                    session.attributes.completions = completions;
+                    session.attributes.passing_yards = passing_yards;
+                    session.attributes.passing_touchdowns = passing_touchdowns;
+                    session.attributes.targets = targets;
+                    session.attributes.receptions = receptions;
+                    session.attributes.receiving_yards = receiving_yards;
+                    session.attributes.receiving_touchdowns = receiving_touchdowns;
+                    session.attributes.rushing_attempts = rushing_attempts;
+                    session.attributes.rushing_yards = rushing_yards;
+                    session.attributes.rushing_touchdowns = rushing_touchdowns;
+                    session.attributes.fantasy_points = fantasy_points;
+                    session.attributes.half_ppr_points = half_ppr_points;
+                    session.attributes.ppr_points = ppr_points;
+
                     console.log("Player Key: " + player_key);
                     console.log("Metric Value: " + metric_value);
-                    console.log("Finished calling player weekly stats");
+                    console.log("Finished calling weekly stats");
 
                     trackEvent(
                         'Intent',
@@ -623,7 +968,6 @@ function yahooSearch(intent, session, response) {
                     console.log(err);
                     getMetricRequest(intent, session, response);
                 } else {
-                    console.log("Calling player season stats...");
                     for (var key in data["stats"]["stats"]) {
                         if (data["stats"]["stats"][key]["stat_id"] === metric_id) {
                             metric_value = data["stats"]["stats"][key]["value"];
@@ -654,9 +998,11 @@ function yahooSearch(intent, session, response) {
                         }
                     }
                     
+                    console.log("Yahoo Search season stats...");
                     console.log("Team: " + team);
                     console.log("Position: " + position);
                     console.log("Games Played: " + games_played);
+                    console.log("Did Not Play: " + did_not_play);
                     console.log("Passing Attempts: " + passing_attempts);
                     console.log("Completions: " + completions);
                     console.log("Passing Yards: " + passing_yards);
@@ -679,6 +1025,7 @@ function yahooSearch(intent, session, response) {
 
                     ppr_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receptions * 1) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
 
+                    completion_percentage = (completions / passing_attempts).toFixed(2) * 100;
                     total_touchdowns = (passing_touchdowns + rushing_touchdowns + receiving_touchdowns + return_touchdowns);
                     fantasy_points_per_game = (fantasy_points / games_played).toFixed(1);
                     half_ppr_points_per_game = (half_ppr_points / games_played).toFixed(1);
@@ -702,6 +1049,7 @@ function yahooSearch(intent, session, response) {
                     console.log("Fantasy Points: " + fantasy_points);
                     console.log("Half PPR Points: " + half_ppr_points);
                     console.log("PPR Points: " + ppr_points);
+                    console.log("Completion Percentage: " + completion_percentage);
                     console.log("Total Touchdowns: " + total_touchdowns);
                     console.log("Fantasy Points Per Game: " + fantasy_points_per_game);
                     console.log("Half PPR Points Per Game: " + half_ppr_points_per_game);
@@ -728,6 +1076,8 @@ function yahooSearch(intent, session, response) {
                         metric_value = half_ppr_points;
                     } else if (metricName === "ppr points" || metricName === "p.p.r. points") {
                         metric_value = ppr_points;
+                    } else if (metricName === "completion percentage") {
+                        metric_value = completion_percentage;
                     } else if (metricName === "total touchdowns") {
                         metric_value = total_touchdowns;
                     } else if (metricName === "fantasy points per game") {
@@ -768,17 +1118,43 @@ function yahooSearch(intent, session, response) {
                         metric_value = catch_rate;
                     }
 
-                    if (metric_value === "0.0") {
-                        metric_value = "0";
-                    } else if (metric_value === "NaN") {
+                    if (metric_value === "0.0" || metric_value === "NaN") {
                         metric_value = "0";
                     }
 
-                    session.attributes.games_played = games_played;
+                    if (fantasy_points === "0.0") {
+                        fantasy_points = "0";
+                        half_ppr_points = "0";
+                        ppr_points = "0";
+                        fantasy_points_per_game = "0";
+                        half_ppr_points_per_game = "0";
+                        ppr_points_per_game = "0";
+                    }
+                    
                     session.attributes.metric_value = metric_value;
+                    session.attributes.team = team;
+                    session.attributes.position = position;
+                    session.attributes.games_played = games_played;
+                    session.attributes.did_not_play = did_not_play;
+                    session.attributes.passing_attempts = passing_attempts;
+                    session.attributes.completions = completions;
+                    session.attributes.passing_yards = passing_yards;
+                    session.attributes.passing_touchdowns = passing_touchdowns;
+                    session.attributes.targets = targets;
+                    session.attributes.receptions = receptions;
+                    session.attributes.receiving_yards = receiving_yards;
+                    session.attributes.receiving_touchdowns = receiving_touchdowns;
+                    session.attributes.rushing_attempts = rushing_attempts;
+                    session.attributes.rushing_yards = rushing_yards;
+                    session.attributes.rushing_touchdowns = rushing_touchdowns;
+                    session.attributes.fantasy_points = fantasy_points;
+                    session.attributes.half_ppr_points = half_ppr_points;
+                    session.attributes.ppr_points = ppr_points;
+                    session.attributes.fantasy_points_per_game = fantasy_points_per_game;
+
                     console.log("Player Key: " + player_key);
                     console.log("Metric Value: " + metric_value);
-                    console.log("Finished calling player season stats");
+                    console.log("Finished calling season stats");
 
                     trackEvent(
                         'Intent',

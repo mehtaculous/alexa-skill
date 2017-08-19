@@ -6,16 +6,36 @@ A voice-enabled skill for Amazon's Alexa platform which provides past and presen
 How To Use:
 
 1. Name of a current NFL player who has played in at least one game
-2. Valid football metric pertaining to player's position (See list below)
+2. Valid football metric pertaining to that player's position (See list below)
 3. Year of an NFL season ranging from 2001 – Present
 4. Week number is merely optional (Week 1 – 17)
 5. Target metrics are only available beginning from year 2014 - Present
 
 <br>
+How To Use For Schedule:
+1. Name of an NFL team
+2. Year of an NFL season ranging from 2002 – Present
+3. Week number ranging from Week 1 – 17
+
+<br>
+Quick Example Phrases:
+
+Alexa, ask FantasyMetrix Aaron Rodgers, fantasy points per game, 2010
+Alexa, ask FantasyMetrix Rob Gronkowski, receiving touchdowns, 2011
+Alexa, ask FantasyMetrix Marshawn Lynch, yards from scrimmage, 2012
+Alexa, ask FantasyMetrix Russell Wilson, completion percentage, 2013
+Alexa, ask FantasyMetrix Jordy Nelson, stats, week 14, twenty fourteen
+Alexa, ask FantasyMetrix Odell Beckham, catch rate, week 15, twenty fifteen
+Alexa, ask FantasyMetrix Atlanta Falcons, week 16, twenty sixteen
+Alexa, ask FantasyMetrix Oakland Raiders, week 17, twenty seventeen
+
+<br>
 Football Metrics:
 
+* Carries
 * Catch Rate
 * Completions
+* Completion Percentage
 * Fantasy Points
 * Fantasy Points Per Game
 * Fumbles

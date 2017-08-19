@@ -1,7 +1,6 @@
 {
   "intents": [
     {
-      "intent": "OneShotMetricIntent",
       "slots": [
         {
           "name": "Player",
@@ -19,10 +18,10 @@
           "name": "Season",
           "type": "AMAZON.FOUR_DIGIT_NUMBER"
         }
-      ]
+      ],
+      "intent": "OneShotMetricIntent"
     },
     {
-      "intent": "MissingSlotIntent",
       "slots": [
         {
           "name": "Player",
@@ -40,7 +39,25 @@
           "name": "Season",
           "type": "AMAZON.FOUR_DIGIT_NUMBER"
         }
-      ]
+      ],
+      "intent": "MissingSlotIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "Team",
+          "type": "LIST_OF_TEAMS"
+        },
+        {
+          "name": "Week",
+          "type": "LIST_OF_WEEKS"
+        },
+        {
+          "name": "Season",
+          "type": "AMAZON.FOUR_DIGIT_NUMBER"
+        }
+      ],
+      "intent": "ScheduleIntent"
     },
     {
       "intent": "AMAZON.HelpIntent"

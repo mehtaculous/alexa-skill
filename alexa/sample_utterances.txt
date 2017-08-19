@@ -1545,7 +1545,6 @@ OneShotMetricIntent {Week} {Season} {Player} {Metric}
 OneShotMetricIntent {Week} {Season} {Metric} {Player}
 OneShotMetricIntent {Week} {Metric} {Player} {Season}
 OneShotMetricIntent {Week} {Metric} {Season} {Player}
-
 MissingSlotIntent {Player}
 MissingSlotIntent {Metric}
 MissingSlotIntent {Week}
@@ -1604,3 +1603,1315 @@ MissingSlotIntent {Season} {Metric} {Week}
 MissingSlotIntent {Season} {Week}
 MissingSlotIntent {Season} {Week} {Player}
 MissingSlotIntent {Season} {Week} {Metric}
+ScheduleIntent during {Week} during {Season} what team played the {Team}
+ScheduleIntent during {Week} during {Season} what team played {Team}
+ScheduleIntent during {Week} during {Season} what team plays the {Team}
+ScheduleIntent during {Week} during {Season} what team plays {Team}
+ScheduleIntent during {Week} during {Season} which team played the {Team}
+ScheduleIntent during {Week} during {Season} which team played {Team}
+ScheduleIntent during {Week} during {Season} which team plays the {Team}
+ScheduleIntent during {Week} during {Season} which team plays {Team}
+ScheduleIntent during {Week} during {Season} who did the {Team} play
+ScheduleIntent during {Week} during {Season} who did {Team} play
+ScheduleIntent during {Week} during {Season} who do the {Team} play
+ScheduleIntent during {Week} during {Season} who do {Team} play
+ScheduleIntent during {Week} during {Season} who does the {Team} play
+ScheduleIntent during {Week} during {Season} who does {Team} play
+ScheduleIntent during {Week} during {Season} who played the {Team}
+ScheduleIntent during {Week} during {Season} who played {Team}
+ScheduleIntent during {Week} during {Season} who plays the {Team}
+ScheduleIntent during {Week} during {Season} who plays {Team}
+ScheduleIntent during {Week} for {Season} what team played the {Team}
+ScheduleIntent during {Week} for {Season} what team played {Team}
+ScheduleIntent during {Week} for {Season} what team plays the {Team}
+ScheduleIntent during {Week} for {Season} what team plays {Team}
+ScheduleIntent during {Week} for {Season} which team played the {Team}
+ScheduleIntent during {Week} for {Season} which team played {Team}
+ScheduleIntent during {Week} for {Season} which team plays the {Team}
+ScheduleIntent during {Week} for {Season} which team plays {Team}
+ScheduleIntent during {Week} for {Season} who did the {Team} play
+ScheduleIntent during {Week} for {Season} who did {Team} play
+ScheduleIntent during {Week} for {Season} who do the {Team} play
+ScheduleIntent during {Week} for {Season} who do {Team} play
+ScheduleIntent during {Week} for {Season} who does the {Team} play
+ScheduleIntent during {Week} for {Season} who does {Team} play
+ScheduleIntent during {Week} for {Season} who played the {Team}
+ScheduleIntent during {Week} for {Season} who played {Team}
+ScheduleIntent during {Week} for {Season} who plays the {Team}
+ScheduleIntent during {Week} for {Season} who plays {Team}
+ScheduleIntent during {Week} in {Season} what team played the {Team}
+ScheduleIntent during {Week} in {Season} what team played {Team}
+ScheduleIntent during {Week} in {Season} what team plays the {Team}
+ScheduleIntent during {Week} in {Season} what team plays {Team}
+ScheduleIntent during {Week} in {Season} which team played the {Team}
+ScheduleIntent during {Week} in {Season} which team played {Team}
+ScheduleIntent during {Week} in {Season} which team plays the {Team}
+ScheduleIntent during {Week} in {Season} which team plays {Team}
+ScheduleIntent during {Week} in {Season} who did the {Team} play
+ScheduleIntent during {Week} in {Season} who did {Team} play
+ScheduleIntent during {Week} in {Season} who do the {Team} play
+ScheduleIntent during {Week} in {Season} who do {Team} play
+ScheduleIntent during {Week} in {Season} who does the {Team} play
+ScheduleIntent during {Week} in {Season} who does {Team} play
+ScheduleIntent during {Week} in {Season} who played the {Team}
+ScheduleIntent during {Week} in {Season} who played {Team}
+ScheduleIntent during {Week} in {Season} who plays the {Team}
+ScheduleIntent during {Week} in {Season} who plays {Team}
+ScheduleIntent during {Week} of {Season} what team played the {Team}
+ScheduleIntent during {Week} of {Season} what team played {Team}
+ScheduleIntent during {Week} of {Season} what team plays the {Team}
+ScheduleIntent during {Week} of {Season} what team plays {Team}
+ScheduleIntent during {Week} of {Season} which team played the {Team}
+ScheduleIntent during {Week} of {Season} which team played {Team}
+ScheduleIntent during {Week} of {Season} which team plays the {Team}
+ScheduleIntent during {Week} of {Season} which team plays {Team}
+ScheduleIntent during {Week} of {Season} who did the {Team} play
+ScheduleIntent during {Week} of {Season} who did {Team} play
+ScheduleIntent during {Week} of {Season} who do the {Team} play
+ScheduleIntent during {Week} of {Season} who do {Team} play
+ScheduleIntent during {Week} of {Season} who does the {Team} play
+ScheduleIntent during {Week} of {Season} who does {Team} play
+ScheduleIntent during {Week} of {Season} who played the {Team}
+ScheduleIntent during {Week} of {Season} who played {Team}
+ScheduleIntent during {Week} of {Season} who plays the {Team}
+ScheduleIntent during {Week} of {Season} who plays {Team}
+ScheduleIntent during {Week} {Season} what team played the {Team}
+ScheduleIntent during {Week} {Season} what team played {Team}
+ScheduleIntent during {Week} {Season} what team plays the {Team}
+ScheduleIntent during {Week} {Season} what team plays {Team}
+ScheduleIntent during {Week} {Season} which team played the {Team}
+ScheduleIntent during {Week} {Season} which team played {Team}
+ScheduleIntent during {Week} {Season} which team plays the {Team}
+ScheduleIntent during {Week} {Season} which team plays {Team}
+ScheduleIntent during {Week} {Season} who did the {Team} play
+ScheduleIntent during {Week} {Season} who did {Team} play
+ScheduleIntent during {Week} {Season} who do the {Team} play
+ScheduleIntent during {Week} {Season} who do {Team} play
+ScheduleIntent during {Week} {Season} who does the {Team} play
+ScheduleIntent during {Week} {Season} who does {Team} play
+ScheduleIntent during {Week} {Season} who played the {Team}
+ScheduleIntent during {Week} {Season} who played {Team}
+ScheduleIntent during {Week} {Season} who plays the {Team}
+ScheduleIntent during {Week} {Season} who plays {Team}
+ScheduleIntent find me the team that played {Team} during {Week} during {Season}
+ScheduleIntent find me the team that played {Team} during {Week} for {Season}
+ScheduleIntent find me the team that played {Team} during {Week} in {Season}
+ScheduleIntent find me the team that played {Team} during {Week} of {Season}
+ScheduleIntent find me the team that played {Team} during {Week} {Season}
+ScheduleIntent find me the team that played {Team} for {Week} during {Season}
+ScheduleIntent find me the team that played {Team} for {Week} for {Season}
+ScheduleIntent find me the team that played {Team} for {Week} in {Season}
+ScheduleIntent find me the team that played {Team} for {Week} of {Season}
+ScheduleIntent find me the team that played {Team} for {Week} {Season}
+ScheduleIntent find me the team that played {Team} in {Week} during {Season}
+ScheduleIntent find me the team that played {Team} in {Week} for {Season}
+ScheduleIntent find me the team that played {Team} in {Week} in {Season}
+ScheduleIntent find me the team that played {Team} in {Week} of {Season}
+ScheduleIntent find me the team that played {Team} in {Week} {Season}
+ScheduleIntent find me the team that played {Team} {Week} during {Season}
+ScheduleIntent find me the team that played {Team} {Week} for {Season}
+ScheduleIntent find me the team that played {Team} {Week} in {Season}
+ScheduleIntent find me the team that played {Team} {Week} of {Season}
+ScheduleIntent find me the team that played {Team} {Week} {Season}
+ScheduleIntent find me the team that plays {Team} during {Week} during {Season}
+ScheduleIntent find me the team that plays {Team} during {Week} for {Season}
+ScheduleIntent find me the team that plays {Team} during {Week} in {Season}
+ScheduleIntent find me the team that plays {Team} during {Week} of {Season}
+ScheduleIntent find me the team that plays {Team} during {Week} {Season}
+ScheduleIntent find me the team that plays {Team} for {Week} during {Season}
+ScheduleIntent find me the team that plays {Team} for {Week} for {Season}
+ScheduleIntent find me the team that plays {Team} for {Week} in {Season}
+ScheduleIntent find me the team that plays {Team} for {Week} of {Season}
+ScheduleIntent find me the team that plays {Team} for {Week} {Season}
+ScheduleIntent find me the team that plays {Team} in {Week} during {Season}
+ScheduleIntent find me the team that plays {Team} in {Week} for {Season}
+ScheduleIntent find me the team that plays {Team} in {Week} in {Season}
+ScheduleIntent find me the team that plays {Team} in {Week} of {Season}
+ScheduleIntent find me the team that plays {Team} in {Week} {Season}
+ScheduleIntent find me the team that plays {Team} {Week} during {Season}
+ScheduleIntent find me the team that plays {Team} {Week} for {Season}
+ScheduleIntent find me the team that plays {Team} {Week} in {Season}
+ScheduleIntent find me the team that plays {Team} {Week} of {Season}
+ScheduleIntent find me the team that plays {Team} {Week} {Season}
+ScheduleIntent find the team that played {Team} during {Week} during {Season}
+ScheduleIntent find the team that played {Team} during {Week} for {Season}
+ScheduleIntent find the team that played {Team} during {Week} in {Season}
+ScheduleIntent find the team that played {Team} during {Week} of {Season}
+ScheduleIntent find the team that played {Team} during {Week} {Season}
+ScheduleIntent find the team that played {Team} for {Week} during {Season}
+ScheduleIntent find the team that played {Team} for {Week} for {Season}
+ScheduleIntent find the team that played {Team} for {Week} in {Season}
+ScheduleIntent find the team that played {Team} for {Week} of {Season}
+ScheduleIntent find the team that played {Team} for {Week} {Season}
+ScheduleIntent find the team that played {Team} in {Week} during {Season}
+ScheduleIntent find the team that played {Team} in {Week} for {Season}
+ScheduleIntent find the team that played {Team} in {Week} in {Season}
+ScheduleIntent find the team that played {Team} in {Week} of {Season}
+ScheduleIntent find the team that played {Team} in {Week} {Season}
+ScheduleIntent find the team that played {Team} {Week} during {Season}
+ScheduleIntent find the team that played {Team} {Week} for {Season}
+ScheduleIntent find the team that played {Team} {Week} in {Season}
+ScheduleIntent find the team that played {Team} {Week} of {Season}
+ScheduleIntent find the team that played {Team} {Week} {Season}
+ScheduleIntent find the team that plays {Team} during {Week} during {Season}
+ScheduleIntent find the team that plays {Team} during {Week} for {Season}
+ScheduleIntent find the team that plays {Team} during {Week} in {Season}
+ScheduleIntent find the team that plays {Team} during {Week} of {Season}
+ScheduleIntent find the team that plays {Team} during {Week} {Season}
+ScheduleIntent find the team that plays {Team} for {Week} during {Season}
+ScheduleIntent find the team that plays {Team} for {Week} for {Season}
+ScheduleIntent find the team that plays {Team} for {Week} in {Season}
+ScheduleIntent find the team that plays {Team} for {Week} of {Season}
+ScheduleIntent find the team that plays {Team} for {Week} {Season}
+ScheduleIntent find the team that plays {Team} in {Week} during {Season}
+ScheduleIntent find the team that plays {Team} in {Week} for {Season}
+ScheduleIntent find the team that plays {Team} in {Week} in {Season}
+ScheduleIntent find the team that plays {Team} in {Week} of {Season}
+ScheduleIntent find the team that plays {Team} in {Week} {Season}
+ScheduleIntent find the team that plays {Team} {Week} during {Season}
+ScheduleIntent find the team that plays {Team} {Week} for {Season}
+ScheduleIntent find the team that plays {Team} {Week} in {Season}
+ScheduleIntent find the team that plays {Team} {Week} of {Season}
+ScheduleIntent find the team that plays {Team} {Week} {Season}
+ScheduleIntent for {Week} during {Season} what team played the {Team}
+ScheduleIntent for {Week} during {Season} what team played {Team}
+ScheduleIntent for {Week} during {Season} what team plays the {Team}
+ScheduleIntent for {Week} during {Season} what team plays {Team}
+ScheduleIntent for {Week} during {Season} which team played the {Team}
+ScheduleIntent for {Week} during {Season} which team played {Team}
+ScheduleIntent for {Week} during {Season} which team plays the {Team}
+ScheduleIntent for {Week} during {Season} which team plays {Team}
+ScheduleIntent for {Week} during {Season} who did the {Team} play
+ScheduleIntent for {Week} during {Season} who did {Team} play
+ScheduleIntent for {Week} during {Season} who do the {Team} play
+ScheduleIntent for {Week} during {Season} who do {Team} play
+ScheduleIntent for {Week} during {Season} who does the {Team} play
+ScheduleIntent for {Week} during {Season} who does {Team} play
+ScheduleIntent for {Week} during {Season} who played the {Team}
+ScheduleIntent for {Week} during {Season} who played {Team}
+ScheduleIntent for {Week} during {Season} who plays the {Team}
+ScheduleIntent for {Week} during {Season} who plays {Team}
+ScheduleIntent for {Week} for {Season} what team played the {Team}
+ScheduleIntent for {Week} for {Season} what team played {Team}
+ScheduleIntent for {Week} for {Season} what team plays the {Team}
+ScheduleIntent for {Week} for {Season} what team plays {Team}
+ScheduleIntent for {Week} for {Season} which team played the {Team}
+ScheduleIntent for {Week} for {Season} which team played {Team}
+ScheduleIntent for {Week} for {Season} which team plays the {Team}
+ScheduleIntent for {Week} for {Season} which team plays {Team}
+ScheduleIntent for {Week} for {Season} who did the {Team} play
+ScheduleIntent for {Week} for {Season} who did {Team} play
+ScheduleIntent for {Week} for {Season} who do the {Team} play
+ScheduleIntent for {Week} for {Season} who do {Team} play
+ScheduleIntent for {Week} for {Season} who does the {Team} play
+ScheduleIntent for {Week} for {Season} who does {Team} play
+ScheduleIntent for {Week} for {Season} who played the {Team}
+ScheduleIntent for {Week} for {Season} who played {Team}
+ScheduleIntent for {Week} for {Season} who plays the {Team}
+ScheduleIntent for {Week} for {Season} who plays {Team}
+ScheduleIntent for {Week} in {Season} what team played the {Team}
+ScheduleIntent for {Week} in {Season} what team played {Team}
+ScheduleIntent for {Week} in {Season} what team plays the {Team}
+ScheduleIntent for {Week} in {Season} what team plays {Team}
+ScheduleIntent for {Week} in {Season} which team played the {Team}
+ScheduleIntent for {Week} in {Season} which team played {Team}
+ScheduleIntent for {Week} in {Season} which team plays the {Team}
+ScheduleIntent for {Week} in {Season} which team plays {Team}
+ScheduleIntent for {Week} in {Season} who did the {Team} play
+ScheduleIntent for {Week} in {Season} who did {Team} play
+ScheduleIntent for {Week} in {Season} who do the {Team} play
+ScheduleIntent for {Week} in {Season} who do {Team} play
+ScheduleIntent for {Week} in {Season} who does the {Team} play
+ScheduleIntent for {Week} in {Season} who does {Team} play
+ScheduleIntent for {Week} in {Season} who played the {Team}
+ScheduleIntent for {Week} in {Season} who played {Team}
+ScheduleIntent for {Week} in {Season} who plays the {Team}
+ScheduleIntent for {Week} in {Season} who plays {Team}
+ScheduleIntent for {Week} of {Season} what team played the {Team}
+ScheduleIntent for {Week} of {Season} what team played {Team}
+ScheduleIntent for {Week} of {Season} what team plays the {Team}
+ScheduleIntent for {Week} of {Season} what team plays {Team}
+ScheduleIntent for {Week} of {Season} which team played the {Team}
+ScheduleIntent for {Week} of {Season} which team played {Team}
+ScheduleIntent for {Week} of {Season} which team plays the {Team}
+ScheduleIntent for {Week} of {Season} which team plays {Team}
+ScheduleIntent for {Week} of {Season} who did the {Team} play
+ScheduleIntent for {Week} of {Season} who did {Team} play
+ScheduleIntent for {Week} of {Season} who do the {Team} play
+ScheduleIntent for {Week} of {Season} who do {Team} play
+ScheduleIntent for {Week} of {Season} who does the {Team} play
+ScheduleIntent for {Week} of {Season} who does {Team} play
+ScheduleIntent for {Week} of {Season} who played the {Team}
+ScheduleIntent for {Week} of {Season} who played {Team}
+ScheduleIntent for {Week} of {Season} who plays the {Team}
+ScheduleIntent for {Week} of {Season} who plays {Team}
+ScheduleIntent for {Week} {Season} what team played the {Team}
+ScheduleIntent for {Week} {Season} what team played {Team}
+ScheduleIntent for {Week} {Season} what team plays the {Team}
+ScheduleIntent for {Week} {Season} what team plays {Team}
+ScheduleIntent for {Week} {Season} which team played the {Team}
+ScheduleIntent for {Week} {Season} which team played {Team}
+ScheduleIntent for {Week} {Season} which team plays the {Team}
+ScheduleIntent for {Week} {Season} which team plays {Team}
+ScheduleIntent for {Week} {Season} who did the {Team} play
+ScheduleIntent for {Week} {Season} who did {Team} play
+ScheduleIntent for {Week} {Season} who do the {Team} play
+ScheduleIntent for {Week} {Season} who do {Team} play
+ScheduleIntent for {Week} {Season} who does the {Team} play
+ScheduleIntent for {Week} {Season} who does {Team} play
+ScheduleIntent for {Week} {Season} who played the {Team}
+ScheduleIntent for {Week} {Season} who played {Team}
+ScheduleIntent for {Week} {Season} who plays the {Team}
+ScheduleIntent for {Week} {Season} who plays {Team}
+ScheduleIntent get me the team that played {Team} during {Week} during {Season}
+ScheduleIntent get me the team that played {Team} during {Week} for {Season}
+ScheduleIntent get me the team that played {Team} during {Week} in {Season}
+ScheduleIntent get me the team that played {Team} during {Week} of {Season}
+ScheduleIntent get me the team that played {Team} during {Week} {Season}
+ScheduleIntent get me the team that played {Team} for {Week} during {Season}
+ScheduleIntent get me the team that played {Team} for {Week} for {Season}
+ScheduleIntent get me the team that played {Team} for {Week} in {Season}
+ScheduleIntent get me the team that played {Team} for {Week} of {Season}
+ScheduleIntent get me the team that played {Team} for {Week} {Season}
+ScheduleIntent get me the team that played {Team} in {Week} during {Season}
+ScheduleIntent get me the team that played {Team} in {Week} for {Season}
+ScheduleIntent get me the team that played {Team} in {Week} in {Season}
+ScheduleIntent get me the team that played {Team} in {Week} of {Season}
+ScheduleIntent get me the team that played {Team} in {Week} {Season}
+ScheduleIntent get me the team that played {Team} {Week} during {Season}
+ScheduleIntent get me the team that played {Team} {Week} for {Season}
+ScheduleIntent get me the team that played {Team} {Week} in {Season}
+ScheduleIntent get me the team that played {Team} {Week} of {Season}
+ScheduleIntent get me the team that played {Team} {Week} {Season}
+ScheduleIntent get me the team that plays {Team} during {Week} during {Season}
+ScheduleIntent get me the team that plays {Team} during {Week} for {Season}
+ScheduleIntent get me the team that plays {Team} during {Week} in {Season}
+ScheduleIntent get me the team that plays {Team} during {Week} of {Season}
+ScheduleIntent get me the team that plays {Team} during {Week} {Season}
+ScheduleIntent get me the team that plays {Team} for {Week} during {Season}
+ScheduleIntent get me the team that plays {Team} for {Week} for {Season}
+ScheduleIntent get me the team that plays {Team} for {Week} in {Season}
+ScheduleIntent get me the team that plays {Team} for {Week} of {Season}
+ScheduleIntent get me the team that plays {Team} for {Week} {Season}
+ScheduleIntent get me the team that plays {Team} in {Week} during {Season}
+ScheduleIntent get me the team that plays {Team} in {Week} for {Season}
+ScheduleIntent get me the team that plays {Team} in {Week} in {Season}
+ScheduleIntent get me the team that plays {Team} in {Week} of {Season}
+ScheduleIntent get me the team that plays {Team} in {Week} {Season}
+ScheduleIntent get me the team that plays {Team} {Week} during {Season}
+ScheduleIntent get me the team that plays {Team} {Week} for {Season}
+ScheduleIntent get me the team that plays {Team} {Week} in {Season}
+ScheduleIntent get me the team that plays {Team} {Week} of {Season}
+ScheduleIntent get me the team that plays {Team} {Week} {Season}
+ScheduleIntent give me the team that played {Team} during {Week} during {Season}
+ScheduleIntent give me the team that played {Team} during {Week} for {Season}
+ScheduleIntent give me the team that played {Team} during {Week} in {Season}
+ScheduleIntent give me the team that played {Team} during {Week} of {Season}
+ScheduleIntent give me the team that played {Team} during {Week} {Season}
+ScheduleIntent give me the team that played {Team} for {Week} during {Season}
+ScheduleIntent give me the team that played {Team} for {Week} for {Season}
+ScheduleIntent give me the team that played {Team} for {Week} in {Season}
+ScheduleIntent give me the team that played {Team} for {Week} of {Season}
+ScheduleIntent give me the team that played {Team} for {Week} {Season}
+ScheduleIntent give me the team that played {Team} in {Week} during {Season}
+ScheduleIntent give me the team that played {Team} in {Week} for {Season}
+ScheduleIntent give me the team that played {Team} in {Week} in {Season}
+ScheduleIntent give me the team that played {Team} in {Week} of {Season}
+ScheduleIntent give me the team that played {Team} in {Week} {Season}
+ScheduleIntent give me the team that played {Team} {Week} during {Season}
+ScheduleIntent give me the team that played {Team} {Week} for {Season}
+ScheduleIntent give me the team that played {Team} {Week} in {Season}
+ScheduleIntent give me the team that played {Team} {Week} of {Season}
+ScheduleIntent give me the team that played {Team} {Week} {Season}
+ScheduleIntent give me the team that plays {Team} during {Week} during {Season}
+ScheduleIntent give me the team that plays {Team} during {Week} for {Season}
+ScheduleIntent give me the team that plays {Team} during {Week} in {Season}
+ScheduleIntent give me the team that plays {Team} during {Week} of {Season}
+ScheduleIntent give me the team that plays {Team} during {Week} {Season}
+ScheduleIntent give me the team that plays {Team} for {Week} during {Season}
+ScheduleIntent give me the team that plays {Team} for {Week} for {Season}
+ScheduleIntent give me the team that plays {Team} for {Week} in {Season}
+ScheduleIntent give me the team that plays {Team} for {Week} of {Season}
+ScheduleIntent give me the team that plays {Team} for {Week} {Season}
+ScheduleIntent give me the team that plays {Team} in {Week} during {Season}
+ScheduleIntent give me the team that plays {Team} in {Week} for {Season}
+ScheduleIntent give me the team that plays {Team} in {Week} in {Season}
+ScheduleIntent give me the team that plays {Team} in {Week} of {Season}
+ScheduleIntent give me the team that plays {Team} in {Week} {Season}
+ScheduleIntent give me the team that plays {Team} {Week} during {Season}
+ScheduleIntent give me the team that plays {Team} {Week} for {Season}
+ScheduleIntent give me the team that plays {Team} {Week} in {Season}
+ScheduleIntent give me the team that plays {Team} {Week} of {Season}
+ScheduleIntent give me the team that plays {Team} {Week} {Season}
+ScheduleIntent in {Week} during {Season} what team played the {Team}
+ScheduleIntent in {Week} during {Season} what team played {Team}
+ScheduleIntent in {Week} during {Season} what team plays the {Team}
+ScheduleIntent in {Week} during {Season} what team plays {Team}
+ScheduleIntent in {Week} during {Season} which team played the {Team}
+ScheduleIntent in {Week} during {Season} which team played {Team}
+ScheduleIntent in {Week} during {Season} which team plays the {Team}
+ScheduleIntent in {Week} during {Season} which team plays {Team}
+ScheduleIntent in {Week} during {Season} who did the {Team} play
+ScheduleIntent in {Week} during {Season} who did {Team} play
+ScheduleIntent in {Week} during {Season} who do the {Team} play
+ScheduleIntent in {Week} during {Season} who do {Team} play
+ScheduleIntent in {Week} during {Season} who does the {Team} play
+ScheduleIntent in {Week} during {Season} who does {Team} play
+ScheduleIntent in {Week} during {Season} who played the {Team}
+ScheduleIntent in {Week} during {Season} who played {Team}
+ScheduleIntent in {Week} during {Season} who plays the {Team}
+ScheduleIntent in {Week} during {Season} who plays {Team}
+ScheduleIntent in {Week} for {Season} what team played the {Team}
+ScheduleIntent in {Week} for {Season} what team played {Team}
+ScheduleIntent in {Week} for {Season} what team plays the {Team}
+ScheduleIntent in {Week} for {Season} what team plays {Team}
+ScheduleIntent in {Week} for {Season} which team played the {Team}
+ScheduleIntent in {Week} for {Season} which team played {Team}
+ScheduleIntent in {Week} for {Season} which team plays the {Team}
+ScheduleIntent in {Week} for {Season} which team plays {Team}
+ScheduleIntent in {Week} for {Season} who did the {Team} play
+ScheduleIntent in {Week} for {Season} who did {Team} play
+ScheduleIntent in {Week} for {Season} who do the {Team} play
+ScheduleIntent in {Week} for {Season} who do {Team} play
+ScheduleIntent in {Week} for {Season} who does the {Team} play
+ScheduleIntent in {Week} for {Season} who does {Team} play
+ScheduleIntent in {Week} for {Season} who played the {Team}
+ScheduleIntent in {Week} for {Season} who played {Team}
+ScheduleIntent in {Week} for {Season} who plays the {Team}
+ScheduleIntent in {Week} for {Season} who plays {Team}
+ScheduleIntent in {Week} in {Season} what team played the {Team}
+ScheduleIntent in {Week} in {Season} what team played {Team}
+ScheduleIntent in {Week} in {Season} what team plays the {Team}
+ScheduleIntent in {Week} in {Season} what team plays {Team}
+ScheduleIntent in {Week} in {Season} which team played the {Team}
+ScheduleIntent in {Week} in {Season} which team played {Team}
+ScheduleIntent in {Week} in {Season} which team plays the {Team}
+ScheduleIntent in {Week} in {Season} which team plays {Team}
+ScheduleIntent in {Week} in {Season} who did the {Team} play
+ScheduleIntent in {Week} in {Season} who did {Team} play
+ScheduleIntent in {Week} in {Season} who do the {Team} play
+ScheduleIntent in {Week} in {Season} who do {Team} play
+ScheduleIntent in {Week} in {Season} who does the {Team} play
+ScheduleIntent in {Week} in {Season} who does {Team} play
+ScheduleIntent in {Week} in {Season} who played the {Team}
+ScheduleIntent in {Week} in {Season} who played {Team}
+ScheduleIntent in {Week} in {Season} who plays the {Team}
+ScheduleIntent in {Week} in {Season} who plays {Team}
+ScheduleIntent in {Week} of {Season} what team played the {Team}
+ScheduleIntent in {Week} of {Season} what team played {Team}
+ScheduleIntent in {Week} of {Season} what team plays the {Team}
+ScheduleIntent in {Week} of {Season} what team plays {Team}
+ScheduleIntent in {Week} of {Season} which team played the {Team}
+ScheduleIntent in {Week} of {Season} which team played {Team}
+ScheduleIntent in {Week} of {Season} which team plays the {Team}
+ScheduleIntent in {Week} of {Season} which team plays {Team}
+ScheduleIntent in {Week} of {Season} who did the {Team} play
+ScheduleIntent in {Week} of {Season} who did {Team} play
+ScheduleIntent in {Week} of {Season} who do the {Team} play
+ScheduleIntent in {Week} of {Season} who do {Team} play
+ScheduleIntent in {Week} of {Season} who does the {Team} play
+ScheduleIntent in {Week} of {Season} who does {Team} play
+ScheduleIntent in {Week} of {Season} who played the {Team}
+ScheduleIntent in {Week} of {Season} who played {Team}
+ScheduleIntent in {Week} of {Season} who plays the {Team}
+ScheduleIntent in {Week} of {Season} who plays {Team}
+ScheduleIntent in {Week} {Season} what team played the {Team}
+ScheduleIntent in {Week} {Season} what team played {Team}
+ScheduleIntent in {Week} {Season} what team plays the {Team}
+ScheduleIntent in {Week} {Season} what team plays {Team}
+ScheduleIntent in {Week} {Season} which team played the {Team}
+ScheduleIntent in {Week} {Season} which team played {Team}
+ScheduleIntent in {Week} {Season} which team plays the {Team}
+ScheduleIntent in {Week} {Season} which team plays {Team}
+ScheduleIntent in {Week} {Season} who did the {Team} play
+ScheduleIntent in {Week} {Season} who did {Team} play
+ScheduleIntent in {Week} {Season} who do the {Team} play
+ScheduleIntent in {Week} {Season} who do {Team} play
+ScheduleIntent in {Week} {Season} who does the {Team} play
+ScheduleIntent in {Week} {Season} who does {Team} play
+ScheduleIntent in {Week} {Season} who played the {Team}
+ScheduleIntent in {Week} {Season} who played {Team}
+ScheduleIntent in {Week} {Season} who plays the {Team}
+ScheduleIntent in {Week} {Season} who plays {Team}
+ScheduleIntent tell me the team that played {Team} during {Week} during {Season}
+ScheduleIntent tell me the team that played {Team} during {Week} for {Season}
+ScheduleIntent tell me the team that played {Team} during {Week} in {Season}
+ScheduleIntent tell me the team that played {Team} during {Week} of {Season}
+ScheduleIntent tell me the team that played {Team} during {Week} {Season}
+ScheduleIntent tell me the team that played {Team} for {Week} during {Season}
+ScheduleIntent tell me the team that played {Team} for {Week} for {Season}
+ScheduleIntent tell me the team that played {Team} for {Week} in {Season}
+ScheduleIntent tell me the team that played {Team} for {Week} of {Season}
+ScheduleIntent tell me the team that played {Team} for {Week} {Season}
+ScheduleIntent tell me the team that played {Team} in {Week} during {Season}
+ScheduleIntent tell me the team that played {Team} in {Week} for {Season}
+ScheduleIntent tell me the team that played {Team} in {Week} in {Season}
+ScheduleIntent tell me the team that played {Team} in {Week} of {Season}
+ScheduleIntent tell me the team that played {Team} in {Week} {Season}
+ScheduleIntent tell me the team that played {Team} {Week} during {Season}
+ScheduleIntent tell me the team that played {Team} {Week} for {Season}
+ScheduleIntent tell me the team that played {Team} {Week} in {Season}
+ScheduleIntent tell me the team that played {Team} {Week} of {Season}
+ScheduleIntent tell me the team that played {Team} {Week} {Season}
+ScheduleIntent tell me the team that plays {Team} during {Week} during {Season}
+ScheduleIntent tell me the team that plays {Team} during {Week} for {Season}
+ScheduleIntent tell me the team that plays {Team} during {Week} in {Season}
+ScheduleIntent tell me the team that plays {Team} during {Week} of {Season}
+ScheduleIntent tell me the team that plays {Team} during {Week} {Season}
+ScheduleIntent tell me the team that plays {Team} for {Week} during {Season}
+ScheduleIntent tell me the team that plays {Team} for {Week} for {Season}
+ScheduleIntent tell me the team that plays {Team} for {Week} in {Season}
+ScheduleIntent tell me the team that plays {Team} for {Week} of {Season}
+ScheduleIntent tell me the team that plays {Team} for {Week} {Season}
+ScheduleIntent tell me the team that plays {Team} in {Week} during {Season}
+ScheduleIntent tell me the team that plays {Team} in {Week} for {Season}
+ScheduleIntent tell me the team that plays {Team} in {Week} in {Season}
+ScheduleIntent tell me the team that plays {Team} in {Week} of {Season}
+ScheduleIntent tell me the team that plays {Team} in {Week} {Season}
+ScheduleIntent tell me the team that plays {Team} {Week} during {Season}
+ScheduleIntent tell me the team that plays {Team} {Week} for {Season}
+ScheduleIntent tell me the team that plays {Team} {Week} in {Season}
+ScheduleIntent tell me the team that plays {Team} {Week} of {Season}
+ScheduleIntent tell me the team that plays {Team} {Week} {Season}
+ScheduleIntent tell the team that played {Team} during {Week} during {Season}
+ScheduleIntent tell the team that played {Team} during {Week} for {Season}
+ScheduleIntent tell the team that played {Team} during {Week} in {Season}
+ScheduleIntent tell the team that played {Team} during {Week} of {Season}
+ScheduleIntent tell the team that played {Team} during {Week} {Season}
+ScheduleIntent tell the team that played {Team} for {Week} during {Season}
+ScheduleIntent tell the team that played {Team} for {Week} for {Season}
+ScheduleIntent tell the team that played {Team} for {Week} in {Season}
+ScheduleIntent tell the team that played {Team} for {Week} of {Season}
+ScheduleIntent tell the team that played {Team} for {Week} {Season}
+ScheduleIntent tell the team that played {Team} in {Week} during {Season}
+ScheduleIntent tell the team that played {Team} in {Week} for {Season}
+ScheduleIntent tell the team that played {Team} in {Week} in {Season}
+ScheduleIntent tell the team that played {Team} in {Week} of {Season}
+ScheduleIntent tell the team that played {Team} in {Week} {Season}
+ScheduleIntent tell the team that played {Team} {Week} during {Season}
+ScheduleIntent tell the team that played {Team} {Week} for {Season}
+ScheduleIntent tell the team that played {Team} {Week} in {Season}
+ScheduleIntent tell the team that played {Team} {Week} of {Season}
+ScheduleIntent tell the team that played {Team} {Week} {Season}
+ScheduleIntent tell the team that plays {Team} during {Week} during {Season}
+ScheduleIntent tell the team that plays {Team} during {Week} for {Season}
+ScheduleIntent tell the team that plays {Team} during {Week} in {Season}
+ScheduleIntent tell the team that plays {Team} during {Week} of {Season}
+ScheduleIntent tell the team that plays {Team} during {Week} {Season}
+ScheduleIntent tell the team that plays {Team} for {Week} during {Season}
+ScheduleIntent tell the team that plays {Team} for {Week} for {Season}
+ScheduleIntent tell the team that plays {Team} for {Week} in {Season}
+ScheduleIntent tell the team that plays {Team} for {Week} of {Season}
+ScheduleIntent tell the team that plays {Team} for {Week} {Season}
+ScheduleIntent tell the team that plays {Team} in {Week} during {Season}
+ScheduleIntent tell the team that plays {Team} in {Week} for {Season}
+ScheduleIntent tell the team that plays {Team} in {Week} in {Season}
+ScheduleIntent tell the team that plays {Team} in {Week} of {Season}
+ScheduleIntent tell the team that plays {Team} in {Week} {Season}
+ScheduleIntent tell the team that plays {Team} {Week} during {Season}
+ScheduleIntent tell the team that plays {Team} {Week} for {Season}
+ScheduleIntent tell the team that plays {Team} {Week} in {Season}
+ScheduleIntent tell the team that plays {Team} {Week} of {Season}
+ScheduleIntent tell the team that plays {Team} {Week} {Season}
+ScheduleIntent what team played the {Team} during {Week} during {Season}
+ScheduleIntent what team played the {Team} during {Week} for {Season}
+ScheduleIntent what team played the {Team} during {Week} in {Season}
+ScheduleIntent what team played the {Team} during {Week} of {Season}
+ScheduleIntent what team played the {Team} during {Week} {Season}
+ScheduleIntent what team played the {Team} for {Week} during {Season}
+ScheduleIntent what team played the {Team} for {Week} for {Season}
+ScheduleIntent what team played the {Team} for {Week} in {Season}
+ScheduleIntent what team played the {Team} for {Week} of {Season}
+ScheduleIntent what team played the {Team} for {Week} {Season}
+ScheduleIntent what team played the {Team} in {Week} during {Season}
+ScheduleIntent what team played the {Team} in {Week} for {Season}
+ScheduleIntent what team played the {Team} in {Week} in {Season}
+ScheduleIntent what team played the {Team} in {Week} of {Season}
+ScheduleIntent what team played the {Team} in {Week} {Season}
+ScheduleIntent what team played the {Team} of {Week} during {Season}
+ScheduleIntent what team played the {Team} of {Week} for {Season}
+ScheduleIntent what team played the {Team} of {Week} in {Season}
+ScheduleIntent what team played the {Team} of {Week} of {Season}
+ScheduleIntent what team played the {Team} of {Week} {Season}
+ScheduleIntent what team played the {Team} {Week} during {Season}
+ScheduleIntent what team played the {Team} {Week} for {Season}
+ScheduleIntent what team played the {Team} {Week} in {Season}
+ScheduleIntent what team played the {Team} {Week} of {Season}
+ScheduleIntent what team played the {Team} {Week} {Season}
+ScheduleIntent what team played {Team} during {Week} during {Season}
+ScheduleIntent what team played {Team} during {Week} for {Season}
+ScheduleIntent what team played {Team} during {Week} in {Season}
+ScheduleIntent what team played {Team} during {Week} of {Season}
+ScheduleIntent what team played {Team} during {Week} {Season}
+ScheduleIntent what team played {Team} for {Week} during {Season}
+ScheduleIntent what team played {Team} for {Week} for {Season}
+ScheduleIntent what team played {Team} for {Week} in {Season}
+ScheduleIntent what team played {Team} for {Week} of {Season}
+ScheduleIntent what team played {Team} for {Week} {Season}
+ScheduleIntent what team played {Team} in {Week} during {Season}
+ScheduleIntent what team played {Team} in {Week} for {Season}
+ScheduleIntent what team played {Team} in {Week} in {Season}
+ScheduleIntent what team played {Team} in {Week} of {Season}
+ScheduleIntent what team played {Team} in {Week} {Season}
+ScheduleIntent what team played {Team} of {Week} during {Season}
+ScheduleIntent what team played {Team} of {Week} for {Season}
+ScheduleIntent what team played {Team} of {Week} in {Season}
+ScheduleIntent what team played {Team} of {Week} of {Season}
+ScheduleIntent what team played {Team} of {Week} {Season}
+ScheduleIntent what team played {Team} {Week} during {Season}
+ScheduleIntent what team played {Team} {Week} for {Season}
+ScheduleIntent what team played {Team} {Week} in {Season}
+ScheduleIntent what team played {Team} {Week} of {Season}
+ScheduleIntent what team played {Team} {Week} {Season}
+ScheduleIntent what team plays the {Team} during {Week} during {Season}
+ScheduleIntent what team plays the {Team} during {Week} for {Season}
+ScheduleIntent what team plays the {Team} during {Week} in {Season}
+ScheduleIntent what team plays the {Team} during {Week} of {Season}
+ScheduleIntent what team plays the {Team} during {Week} {Season}
+ScheduleIntent what team plays the {Team} for {Week} during {Season}
+ScheduleIntent what team plays the {Team} for {Week} for {Season}
+ScheduleIntent what team plays the {Team} for {Week} in {Season}
+ScheduleIntent what team plays the {Team} for {Week} of {Season}
+ScheduleIntent what team plays the {Team} for {Week} {Season}
+ScheduleIntent what team plays the {Team} in {Week} during {Season}
+ScheduleIntent what team plays the {Team} in {Week} for {Season}
+ScheduleIntent what team plays the {Team} in {Week} in {Season}
+ScheduleIntent what team plays the {Team} in {Week} of {Season}
+ScheduleIntent what team plays the {Team} in {Week} {Season}
+ScheduleIntent what team plays the {Team} of {Week} during {Season}
+ScheduleIntent what team plays the {Team} of {Week} for {Season}
+ScheduleIntent what team plays the {Team} of {Week} in {Season}
+ScheduleIntent what team plays the {Team} of {Week} of {Season}
+ScheduleIntent what team plays the {Team} of {Week} {Season}
+ScheduleIntent what team plays the {Team} {Week} during {Season}
+ScheduleIntent what team plays the {Team} {Week} for {Season}
+ScheduleIntent what team plays the {Team} {Week} in {Season}
+ScheduleIntent what team plays the {Team} {Week} of {Season}
+ScheduleIntent what team plays the {Team} {Week} {Season}
+ScheduleIntent what team plays {Team} during {Week} during {Season}
+ScheduleIntent what team plays {Team} during {Week} for {Season}
+ScheduleIntent what team plays {Team} during {Week} in {Season}
+ScheduleIntent what team plays {Team} during {Week} of {Season}
+ScheduleIntent what team plays {Team} during {Week} {Season}
+ScheduleIntent what team plays {Team} for {Week} during {Season}
+ScheduleIntent what team plays {Team} for {Week} for {Season}
+ScheduleIntent what team plays {Team} for {Week} in {Season}
+ScheduleIntent what team plays {Team} for {Week} of {Season}
+ScheduleIntent what team plays {Team} for {Week} {Season}
+ScheduleIntent what team plays {Team} in {Week} during {Season}
+ScheduleIntent what team plays {Team} in {Week} for {Season}
+ScheduleIntent what team plays {Team} in {Week} in {Season}
+ScheduleIntent what team plays {Team} in {Week} of {Season}
+ScheduleIntent what team plays {Team} in {Week} {Season}
+ScheduleIntent what team plays {Team} of {Week} during {Season}
+ScheduleIntent what team plays {Team} of {Week} for {Season}
+ScheduleIntent what team plays {Team} of {Week} in {Season}
+ScheduleIntent what team plays {Team} of {Week} of {Season}
+ScheduleIntent what team plays {Team} of {Week} {Season}
+ScheduleIntent what team plays {Team} {Week} during {Season}
+ScheduleIntent what team plays {Team} {Week} for {Season}
+ScheduleIntent what team plays {Team} {Week} in {Season}
+ScheduleIntent what team plays {Team} {Week} of {Season}
+ScheduleIntent what team plays {Team} {Week} {Season}
+ScheduleIntent which team played the {Team} during {Week} during {Season}
+ScheduleIntent which team played the {Team} during {Week} for {Season}
+ScheduleIntent which team played the {Team} during {Week} in {Season}
+ScheduleIntent which team played the {Team} during {Week} of {Season}
+ScheduleIntent which team played the {Team} during {Week} {Season}
+ScheduleIntent which team played the {Team} for {Week} during {Season}
+ScheduleIntent which team played the {Team} for {Week} for {Season}
+ScheduleIntent which team played the {Team} for {Week} in {Season}
+ScheduleIntent which team played the {Team} for {Week} of {Season}
+ScheduleIntent which team played the {Team} for {Week} {Season}
+ScheduleIntent which team played the {Team} in {Week} during {Season}
+ScheduleIntent which team played the {Team} in {Week} for {Season}
+ScheduleIntent which team played the {Team} in {Week} in {Season}
+ScheduleIntent which team played the {Team} in {Week} of {Season}
+ScheduleIntent which team played the {Team} in {Week} {Season}
+ScheduleIntent which team played the {Team} of {Week} during {Season}
+ScheduleIntent which team played the {Team} of {Week} for {Season}
+ScheduleIntent which team played the {Team} of {Week} in {Season}
+ScheduleIntent which team played the {Team} of {Week} of {Season}
+ScheduleIntent which team played the {Team} of {Week} {Season}
+ScheduleIntent which team played the {Team} {Week} during {Season}
+ScheduleIntent which team played the {Team} {Week} for {Season}
+ScheduleIntent which team played the {Team} {Week} in {Season}
+ScheduleIntent which team played the {Team} {Week} of {Season}
+ScheduleIntent which team played the {Team} {Week} {Season}
+ScheduleIntent which team played {Team} during {Week} during {Season}
+ScheduleIntent which team played {Team} during {Week} for {Season}
+ScheduleIntent which team played {Team} during {Week} in {Season}
+ScheduleIntent which team played {Team} during {Week} of {Season}
+ScheduleIntent which team played {Team} during {Week} {Season}
+ScheduleIntent which team played {Team} for {Week} during {Season}
+ScheduleIntent which team played {Team} for {Week} for {Season}
+ScheduleIntent which team played {Team} for {Week} in {Season}
+ScheduleIntent which team played {Team} for {Week} of {Season}
+ScheduleIntent which team played {Team} for {Week} {Season}
+ScheduleIntent which team played {Team} in {Week} during {Season}
+ScheduleIntent which team played {Team} in {Week} for {Season}
+ScheduleIntent which team played {Team} in {Week} in {Season}
+ScheduleIntent which team played {Team} in {Week} of {Season}
+ScheduleIntent which team played {Team} in {Week} {Season}
+ScheduleIntent which team played {Team} of {Week} during {Season}
+ScheduleIntent which team played {Team} of {Week} for {Season}
+ScheduleIntent which team played {Team} of {Week} in {Season}
+ScheduleIntent which team played {Team} of {Week} of {Season}
+ScheduleIntent which team played {Team} of {Week} {Season}
+ScheduleIntent which team played {Team} {Week} during {Season}
+ScheduleIntent which team played {Team} {Week} for {Season}
+ScheduleIntent which team played {Team} {Week} in {Season}
+ScheduleIntent which team played {Team} {Week} of {Season}
+ScheduleIntent which team played {Team} {Week} {Season}
+ScheduleIntent which team plays the {Team} during {Week} during {Season}
+ScheduleIntent which team plays the {Team} during {Week} for {Season}
+ScheduleIntent which team plays the {Team} during {Week} in {Season}
+ScheduleIntent which team plays the {Team} during {Week} of {Season}
+ScheduleIntent which team plays the {Team} during {Week} {Season}
+ScheduleIntent which team plays the {Team} for {Week} during {Season}
+ScheduleIntent which team plays the {Team} for {Week} for {Season}
+ScheduleIntent which team plays the {Team} for {Week} in {Season}
+ScheduleIntent which team plays the {Team} for {Week} of {Season}
+ScheduleIntent which team plays the {Team} for {Week} {Season}
+ScheduleIntent which team plays the {Team} in {Week} during {Season}
+ScheduleIntent which team plays the {Team} in {Week} for {Season}
+ScheduleIntent which team plays the {Team} in {Week} in {Season}
+ScheduleIntent which team plays the {Team} in {Week} of {Season}
+ScheduleIntent which team plays the {Team} in {Week} {Season}
+ScheduleIntent which team plays the {Team} of {Week} during {Season}
+ScheduleIntent which team plays the {Team} of {Week} for {Season}
+ScheduleIntent which team plays the {Team} of {Week} in {Season}
+ScheduleIntent which team plays the {Team} of {Week} of {Season}
+ScheduleIntent which team plays the {Team} of {Week} {Season}
+ScheduleIntent which team plays the {Team} {Week} during {Season}
+ScheduleIntent which team plays the {Team} {Week} for {Season}
+ScheduleIntent which team plays the {Team} {Week} in {Season}
+ScheduleIntent which team plays the {Team} {Week} of {Season}
+ScheduleIntent which team plays the {Team} {Week} {Season}
+ScheduleIntent which team plays {Team} during {Week} during {Season}
+ScheduleIntent which team plays {Team} during {Week} for {Season}
+ScheduleIntent which team plays {Team} during {Week} in {Season}
+ScheduleIntent which team plays {Team} during {Week} of {Season}
+ScheduleIntent which team plays {Team} during {Week} {Season}
+ScheduleIntent which team plays {Team} for {Week} during {Season}
+ScheduleIntent which team plays {Team} for {Week} for {Season}
+ScheduleIntent which team plays {Team} for {Week} in {Season}
+ScheduleIntent which team plays {Team} for {Week} of {Season}
+ScheduleIntent which team plays {Team} for {Week} {Season}
+ScheduleIntent which team plays {Team} in {Week} during {Season}
+ScheduleIntent which team plays {Team} in {Week} for {Season}
+ScheduleIntent which team plays {Team} in {Week} in {Season}
+ScheduleIntent which team plays {Team} in {Week} of {Season}
+ScheduleIntent which team plays {Team} in {Week} {Season}
+ScheduleIntent which team plays {Team} of {Week} during {Season}
+ScheduleIntent which team plays {Team} of {Week} for {Season}
+ScheduleIntent which team plays {Team} of {Week} in {Season}
+ScheduleIntent which team plays {Team} of {Week} of {Season}
+ScheduleIntent which team plays {Team} of {Week} {Season}
+ScheduleIntent which team plays {Team} {Week} during {Season}
+ScheduleIntent which team plays {Team} {Week} for {Season}
+ScheduleIntent which team plays {Team} {Week} in {Season}
+ScheduleIntent which team plays {Team} {Week} of {Season}
+ScheduleIntent which team plays {Team} {Week} {Season}
+ScheduleIntent who did the {Team} play during {Week} during {Season}
+ScheduleIntent who did the {Team} play during {Week} during {Season} season
+ScheduleIntent who did the {Team} play during {Week} for {Season}
+ScheduleIntent who did the {Team} play during {Week} for {Season} season
+ScheduleIntent who did the {Team} play during {Week} in {Season}
+ScheduleIntent who did the {Team} play during {Week} in {Season} season
+ScheduleIntent who did the {Team} play during {Week} of {Season}
+ScheduleIntent who did the {Team} play during {Week} of {Season} season
+ScheduleIntent who did the {Team} play during {Week} {Season}
+ScheduleIntent who did the {Team} play during {Week} {Season} season
+ScheduleIntent who did the {Team} play for {Week} during {Season}
+ScheduleIntent who did the {Team} play for {Week} during {Season} season
+ScheduleIntent who did the {Team} play for {Week} for {Season}
+ScheduleIntent who did the {Team} play for {Week} for {Season} season
+ScheduleIntent who did the {Team} play for {Week} in {Season}
+ScheduleIntent who did the {Team} play for {Week} in {Season} season
+ScheduleIntent who did the {Team} play for {Week} of {Season}
+ScheduleIntent who did the {Team} play for {Week} of {Season} season
+ScheduleIntent who did the {Team} play for {Week} {Season}
+ScheduleIntent who did the {Team} play for {Week} {Season} season
+ScheduleIntent who did the {Team} play in {Week} during {Season}
+ScheduleIntent who did the {Team} play in {Week} during {Season} season
+ScheduleIntent who did the {Team} play in {Week} for {Season}
+ScheduleIntent who did the {Team} play in {Week} for {Season} season
+ScheduleIntent who did the {Team} play in {Week} in {Season}
+ScheduleIntent who did the {Team} play in {Week} in {Season} season
+ScheduleIntent who did the {Team} play in {Week} of {Season}
+ScheduleIntent who did the {Team} play in {Week} of {Season} season
+ScheduleIntent who did the {Team} play in {Week} {Season}
+ScheduleIntent who did the {Team} play in {Week} {Season} season
+ScheduleIntent who did the {Team} play {Week} during {Season}
+ScheduleIntent who did the {Team} play {Week} during {Season} season
+ScheduleIntent who did the {Team} play {Week} for {Season}
+ScheduleIntent who did the {Team} play {Week} for {Season} season
+ScheduleIntent who did the {Team} play {Week} in {Season}
+ScheduleIntent who did the {Team} play {Week} in {Season} season
+ScheduleIntent who did the {Team} play {Week} of {Season}
+ScheduleIntent who did the {Team} play {Week} of {Season} season
+ScheduleIntent who did the {Team} play {Week} {Season}
+ScheduleIntent who did the {Team} play {Week} {Season} season
+ScheduleIntent who did {Team} play during {Week} during {Season}
+ScheduleIntent who did {Team} play during {Week} during {Season} season
+ScheduleIntent who did {Team} play during {Week} for {Season}
+ScheduleIntent who did {Team} play during {Week} for {Season} season
+ScheduleIntent who did {Team} play during {Week} in {Season}
+ScheduleIntent who did {Team} play during {Week} in {Season} season
+ScheduleIntent who did {Team} play during {Week} of {Season}
+ScheduleIntent who did {Team} play during {Week} of {Season} season
+ScheduleIntent who did {Team} play during {Week} {Season}
+ScheduleIntent who did {Team} play during {Week} {Season} season
+ScheduleIntent who did {Team} play for {Week} during {Season}
+ScheduleIntent who did {Team} play for {Week} during {Season} season
+ScheduleIntent who did {Team} play for {Week} for {Season}
+ScheduleIntent who did {Team} play for {Week} for {Season} season
+ScheduleIntent who did {Team} play for {Week} in {Season}
+ScheduleIntent who did {Team} play for {Week} in {Season} season
+ScheduleIntent who did {Team} play for {Week} of {Season}
+ScheduleIntent who did {Team} play for {Week} of {Season} season
+ScheduleIntent who did {Team} play for {Week} {Season}
+ScheduleIntent who did {Team} play for {Week} {Season} season
+ScheduleIntent who did {Team} play in {Week} during {Season}
+ScheduleIntent who did {Team} play in {Week} during {Season} season
+ScheduleIntent who did {Team} play in {Week} for {Season}
+ScheduleIntent who did {Team} play in {Week} for {Season} season
+ScheduleIntent who did {Team} play in {Week} in {Season}
+ScheduleIntent who did {Team} play in {Week} in {Season} season
+ScheduleIntent who did {Team} play in {Week} of {Season}
+ScheduleIntent who did {Team} play in {Week} of {Season} season
+ScheduleIntent who did {Team} play in {Week} {Season}
+ScheduleIntent who did {Team} play in {Week} {Season} season
+ScheduleIntent who did {Team} play {Week} during {Season}
+ScheduleIntent who did {Team} play {Week} during {Season} season
+ScheduleIntent who did {Team} play {Week} for {Season}
+ScheduleIntent who did {Team} play {Week} for {Season} season
+ScheduleIntent who did {Team} play {Week} in {Season}
+ScheduleIntent who did {Team} play {Week} in {Season} season
+ScheduleIntent who did {Team} play {Week} of {Season}
+ScheduleIntent who did {Team} play {Week} of {Season} season
+ScheduleIntent who did {Team} play {Week} {Season}
+ScheduleIntent who did {Team} play {Week} {Season} season
+ScheduleIntent who do the {Team} play during {Week} during {Season}
+ScheduleIntent who do the {Team} play during {Week} during {Season} season
+ScheduleIntent who do the {Team} play during {Week} for {Season}
+ScheduleIntent who do the {Team} play during {Week} for {Season} season
+ScheduleIntent who do the {Team} play during {Week} in {Season}
+ScheduleIntent who do the {Team} play during {Week} in {Season} season
+ScheduleIntent who do the {Team} play during {Week} of {Season}
+ScheduleIntent who do the {Team} play during {Week} of {Season} season
+ScheduleIntent who do the {Team} play during {Week} {Season}
+ScheduleIntent who do the {Team} play during {Week} {Season} season
+ScheduleIntent who do the {Team} play for {Week} during {Season}
+ScheduleIntent who do the {Team} play for {Week} during {Season} season
+ScheduleIntent who do the {Team} play for {Week} for {Season}
+ScheduleIntent who do the {Team} play for {Week} for {Season} season
+ScheduleIntent who do the {Team} play for {Week} in {Season}
+ScheduleIntent who do the {Team} play for {Week} in {Season} season
+ScheduleIntent who do the {Team} play for {Week} of {Season}
+ScheduleIntent who do the {Team} play for {Week} of {Season} season
+ScheduleIntent who do the {Team} play for {Week} {Season}
+ScheduleIntent who do the {Team} play for {Week} {Season} season
+ScheduleIntent who do the {Team} play in {Week} during {Season}
+ScheduleIntent who do the {Team} play in {Week} during {Season} season
+ScheduleIntent who do the {Team} play in {Week} for {Season}
+ScheduleIntent who do the {Team} play in {Week} for {Season} season
+ScheduleIntent who do the {Team} play in {Week} in {Season}
+ScheduleIntent who do the {Team} play in {Week} in {Season} season
+ScheduleIntent who do the {Team} play in {Week} of {Season}
+ScheduleIntent who do the {Team} play in {Week} of {Season} season
+ScheduleIntent who do the {Team} play in {Week} {Season}
+ScheduleIntent who do the {Team} play in {Week} {Season} season
+ScheduleIntent who do the {Team} play {Week} during {Season}
+ScheduleIntent who do the {Team} play {Week} during {Season} season
+ScheduleIntent who do the {Team} play {Week} for {Season}
+ScheduleIntent who do the {Team} play {Week} for {Season} season
+ScheduleIntent who do the {Team} play {Week} in {Season}
+ScheduleIntent who do the {Team} play {Week} in {Season} season
+ScheduleIntent who do the {Team} play {Week} of {Season}
+ScheduleIntent who do the {Team} play {Week} of {Season} season
+ScheduleIntent who do the {Team} play {Week} {Season}
+ScheduleIntent who do the {Team} play {Week} {Season} season
+ScheduleIntent who do {Team} play during {Week} during {Season}
+ScheduleIntent who do {Team} play during {Week} during {Season} season
+ScheduleIntent who do {Team} play during {Week} for {Season}
+ScheduleIntent who do {Team} play during {Week} for {Season} season
+ScheduleIntent who do {Team} play during {Week} in {Season}
+ScheduleIntent who do {Team} play during {Week} in {Season} season
+ScheduleIntent who do {Team} play during {Week} of {Season}
+ScheduleIntent who do {Team} play during {Week} of {Season} season
+ScheduleIntent who do {Team} play during {Week} {Season}
+ScheduleIntent who do {Team} play during {Week} {Season} season
+ScheduleIntent who do {Team} play for {Week} during {Season}
+ScheduleIntent who do {Team} play for {Week} during {Season} season
+ScheduleIntent who do {Team} play for {Week} for {Season}
+ScheduleIntent who do {Team} play for {Week} for {Season} season
+ScheduleIntent who do {Team} play for {Week} in {Season}
+ScheduleIntent who do {Team} play for {Week} in {Season} season
+ScheduleIntent who do {Team} play for {Week} of {Season}
+ScheduleIntent who do {Team} play for {Week} of {Season} season
+ScheduleIntent who do {Team} play for {Week} {Season}
+ScheduleIntent who do {Team} play for {Week} {Season} season
+ScheduleIntent who do {Team} play in {Week} during {Season}
+ScheduleIntent who do {Team} play in {Week} during {Season} season
+ScheduleIntent who do {Team} play in {Week} for {Season}
+ScheduleIntent who do {Team} play in {Week} for {Season} season
+ScheduleIntent who do {Team} play in {Week} in {Season}
+ScheduleIntent who do {Team} play in {Week} in {Season} season
+ScheduleIntent who do {Team} play in {Week} of {Season}
+ScheduleIntent who do {Team} play in {Week} of {Season} season
+ScheduleIntent who do {Team} play in {Week} {Season}
+ScheduleIntent who do {Team} play in {Week} {Season} season
+ScheduleIntent who do {Team} play {Week} during {Season}
+ScheduleIntent who do {Team} play {Week} during {Season} season
+ScheduleIntent who do {Team} play {Week} for {Season}
+ScheduleIntent who do {Team} play {Week} for {Season} season
+ScheduleIntent who do {Team} play {Week} in {Season}
+ScheduleIntent who do {Team} play {Week} in {Season} season
+ScheduleIntent who do {Team} play {Week} of {Season}
+ScheduleIntent who do {Team} play {Week} of {Season} season
+ScheduleIntent who do {Team} play {Week} {Season}
+ScheduleIntent who do {Team} play {Week} {Season} season
+ScheduleIntent who does the {Team} play during {Week} during {Season}
+ScheduleIntent who does the {Team} play during {Week} during {Season} season
+ScheduleIntent who does the {Team} play during {Week} for {Season}
+ScheduleIntent who does the {Team} play during {Week} for {Season} season
+ScheduleIntent who does the {Team} play during {Week} in {Season}
+ScheduleIntent who does the {Team} play during {Week} in {Season} season
+ScheduleIntent who does the {Team} play during {Week} of {Season}
+ScheduleIntent who does the {Team} play during {Week} of {Season} season
+ScheduleIntent who does the {Team} play during {Week} {Season}
+ScheduleIntent who does the {Team} play during {Week} {Season} season
+ScheduleIntent who does the {Team} play for {Week} during {Season}
+ScheduleIntent who does the {Team} play for {Week} during {Season} season
+ScheduleIntent who does the {Team} play for {Week} for {Season}
+ScheduleIntent who does the {Team} play for {Week} for {Season} season
+ScheduleIntent who does the {Team} play for {Week} in {Season}
+ScheduleIntent who does the {Team} play for {Week} in {Season} season
+ScheduleIntent who does the {Team} play for {Week} of {Season}
+ScheduleIntent who does the {Team} play for {Week} of {Season} season
+ScheduleIntent who does the {Team} play for {Week} {Season}
+ScheduleIntent who does the {Team} play for {Week} {Season} season
+ScheduleIntent who does the {Team} play in {Week} during {Season}
+ScheduleIntent who does the {Team} play in {Week} during {Season} season
+ScheduleIntent who does the {Team} play in {Week} for {Season}
+ScheduleIntent who does the {Team} play in {Week} for {Season} season
+ScheduleIntent who does the {Team} play in {Week} in {Season}
+ScheduleIntent who does the {Team} play in {Week} in {Season} season
+ScheduleIntent who does the {Team} play in {Week} of {Season}
+ScheduleIntent who does the {Team} play in {Week} of {Season} season
+ScheduleIntent who does the {Team} play in {Week} {Season}
+ScheduleIntent who does the {Team} play in {Week} {Season} season
+ScheduleIntent who does the {Team} play {Week} during {Season}
+ScheduleIntent who does the {Team} play {Week} during {Season} season
+ScheduleIntent who does the {Team} play {Week} for {Season}
+ScheduleIntent who does the {Team} play {Week} for {Season} season
+ScheduleIntent who does the {Team} play {Week} in {Season}
+ScheduleIntent who does the {Team} play {Week} in {Season} season
+ScheduleIntent who does the {Team} play {Week} of {Season}
+ScheduleIntent who does the {Team} play {Week} of {Season} season
+ScheduleIntent who does the {Team} play {Week} {Season}
+ScheduleIntent who does the {Team} play {Week} {Season} season
+ScheduleIntent who does {Team} play during {Week} during {Season}
+ScheduleIntent who does {Team} play during {Week} during {Season} season
+ScheduleIntent who does {Team} play during {Week} for {Season}
+ScheduleIntent who does {Team} play during {Week} for {Season} season
+ScheduleIntent who does {Team} play during {Week} in {Season}
+ScheduleIntent who does {Team} play during {Week} in {Season} season
+ScheduleIntent who does {Team} play during {Week} of {Season}
+ScheduleIntent who does {Team} play during {Week} of {Season} season
+ScheduleIntent who does {Team} play during {Week} {Season}
+ScheduleIntent who does {Team} play during {Week} {Season} season
+ScheduleIntent who does {Team} play for {Week} during {Season}
+ScheduleIntent who does {Team} play for {Week} during {Season} season
+ScheduleIntent who does {Team} play for {Week} for {Season}
+ScheduleIntent who does {Team} play for {Week} for {Season} season
+ScheduleIntent who does {Team} play for {Week} in {Season}
+ScheduleIntent who does {Team} play for {Week} in {Season} season
+ScheduleIntent who does {Team} play for {Week} of {Season}
+ScheduleIntent who does {Team} play for {Week} of {Season} season
+ScheduleIntent who does {Team} play for {Week} {Season}
+ScheduleIntent who does {Team} play for {Week} {Season} season
+ScheduleIntent who does {Team} play in {Week} during {Season}
+ScheduleIntent who does {Team} play in {Week} during {Season} season
+ScheduleIntent who does {Team} play in {Week} for {Season}
+ScheduleIntent who does {Team} play in {Week} for {Season} season
+ScheduleIntent who does {Team} play in {Week} in {Season}
+ScheduleIntent who does {Team} play in {Week} in {Season} season
+ScheduleIntent who does {Team} play in {Week} of {Season}
+ScheduleIntent who does {Team} play in {Week} of {Season} season
+ScheduleIntent who does {Team} play in {Week} {Season}
+ScheduleIntent who does {Team} play in {Week} {Season} season
+ScheduleIntent who does {Team} play {Week} during {Season}
+ScheduleIntent who does {Team} play {Week} during {Season} season
+ScheduleIntent who does {Team} play {Week} for {Season}
+ScheduleIntent who does {Team} play {Week} for {Season} season
+ScheduleIntent who does {Team} play {Week} in {Season}
+ScheduleIntent who does {Team} play {Week} in {Season} season
+ScheduleIntent who does {Team} play {Week} of {Season}
+ScheduleIntent who does {Team} play {Week} of {Season} season
+ScheduleIntent who does {Team} play {Week} {Season}
+ScheduleIntent who does {Team} play {Week} {Season} season
+ScheduleIntent who played the {Team} during {Week} during the {Season}
+ScheduleIntent who played the {Team} during {Week} during the {Season} season
+ScheduleIntent who played the {Team} during {Week} during {Season}
+ScheduleIntent who played the {Team} during {Week} during {Season} season
+ScheduleIntent who played the {Team} during {Week} for the {Season}
+ScheduleIntent who played the {Team} during {Week} for the {Season} season
+ScheduleIntent who played the {Team} during {Week} for {Season}
+ScheduleIntent who played the {Team} during {Week} for {Season} season
+ScheduleIntent who played the {Team} during {Week} in the {Season}
+ScheduleIntent who played the {Team} during {Week} in the {Season} season
+ScheduleIntent who played the {Team} during {Week} in {Season}
+ScheduleIntent who played the {Team} during {Week} in {Season} season
+ScheduleIntent who played the {Team} during {Week} of the {Season}
+ScheduleIntent who played the {Team} during {Week} of the {Season} season
+ScheduleIntent who played the {Team} during {Week} of {Season}
+ScheduleIntent who played the {Team} during {Week} of {Season} season
+ScheduleIntent who played the {Team} during {Week} the {Season}
+ScheduleIntent who played the {Team} during {Week} the {Season} season
+ScheduleIntent who played the {Team} during {Week} {Season}
+ScheduleIntent who played the {Team} during {Week} {Season} season
+ScheduleIntent who played the {Team} for {Week} during the {Season}
+ScheduleIntent who played the {Team} for {Week} during the {Season} season
+ScheduleIntent who played the {Team} for {Week} during {Season}
+ScheduleIntent who played the {Team} for {Week} during {Season} season
+ScheduleIntent who played the {Team} for {Week} for the {Season}
+ScheduleIntent who played the {Team} for {Week} for the {Season} season
+ScheduleIntent who played the {Team} for {Week} for {Season}
+ScheduleIntent who played the {Team} for {Week} for {Season} season
+ScheduleIntent who played the {Team} for {Week} in the {Season}
+ScheduleIntent who played the {Team} for {Week} in the {Season} season
+ScheduleIntent who played the {Team} for {Week} in {Season}
+ScheduleIntent who played the {Team} for {Week} in {Season} season
+ScheduleIntent who played the {Team} for {Week} of the {Season}
+ScheduleIntent who played the {Team} for {Week} of the {Season} season
+ScheduleIntent who played the {Team} for {Week} of {Season}
+ScheduleIntent who played the {Team} for {Week} of {Season} season
+ScheduleIntent who played the {Team} for {Week} the {Season}
+ScheduleIntent who played the {Team} for {Week} the {Season} season
+ScheduleIntent who played the {Team} for {Week} {Season}
+ScheduleIntent who played the {Team} for {Week} {Season} season
+ScheduleIntent who played the {Team} in {Week} during the {Season}
+ScheduleIntent who played the {Team} in {Week} during the {Season} season
+ScheduleIntent who played the {Team} in {Week} during {Season}
+ScheduleIntent who played the {Team} in {Week} during {Season} season
+ScheduleIntent who played the {Team} in {Week} for the {Season}
+ScheduleIntent who played the {Team} in {Week} for the {Season} season
+ScheduleIntent who played the {Team} in {Week} for {Season}
+ScheduleIntent who played the {Team} in {Week} for {Season} season
+ScheduleIntent who played the {Team} in {Week} in the {Season}
+ScheduleIntent who played the {Team} in {Week} in the {Season} season
+ScheduleIntent who played the {Team} in {Week} in {Season}
+ScheduleIntent who played the {Team} in {Week} in {Season} season
+ScheduleIntent who played the {Team} in {Week} of the {Season}
+ScheduleIntent who played the {Team} in {Week} of the {Season} season
+ScheduleIntent who played the {Team} in {Week} of {Season}
+ScheduleIntent who played the {Team} in {Week} of {Season} season
+ScheduleIntent who played the {Team} in {Week} the {Season}
+ScheduleIntent who played the {Team} in {Week} the {Season} season
+ScheduleIntent who played the {Team} in {Week} {Season}
+ScheduleIntent who played the {Team} in {Week} {Season} season
+ScheduleIntent who played the {Team} {Week} during the {Season}
+ScheduleIntent who played the {Team} {Week} during the {Season} season
+ScheduleIntent who played the {Team} {Week} during {Season}
+ScheduleIntent who played the {Team} {Week} during {Season} season
+ScheduleIntent who played the {Team} {Week} for the {Season}
+ScheduleIntent who played the {Team} {Week} for the {Season} season
+ScheduleIntent who played the {Team} {Week} for {Season}
+ScheduleIntent who played the {Team} {Week} for {Season} season
+ScheduleIntent who played the {Team} {Week} in the {Season}
+ScheduleIntent who played the {Team} {Week} in the {Season} season
+ScheduleIntent who played the {Team} {Week} in {Season}
+ScheduleIntent who played the {Team} {Week} in {Season} season
+ScheduleIntent who played the {Team} {Week} of the {Season}
+ScheduleIntent who played the {Team} {Week} of the {Season} season
+ScheduleIntent who played the {Team} {Week} of {Season}
+ScheduleIntent who played the {Team} {Week} of {Season} season
+ScheduleIntent who played the {Team} {Week} the {Season}
+ScheduleIntent who played the {Team} {Week} the {Season} season
+ScheduleIntent who played the {Team} {Week} {Season}
+ScheduleIntent who played the {Team} {Week} {Season} season
+ScheduleIntent who played {Team} during {Week} during the {Season}
+ScheduleIntent who played {Team} during {Week} during the {Season} season
+ScheduleIntent who played {Team} during {Week} during {Season}
+ScheduleIntent who played {Team} during {Week} during {Season} season
+ScheduleIntent who played {Team} during {Week} for the {Season}
+ScheduleIntent who played {Team} during {Week} for the {Season} season
+ScheduleIntent who played {Team} during {Week} for {Season}
+ScheduleIntent who played {Team} during {Week} for {Season} season
+ScheduleIntent who played {Team} during {Week} in the {Season}
+ScheduleIntent who played {Team} during {Week} in the {Season} season
+ScheduleIntent who played {Team} during {Week} in {Season}
+ScheduleIntent who played {Team} during {Week} in {Season} season
+ScheduleIntent who played {Team} during {Week} of the {Season}
+ScheduleIntent who played {Team} during {Week} of the {Season} season
+ScheduleIntent who played {Team} during {Week} of {Season}
+ScheduleIntent who played {Team} during {Week} of {Season} season
+ScheduleIntent who played {Team} during {Week} the {Season}
+ScheduleIntent who played {Team} during {Week} the {Season} season
+ScheduleIntent who played {Team} during {Week} {Season}
+ScheduleIntent who played {Team} during {Week} {Season} season
+ScheduleIntent who played {Team} for {Week} during the {Season}
+ScheduleIntent who played {Team} for {Week} during the {Season} season
+ScheduleIntent who played {Team} for {Week} during {Season}
+ScheduleIntent who played {Team} for {Week} during {Season} season
+ScheduleIntent who played {Team} for {Week} for the {Season}
+ScheduleIntent who played {Team} for {Week} for the {Season} season
+ScheduleIntent who played {Team} for {Week} for {Season}
+ScheduleIntent who played {Team} for {Week} for {Season} season
+ScheduleIntent who played {Team} for {Week} in the {Season}
+ScheduleIntent who played {Team} for {Week} in the {Season} season
+ScheduleIntent who played {Team} for {Week} in {Season}
+ScheduleIntent who played {Team} for {Week} in {Season} season
+ScheduleIntent who played {Team} for {Week} of the {Season}
+ScheduleIntent who played {Team} for {Week} of the {Season} season
+ScheduleIntent who played {Team} for {Week} of {Season}
+ScheduleIntent who played {Team} for {Week} of {Season} season
+ScheduleIntent who played {Team} for {Week} the {Season}
+ScheduleIntent who played {Team} for {Week} the {Season} season
+ScheduleIntent who played {Team} for {Week} {Season}
+ScheduleIntent who played {Team} for {Week} {Season} season
+ScheduleIntent who played {Team} in {Week} during the {Season}
+ScheduleIntent who played {Team} in {Week} during the {Season} season
+ScheduleIntent who played {Team} in {Week} during {Season}
+ScheduleIntent who played {Team} in {Week} during {Season} season
+ScheduleIntent who played {Team} in {Week} for the {Season}
+ScheduleIntent who played {Team} in {Week} for the {Season} season
+ScheduleIntent who played {Team} in {Week} for {Season}
+ScheduleIntent who played {Team} in {Week} for {Season} season
+ScheduleIntent who played {Team} in {Week} in the {Season}
+ScheduleIntent who played {Team} in {Week} in the {Season} season
+ScheduleIntent who played {Team} in {Week} in {Season}
+ScheduleIntent who played {Team} in {Week} in {Season} season
+ScheduleIntent who played {Team} in {Week} of the {Season}
+ScheduleIntent who played {Team} in {Week} of the {Season} season
+ScheduleIntent who played {Team} in {Week} of {Season}
+ScheduleIntent who played {Team} in {Week} of {Season} season
+ScheduleIntent who played {Team} in {Week} the {Season}
+ScheduleIntent who played {Team} in {Week} the {Season} season
+ScheduleIntent who played {Team} in {Week} {Season}
+ScheduleIntent who played {Team} in {Week} {Season} season
+ScheduleIntent who played {Team} {Week} during the {Season}
+ScheduleIntent who played {Team} {Week} during the {Season} season
+ScheduleIntent who played {Team} {Week} during {Season}
+ScheduleIntent who played {Team} {Week} during {Season} season
+ScheduleIntent who played {Team} {Week} for the {Season}
+ScheduleIntent who played {Team} {Week} for the {Season} season
+ScheduleIntent who played {Team} {Week} for {Season}
+ScheduleIntent who played {Team} {Week} for {Season} season
+ScheduleIntent who played {Team} {Week} in the {Season}
+ScheduleIntent who played {Team} {Week} in the {Season} season
+ScheduleIntent who played {Team} {Week} in {Season}
+ScheduleIntent who played {Team} {Week} in {Season} season
+ScheduleIntent who played {Team} {Week} of the {Season}
+ScheduleIntent who played {Team} {Week} of the {Season} season
+ScheduleIntent who played {Team} {Week} of {Season}
+ScheduleIntent who played {Team} {Week} of {Season} season
+ScheduleIntent who played {Team} {Week} the {Season}
+ScheduleIntent who played {Team} {Week} the {Season} season
+ScheduleIntent who played {Team} {Week} {Season}
+ScheduleIntent who played {Team} {Week} {Season} season
+ScheduleIntent who plays the {Team} during {Week} during the {Season}
+ScheduleIntent who plays the {Team} during {Week} during the {Season} season
+ScheduleIntent who plays the {Team} during {Week} during {Season}
+ScheduleIntent who plays the {Team} during {Week} during {Season} season
+ScheduleIntent who plays the {Team} during {Week} for the {Season}
+ScheduleIntent who plays the {Team} during {Week} for the {Season} season
+ScheduleIntent who plays the {Team} during {Week} for {Season}
+ScheduleIntent who plays the {Team} during {Week} for {Season} season
+ScheduleIntent who plays the {Team} during {Week} in the {Season}
+ScheduleIntent who plays the {Team} during {Week} in the {Season} season
+ScheduleIntent who plays the {Team} during {Week} in {Season}
+ScheduleIntent who plays the {Team} during {Week} in {Season} season
+ScheduleIntent who plays the {Team} during {Week} of the {Season}
+ScheduleIntent who plays the {Team} during {Week} of the {Season} season
+ScheduleIntent who plays the {Team} during {Week} of {Season}
+ScheduleIntent who plays the {Team} during {Week} of {Season} season
+ScheduleIntent who plays the {Team} during {Week} the {Season}
+ScheduleIntent who plays the {Team} during {Week} the {Season} season
+ScheduleIntent who plays the {Team} during {Week} {Season}
+ScheduleIntent who plays the {Team} during {Week} {Season} season
+ScheduleIntent who plays the {Team} for {Week} during the {Season}
+ScheduleIntent who plays the {Team} for {Week} during the {Season} season
+ScheduleIntent who plays the {Team} for {Week} during {Season}
+ScheduleIntent who plays the {Team} for {Week} during {Season} season
+ScheduleIntent who plays the {Team} for {Week} for the {Season}
+ScheduleIntent who plays the {Team} for {Week} for the {Season} season
+ScheduleIntent who plays the {Team} for {Week} for {Season}
+ScheduleIntent who plays the {Team} for {Week} for {Season} season
+ScheduleIntent who plays the {Team} for {Week} in the {Season}
+ScheduleIntent who plays the {Team} for {Week} in the {Season} season
+ScheduleIntent who plays the {Team} for {Week} in {Season}
+ScheduleIntent who plays the {Team} for {Week} in {Season} season
+ScheduleIntent who plays the {Team} for {Week} of the {Season}
+ScheduleIntent who plays the {Team} for {Week} of the {Season} season
+ScheduleIntent who plays the {Team} for {Week} of {Season}
+ScheduleIntent who plays the {Team} for {Week} of {Season} season
+ScheduleIntent who plays the {Team} for {Week} the {Season}
+ScheduleIntent who plays the {Team} for {Week} the {Season} season
+ScheduleIntent who plays the {Team} for {Week} {Season}
+ScheduleIntent who plays the {Team} for {Week} {Season} season
+ScheduleIntent who plays the {Team} in {Week} during the {Season}
+ScheduleIntent who plays the {Team} in {Week} during the {Season} season
+ScheduleIntent who plays the {Team} in {Week} during {Season}
+ScheduleIntent who plays the {Team} in {Week} during {Season} season
+ScheduleIntent who plays the {Team} in {Week} for the {Season}
+ScheduleIntent who plays the {Team} in {Week} for the {Season} season
+ScheduleIntent who plays the {Team} in {Week} for {Season}
+ScheduleIntent who plays the {Team} in {Week} for {Season} season
+ScheduleIntent who plays the {Team} in {Week} in the {Season}
+ScheduleIntent who plays the {Team} in {Week} in the {Season} season
+ScheduleIntent who plays the {Team} in {Week} in {Season}
+ScheduleIntent who plays the {Team} in {Week} in {Season} season
+ScheduleIntent who plays the {Team} in {Week} of the {Season}
+ScheduleIntent who plays the {Team} in {Week} of the {Season} season
+ScheduleIntent who plays the {Team} in {Week} of {Season}
+ScheduleIntent who plays the {Team} in {Week} of {Season} season
+ScheduleIntent who plays the {Team} in {Week} the {Season}
+ScheduleIntent who plays the {Team} in {Week} the {Season} season
+ScheduleIntent who plays the {Team} in {Week} {Season}
+ScheduleIntent who plays the {Team} in {Week} {Season} season
+ScheduleIntent who plays the {Team} {Week} during the {Season}
+ScheduleIntent who plays the {Team} {Week} during the {Season} season
+ScheduleIntent who plays the {Team} {Week} during {Season}
+ScheduleIntent who plays the {Team} {Week} during {Season} season
+ScheduleIntent who plays the {Team} {Week} for the {Season}
+ScheduleIntent who plays the {Team} {Week} for the {Season} season
+ScheduleIntent who plays the {Team} {Week} for {Season}
+ScheduleIntent who plays the {Team} {Week} for {Season} season
+ScheduleIntent who plays the {Team} {Week} in the {Season}
+ScheduleIntent who plays the {Team} {Week} in the {Season} season
+ScheduleIntent who plays the {Team} {Week} in {Season}
+ScheduleIntent who plays the {Team} {Week} in {Season} season
+ScheduleIntent who plays the {Team} {Week} of the {Season}
+ScheduleIntent who plays the {Team} {Week} of the {Season} season
+ScheduleIntent who plays the {Team} {Week} of {Season}
+ScheduleIntent who plays the {Team} {Week} of {Season} season
+ScheduleIntent who plays the {Team} {Week} the {Season}
+ScheduleIntent who plays the {Team} {Week} the {Season} season
+ScheduleIntent who plays the {Team} {Week} {Season}
+ScheduleIntent who plays the {Team} {Week} {Season} season
+ScheduleIntent who plays {Team} during {Week} for the {Season}
+ScheduleIntent who plays {Team} during {Week} for the {Season} season
+ScheduleIntent who plays {Team} during {Week} for {Season}
+ScheduleIntent who plays {Team} during {Week} for {Season} season
+ScheduleIntent who plays {Team} during {Week} in the {Season}
+ScheduleIntent who plays {Team} during {Week} in the {Season} season
+ScheduleIntent who plays {Team} during {Week} in {Season}
+ScheduleIntent who plays {Team} during {Week} in {Season} season
+ScheduleIntent who plays {Team} during {Week} of the {Season}
+ScheduleIntent who plays {Team} during {Week} of the {Season} season
+ScheduleIntent who plays {Team} during {Week} of {Season}
+ScheduleIntent who plays {Team} during {Week} of {Season} season
+ScheduleIntent who plays {Team} during {Week} the {Season}
+ScheduleIntent who plays {Team} during {Week} the {Season} season
+ScheduleIntent who plays {Team} during {Week} {Season}
+ScheduleIntent who plays {Team} during {Week} {Season} season
+ScheduleIntent who plays {Team} for {Week} during the {Season}
+ScheduleIntent who plays {Team} for {Week} during the {Season} season
+ScheduleIntent who plays {Team} for {Week} during {Season}
+ScheduleIntent who plays {Team} for {Week} during {Season} season
+ScheduleIntent who plays {Team} for {Week} for the {Season}
+ScheduleIntent who plays {Team} for {Week} for the {Season} season
+ScheduleIntent who plays {Team} for {Week} for {Season}
+ScheduleIntent who plays {Team} for {Week} for {Season} season
+ScheduleIntent who plays {Team} for {Week} in the {Season}
+ScheduleIntent who plays {Team} for {Week} in the {Season} season
+ScheduleIntent who plays {Team} for {Week} in {Season}
+ScheduleIntent who plays {Team} for {Week} in {Season} season
+ScheduleIntent who plays {Team} for {Week} of the {Season}
+ScheduleIntent who plays {Team} for {Week} of the {Season} season
+ScheduleIntent who plays {Team} for {Week} of {Season}
+ScheduleIntent who plays {Team} for {Week} of {Season} season
+ScheduleIntent who plays {Team} for {Week} the {Season}
+ScheduleIntent who plays {Team} for {Week} the {Season} season
+ScheduleIntent who plays {Team} for {Week} {Season}
+ScheduleIntent who plays {Team} for {Week} {Season} season
+ScheduleIntent who plays {Team} in {Week} during the {Season}
+ScheduleIntent who plays {Team} in {Week} during the {Season} season
+ScheduleIntent who plays {Team} in {Week} during {Season}
+ScheduleIntent who plays {Team} in {Week} during {Season} season
+ScheduleIntent who plays {Team} in {Week} for the {Season}
+ScheduleIntent who plays {Team} in {Week} for the {Season} season
+ScheduleIntent who plays {Team} in {Week} for {Season}
+ScheduleIntent who plays {Team} in {Week} for {Season} season
+ScheduleIntent who plays {Team} in {Week} in the {Season}
+ScheduleIntent who plays {Team} in {Week} in the {Season} season
+ScheduleIntent who plays {Team} in {Week} in {Season}
+ScheduleIntent who plays {Team} in {Week} in {Season} season
+ScheduleIntent who plays {Team} in {Week} of the {Season}
+ScheduleIntent who plays {Team} in {Week} of the {Season} season
+ScheduleIntent who plays {Team} in {Week} of {Season}
+ScheduleIntent who plays {Team} in {Week} of {Season} season
+ScheduleIntent who plays {Team} in {Week} the {Season}
+ScheduleIntent who plays {Team} in {Week} the {Season} season
+ScheduleIntent who plays {Team} in {Week} {Season}
+ScheduleIntent who plays {Team} in {Week} {Season} season
+ScheduleIntent who plays {Team} {Week} during the {Season}
+ScheduleIntent who plays {Team} {Week} during the {Season} season
+ScheduleIntent who plays {Team} {Week} during {Season}
+ScheduleIntent who plays {Team} {Week} during {Season} season
+ScheduleIntent who plays {Team} {Week} for the {Season}
+ScheduleIntent who plays {Team} {Week} for the {Season} season
+ScheduleIntent who plays {Team} {Week} for {Season}
+ScheduleIntent who plays {Team} {Week} for {Season} season
+ScheduleIntent who plays {Team} {Week} in the {Season}
+ScheduleIntent who plays {Team} {Week} in the {Season} season
+ScheduleIntent who plays {Team} {Week} in {Season}
+ScheduleIntent who plays {Team} {Week} in {Season} season
+ScheduleIntent who plays {Team} {Week} of the {Season}
+ScheduleIntent who plays {Team} {Week} of the {Season} season
+ScheduleIntent who plays {Team} {Week} of {Season}
+ScheduleIntent who plays {Team} {Week} of {Season} season
+ScheduleIntent who plays {Team} {Week} the {Season}
+ScheduleIntent who plays {Team} {Week} the {Season} season
+ScheduleIntent who plays {Team} {Week} {Season}
+ScheduleIntent who plays {Team} {Week} {Season} season
+ScheduleIntent who the {Team} play during {Week} during {Season}
+ScheduleIntent who the {Team} play during {Week} during {Season} season
+ScheduleIntent who the {Team} play during {Week} for {Season}
+ScheduleIntent who the {Team} play during {Week} for {Season} season
+ScheduleIntent who the {Team} play during {Week} in {Season}
+ScheduleIntent who the {Team} play during {Week} in {Season} season
+ScheduleIntent who the {Team} play during {Week} of {Season}
+ScheduleIntent who the {Team} play during {Week} of {Season} season
+ScheduleIntent who the {Team} play during {Week} {Season}
+ScheduleIntent who the {Team} play during {Week} {Season} season
+ScheduleIntent who the {Team} play for {Week} during {Season}
+ScheduleIntent who the {Team} play for {Week} during {Season} season
+ScheduleIntent who the {Team} play for {Week} for {Season}
+ScheduleIntent who the {Team} play for {Week} for {Season} season
+ScheduleIntent who the {Team} play for {Week} in {Season}
+ScheduleIntent who the {Team} play for {Week} in {Season} season
+ScheduleIntent who the {Team} play for {Week} of {Season}
+ScheduleIntent who the {Team} play for {Week} of {Season} season
+ScheduleIntent who the {Team} play for {Week} {Season}
+ScheduleIntent who the {Team} play for {Week} {Season} season
+ScheduleIntent who the {Team} play in {Week} during {Season}
+ScheduleIntent who the {Team} play in {Week} during {Season} season
+ScheduleIntent who the {Team} play in {Week} for {Season}
+ScheduleIntent who the {Team} play in {Week} for {Season} season
+ScheduleIntent who the {Team} play in {Week} in {Season}
+ScheduleIntent who the {Team} play in {Week} in {Season} season
+ScheduleIntent who the {Team} play in {Week} of {Season}
+ScheduleIntent who the {Team} play in {Week} of {Season} season
+ScheduleIntent who the {Team} play in {Week} {Season}
+ScheduleIntent who the {Team} play in {Week} {Season} season
+ScheduleIntent who the {Team} play {Week} during {Season}
+ScheduleIntent who the {Team} play {Week} during {Season} season
+ScheduleIntent who the {Team} play {Week} for {Season}
+ScheduleIntent who the {Team} play {Week} for {Season} season
+ScheduleIntent who the {Team} play {Week} in {Season}
+ScheduleIntent who the {Team} play {Week} in {Season} season
+ScheduleIntent who the {Team} play {Week} of {Season}
+ScheduleIntent who the {Team} play {Week} of {Season} season
+ScheduleIntent who the {Team} play {Week} {Season}
+ScheduleIntent who the {Team} play {Week} {Season} season
+ScheduleIntent {Team} {Week} {Season}
+ScheduleIntent {Team} {Season} {Week}
+ScheduleIntent {Week} {Team} {Season}
+ScheduleIntent {Week} {Season} {Team}
+ScheduleIntent {Season} {Team} {Week}
+ScheduleIntent {Season} {Week} {Team}
