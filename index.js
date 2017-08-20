@@ -281,7 +281,7 @@ FantasyMetrix.prototype.intentHandlers = {
                 if (err) {
                     console.log(err);
                 }
-            var speechText = "<speak>Please provide the name of a current NFL player who has played in at least one game, a valid metric correlating to that player's position, and a valid year pertaining to the NFL season ranging from two thousand and one through two thousand and seventeen. Providing a regular season week number, ranging from one through seventeen, is merely optional. You can say something like <break time=\"0.618s\"/> How many passing touchdowns did Tom Brady have in two thousand and seven?</speak>"
+            var speechText = "<speak>Please provide the name of a current NFL player who has played in at least one game, a valid metric correlating to that player's position, and the year of an NFL season ranging from two thousand and one through two thousand and seventeen. Providing a regular season week number, ranging from one through seventeen, is merely optional. You can say something like <break time=\"0.618s\"/> How many passing touchdowns did Tom Brady have in two thousand and seven?</speak>";
 
             var repromptText = "<speak>Here is the entire list of available metrics: Carries, Catch Rate, Completions, Completion Percentage, Fantasy Points, Fantasy Points Per Game, Fumbles, Games Played, Half PPR Points, Half PPR Points Per Game, Interceptions, Passing Attempts, Passing Attempts Per Game, Passing Touchdowns, Passing Yards, Passing Yards Per Game, PPR Points, PPR Points Per Game, Receiving Touchdowns, Receiving Yards, Receiving Yards Per Game, Receptions, Receptions Per Game, Return Touchdowns, Rushing Attempts, Rushing Attempts Per Game, Rushing Touchdowns, Rushing Yards, Rushing Yards Per Game, Stats, Targets, Targets Per Game, Total Touchdowns, Two Point Conversions, Yards From Scrimmage, Yards From Scrimmage Per Game, Yards Per Attempt, Yards Per Carry, Yards Per Reception, Yards Per Target. <break time=\"0.618s\"/> Now, what can I help you with today?</speak>";
 
@@ -393,6 +393,10 @@ function getMetricRequest(intent, session, response) {
         speechOutput,
         cardTitle,
         cardContent;
+
+    if (parseFloat(metric_value) > 0 && parseFloat(metric_value) <= 1) {
+        metric = metric.slice(0, -1);
+    }
 
     console.log("Get Metric Request...");
     console.log("Player: " + player);

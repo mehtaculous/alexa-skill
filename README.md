@@ -13,6 +13,7 @@ How To Use:
 
 <br>
 How To Use For Schedule:
+
 1. Name of an NFL team
 2. Year of an NFL season ranging from 2002 – Present
 3. Week number ranging from Week 1 – 17
@@ -20,14 +21,11 @@ How To Use For Schedule:
 <br>
 Quick Example Phrases:
 
-Alexa, ask FantasyMetrix Aaron Rodgers, fantasy points per game, 2010
-Alexa, ask FantasyMetrix Rob Gronkowski, receiving touchdowns, 2011
-Alexa, ask FantasyMetrix Marshawn Lynch, yards from scrimmage, 2012
-Alexa, ask FantasyMetrix Russell Wilson, completion percentage, 2013
-Alexa, ask FantasyMetrix Jordy Nelson, stats, week 14, twenty fourteen
-Alexa, ask FantasyMetrix Odell Beckham, catch rate, week 15, twenty fifteen
-Alexa, ask FantasyMetrix Atlanta Falcons, week 16, twenty sixteen
-Alexa, ask FantasyMetrix Oakland Raiders, week 17, twenty seventeen
+* Alexa, ask FantasyMetrix Jordy Nelson, fantasy points per game, 2010
+* Alexa, ask FantasyMetrix Rob Gronkowski, receiving touchdowns, 2011
+* Alexa, ask FantasyMetrix Marshawn Lynch, yards from scrimmage, 2012
+* Alexa, ask FantasyMetrix Russell Wilson, stats, week 13, twenty thirteen
+* Alexa, ask FantasyMetrix New England Patriots, week 14, twenty fourteen
 
 <br>
 Football Metrics:
@@ -61,6 +59,7 @@ Football Metrics:
 * Rushing Touchdowns
 * Rushing Yards
 * Rushing Yards Per Game
+* Stats
 * Targets
 * Targets Per Game
 * Total Touchdowns
