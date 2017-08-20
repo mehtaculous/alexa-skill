@@ -3,7 +3,7 @@
 A voice-enabled skill for Amazon's Alexa platform which provides past and present, weekly and season-long, statistics along with advanced metrics derived from NFL players using the Yahoo Fantasy Sports API
 
 <br>
-How To Use:
+How To Use For Metrics:
 
 1. Name of a current NFL player who has played in at least one game
 2. Valid football metric pertaining to that player's position (See list below)
@@ -21,11 +21,11 @@ How To Use For Schedule:
 <br>
 Quick Example Phrases:
 
-* Alexa, ask FantasyMetrix Jordy Nelson, fantasy points per game, 2010
+* Alexa, ask FantasyMetrix Aaron Rodgers, season stats, 2010
 * Alexa, ask FantasyMetrix Rob Gronkowski, receiving touchdowns, 2011
 * Alexa, ask FantasyMetrix Marshawn Lynch, yards from scrimmage, 2012
-* Alexa, ask FantasyMetrix Russell Wilson, stats, week 13, twenty thirteen
-* Alexa, ask FantasyMetrix New England Patriots, week 14, twenty fourteen
+* Alexa, ask FantasyMetrix A.J. Green, fantasy points, week 10, twenty thirteen
+* Alexa, ask FantasyMetrix Oakland Raiders, week 14, twenty fourteen
 
 <br>
 Football Metrics:
@@ -37,6 +37,7 @@ Football Metrics:
 * Fantasy Points
 * Fantasy Points Per Game
 * Fumbles
+* Game Log
 * Games Played
 * Half PPR Points
 * Half PPR Points Per Game
@@ -59,7 +60,7 @@ Football Metrics:
 * Rushing Touchdowns
 * Rushing Yards
 * Rushing Yards Per Game
-* Stats
+* Season Stats
 * Targets
 * Targets Per Game
 * Total Touchdowns
