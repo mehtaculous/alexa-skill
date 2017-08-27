@@ -3,6 +3,13 @@
 A voice-enabled skill for Amazon's Alexa platform which provides past and present, weekly and season-long, statistics along with advanced metrics derived from NFL players using the Yahoo Fantasy Sports API
 
 <br>
+Example Phrases:
+
+1. Alexa, ask FantasyMetrix for Tom Brady's fantasy points per game in 2015
+2. Alexa, ask FantasyMetrix what was David Johnson's game log for week 5 of 2016
+3. Alexa, ask FantasyMetrix who do the Seattle Seahawks play in week 12 of 2017
+
+<br>
 How To Use For Metrics:
 
 1. Name of a current NFL player who has played in at least one game
@@ -21,11 +28,11 @@ How To Use For Schedule:
 <br>
 Quick Example Phrases:
 
-* Alexa, ask FantasyMetrix Aaron Rodgers, season stats, 2010
-* Alexa, ask FantasyMetrix Rob Gronkowski, receiving touchdowns, 2011
-* Alexa, ask FantasyMetrix Marshawn Lynch, yards from scrimmage, 2012
-* Alexa, ask FantasyMetrix A.J. Green, fantasy points, week 10, twenty thirteen
-* Alexa, ask FantasyMetrix Oakland Raiders, week 14, twenty fourteen
+* Alexa, ask FantasyMetrix Rob Gronkowski, season stats, 2010
+* Alexa, ask FantasyMetrix Julio Jones, yards per reception, 2011
+* Alexa, ask FantasyMetrix Marshawn Lynch, rushing yards, 2012
+* Alexa, ask FantasyMetrix Russell Wilson, completions, twenty thirteen
+* Alexa, ask FantasyMetrix Oakland Raiders, week 10, twenty fourteen
 
 <br>
 Football Metrics:

@@ -18,6 +18,7 @@
   "homepage": "https://github.com/mehtaculous/alexa-skill#readme",
   "dependencies": {
     "express": "^4.14.0",
+    "pluralize": "^7.0.0",
     "request": "^2.78.0",
     "yahoo-fantasy": "^1.0.2"
   }
