@@ -38,9 +38,23 @@ module.exports = function getMetricRequest(intent, session, response) {
         cardTitle,
         cardContent;
 
-    if (parseFloat(metric_value) > 0 && parseFloat(metric_value) <= 1) {
-        metric = metric.slice(0, -1);
-    }
+    if ((parseFloat(metric_value) > 0 && parseFloat(metric_value) <= 1) && (metric != "games played")) { metric = metric.slice(0, -1); }
+
+    var games = "games",
+        targets_metric = "targets",
+        receptions_metric = "receptions",
+        interceptions_metric = "interceptions",
+        passing_tds_metric = "passing touchdowns",
+        rushing_tds_metric = "rushing touchdowns",
+        receiving_tds_metric = "receiving touchdowns";
+
+    if (parseFloat(games_played) === 1) { games = "game"; }
+    if (parseFloat(targets) === 1) { targets_metric = "target"; }
+    if (parseFloat(receptions) === 1) { receptions_metric = "reception"; }
+    if (parseFloat(interceptions) === 1) { interceptions_metric = "interception"; }
+    if (parseFloat(passing_touchdowns) === 1) { passing_tds_metric = "passing touchdown"; }
+    if (parseFloat(rushing_touchdowns) === 1) { rushing_tds_metric = "rushing touchdown"; }
+    if (parseFloat(receiving_touchdowns) === 1) { receiving_tds_metric = "receiving touchdown"; }
 
     console.log("Get Metric Request...");
     console.log("Player: " + player);
@@ -78,16 +92,18 @@ module.exports = function getMetricRequest(intent, session, response) {
             speech: "I'm sorry, but " + player + " did not play in " + week + " of the " + season + " season.",
             type: AlexaSkill.speechOutputType.PLAIN_TEXT
         };
+        cardTitle = "did not play";
         cardContent = player + " did not play in " + week + " of " + season;
-        response.tellWithCard(speechOutput, cardContent);
+        response.tellWithCard(speechOutput, cardTitle, cardContent);
     } else if (Keys[player] && (2000 < parseInt(season) < 2018) && (did_not_play === 0)) {
         console.log("I'm sorry, but " + player + " did not play in a single game during the " + season + " season.");
         speechOutput = {
             speech: "I'm sorry, but " + player + " did not play in a single game during the " + season + " season.",
             type: AlexaSkill.speechOutputType.PLAIN_TEXT
         };
+        cardTitle = "did not play";
         cardContent = player + " did not play in a single game during the " + season + " season";
-        response.tellWithCard(speechOutput, cardContent);
+        response.tellWithCard(speechOutput, cardTitle, cardContent);
     } else if (metric === "game log" || metric === "season stats") {
         if ((metric === "season stats") && Keys[week]) {
             console.log("I'm sorry, but " + metric + " is not a valid request when providing a week number.");
@@ -109,83 +125,83 @@ module.exports = function getMetricRequest(intent, session, response) {
             response.tellWithCard(speechOutput, cardTitle, cardContent);
         } else if (position === "QB") {
             if (Keys[week] && (metric === "game log")) {
-                console.log("During " + week + " of the " + season + " season, " + player + " had " + completions + " completions, on " + passing_attempts + " passing attempts, for " + passing_yards + " passing yards, " + passing_touchdowns + " passing touchdowns, and " + interceptions + " interceptions, along with " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " rushing touchdowns, to finish with " + fantasy_points + " total fantasy points.");
+                console.log("During " + week + " of the " + season + " season, " + player + " had " + completions + " completions, on " + passing_attempts + " passing attempts, for " + passing_yards + " passing yards, " + passing_touchdowns + " " + passing_tds_metric + ", and " + interceptions + " " + interceptions_metric + ", along with " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " " + rushing_tds_metric + ", to finish with " + fantasy_points + " total fantasy points.");
                 speechOutput = {
-                    speech: "During " + week + " of the " + season + " season, " + player + " had " + completions + " completions, on " + passing_attempts + " passing attempts, for " + passing_yards + " passing yards, " + passing_touchdowns + " passing touchdowns, and " + interceptions + " interceptions, along with " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " rushing touchdowns, to finish with " + fantasy_points + " total fantasy points.",
+                    speech: "During " + week + " of the " + season + " season, " + player + " had " + completions + " completions, on " + passing_attempts + " passing attempts, for " + passing_yards + " passing yards, " + passing_touchdowns + " " + passing_tds_metric + ", and " + interceptions + " " + interceptions_metric + ", along with " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " " + rushing_tds_metric + ", to finish with " + fantasy_points + " total fantasy points.",
                     type: AlexaSkill.speechOutputType.PLAIN_TEXT
                 };
                 cardTitle = "game log for " + player + " in " + week + " of " + season;
-                cardContent = completions + " completions, " + passing_attempts + " passing attempts, " + passing_yards + " passing yards, " + passing_touchdowns + " passing touchdowns, " + interceptions + " interceptions, " + rushing_yards + " rushing yards, " + rushing_touchdowns + " rushing touchdowns, " + fantasy_points + " fantasy points";
+                cardContent = completions + " completions, " + passing_attempts + " passing attempts, " + passing_yards + " passing yards, " + passing_touchdowns + " " + passing_tds_metric + ", " + interceptions + " " + interceptions_metric + ", " + rushing_yards + " rushing yards, " + rushing_touchdowns + " " + rushing_tds_metric + ", " + fantasy_points + " fantasy points";
                 response.tellWithCard(speechOutput, cardTitle, cardContent);
             } else if (metric === "season stats") {
-                console.log("During the " + season + " season, " + player + " had " + completions + " completions, on " + passing_attempts + " passing attempts, for " + passing_yards + " passing yards, " + passing_touchdowns + " passing touchdowns, and " + interceptions + " interceptions, along with " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " rushing touchdowns, to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.");
+                console.log("During the " + season + " season, " + player + " had " + completions + " completions, on " + passing_attempts + " passing attempts, for " + passing_yards + " passing yards, " + passing_touchdowns + " " + passing_tds_metric + ", and " + interceptions + " " + interceptions_metric + ", along with " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " " + rushing_tds_metric + ", to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.");
                 speechOutput = {
-                    speech: "During the " + season + " season, " + player + " had " + completions + " completions, on " + passing_attempts + " passing attempts, for " + passing_yards + " passing yards, " + passing_touchdowns + " passing touchdowns, and " + interceptions + " interceptions, along with " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " rushing touchdowns, to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.",
+                    speech: "During the " + season + " season, " + player + " had " + completions + " completions, on " + passing_attempts + " passing attempts, for " + passing_yards + " passing yards, " + passing_touchdowns + " " + passing_tds_metric + ", and " + interceptions + " " + interceptions_metric + ", along with " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " " + rushing_tds_metric + ", to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.",
                     type: AlexaSkill.speechOutputType.PLAIN_TEXT
                 };
                 cardTitle = "season stats for " + player + " in " + season;
-                cardContent = completions + " completions, " + passing_attempts + " passing attempts, " + passing_yards + " passing yards, " + passing_touchdowns + " passing touchdowns, " + interceptions + " interceptions, " + rushing_yards + " rushing yards, " + rushing_touchdowns + " rushing touchdowns, " + fantasy_points + " fantasy points, " + fantasy_points_per_game + " fantasy points per game";
+                cardContent = completions + " completions, " + passing_attempts + " passing attempts, " + passing_yards + " passing yards, " + passing_touchdowns + " " + passing_tds_metric + ", " + interceptions + " " + interceptions_metric + ", " + rushing_yards + " rushing yards, " + rushing_touchdowns + " " + rushing_tds_metric + ", " + fantasy_points + " fantasy points, " + fantasy_points_per_game + " fantasy points per game";
                 response.tellWithCard(speechOutput, cardTitle, cardContent);
             }
         } else if (position === "RB") {
             if (Keys[week] && (metric === "game log")) {
-                console.log("During " + week + " of the " + season + " season, " + player + " had " + rushing_attempts + " rushing attempts, for " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " rushing touchdowns, along with " + receptions + " receptions, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + " fantasy points, and " + ppr_points + " ppr points.");
+                console.log("During " + week + " of the " + season + " season, " + player + " had " + rushing_attempts + " rushing attempts, for " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " " + rushing_tds_metric + ", along with " + receptions + " " + receptions_metric + ", for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " " + receiving_tds_metric + ", to finish with " + fantasy_points + " fantasy points, and " + ppr_points + " ppr points.");
                 speechOutput = {
-                    speech: "During " + week + " of the " + season + " season, " + player + " had " + rushing_attempts + " rushing attempts, for " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " rushing touchdowns, along with " + receptions + " receptions, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + " fantasy points, and " + ppr_points + " ppr points.",
+                    speech: "During " + week + " of the " + season + " season, " + player + " had " + rushing_attempts + " rushing attempts, for " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " " + rushing_tds_metric + ", along with " + receptions + " " + receptions_metric + ", for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " " + receiving_tds_metric + ", to finish with " + fantasy_points + " fantasy points, and " + ppr_points + " ppr points.",
                     type: AlexaSkill.speechOutputType.PLAIN_TEXT
                 };
                 cardTitle = "game log for " + player + " in " + week + " of " + season;
-                cardContent = rushing_attempts + " rushing attempts, " + rushing_yards + " rushing yards, " + rushing_touchdowns + " rushing touchdowns, " + receptions + " receptions, " + receiving_yards + " receiving yards, " + receiving_touchdowns + " receiving touchdowns, " + fantasy_points + " fantasy points, " + ppr_points + " ppr points";
+                cardContent = rushing_attempts + " rushing attempts, " + rushing_yards + " rushing yards, " + rushing_touchdowns + " " + rushing_tds_metric + ", " + receptions + " " + receptions_metric + ", " + receiving_yards + " receiving yards, " + receiving_touchdowns + " " + receiving_tds_metric + ", " + fantasy_points + " fantasy points, " + ppr_points + " ppr points";
                 response.tellWithCard(speechOutput, cardTitle, cardContent);
             } else if (metric === "season stats") {
-                console.log("During the " + season + " season, " + player + " had " + rushing_attempts + " rushing attempts, for " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " rushing touchdowns, along with " + receptions + " receptions, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.");
+                console.log("During the " + season + " season, " + player + " had " + rushing_attempts + " rushing attempts, for " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " " + rushing_tds_metric + ", along with " + receptions + " " + receptions_metric + ", for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " " + receiving_tds_metric + ", to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.");
                 speechOutput = {
-                    speech: "During the " + season + " season, " + player + " had " + rushing_attempts + " rushing attempts, for " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " rushing touchdowns, along with " + receptions + " receptions, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + "  total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.",
+                    speech: "During the " + season + " season, " + player + " had " + rushing_attempts + " rushing attempts, for " + rushing_yards + " rushing yards, and " + rushing_touchdowns + " " + rushing_tds_metric + ", along with " + receptions + " " + receptions_metric + ", for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " " + receiving_tds_metric + ", to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.",
                     type: AlexaSkill.speechOutputType.PLAIN_TEXT
                 };
                 cardTitle = "season stats for " + player + " in " + season;
-                cardContent = rushing_attempts + " rushing attempts, " + rushing_yards + " rushing yards, " + rushing_touchdowns + " rushing touchdowns, " + receptions + " receptions, " + receiving_yards + " receiving yards, " + receiving_touchdowns + " receiving touchdowns, " + fantasy_points + " fantasy points, " + fantasy_points_per_game + " fantasy points per game";
+                cardContent = rushing_attempts + " rushing attempts, " + rushing_yards + " rushing yards, " + rushing_touchdowns + " " + rushing_tds_metric + ", " + receptions + " " + receptions_metric + ", " + receiving_yards + " receiving yards, " + receiving_touchdowns + " " + receiving_tds_metric + ", " + fantasy_points + " fantasy points, " + fantasy_points_per_game + " fantasy points per game";
                 response.tellWithCard(speechOutput, cardTitle, cardContent);
             }
         } else if (position === "WR" || position === "TE") {
-            if (2000 < parseInt(season) < 2014) {
+            if (parseInt(season) > 2000 && parseInt(season) < 2014) {
                 if (Keys[week] && (metric === "game log")) {
-                    console.log("During " + week + " of the " + season + " season, " + player + " had " + receptions + " receptions, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + " fantasy points, and " + ppr_points + " ppr points.");
+                    console.log("During " + week + " of the " + season + " season, " + player + " had " + receptions + " " + receptions_metric + ", for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " " + receiving_tds_metric + ", to finish with " + fantasy_points + " fantasy points, and " + ppr_points + " ppr points.");
                     speechOutput = {
-                        speech: "During " + week + " of the " + season + " season, " + player + " had " + receptions + " receptions, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + " fantasy points, and " + ppr_points + " ppr points.",
+                        speech: "During " + week + " of the " + season + " season, " + player + " had " + receptions + " " + receptions_metric + ", for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " " + receiving_tds_metric + ", to finish with " + fantasy_points + " fantasy points, and " + ppr_points + " ppr points.",
                         type: AlexaSkill.speechOutputType.PLAIN_TEXT
                     };
                     cardTitle = "game log for " + player + " in " + week + " of " + season;
-                    cardContent = receptions + " receptions, " + receiving_yards + " receiving yards, " + receiving_touchdowns + " receiving touchdowns, " + fantasy_points + " fantasy points, " + ppr_points + " ppr points";
+                    cardContent = receptions + " " + receptions_metric + ", " + receiving_yards + " receiving yards, " + receiving_touchdowns + " " + receiving_tds_metric + ", " + fantasy_points + " fantasy points, " + ppr_points + " ppr points";
                     response.tellWithCard(speechOutput, cardTitle, cardContent);
                 } else if (metric === "season stats") {
-                    console.log("During the " + season + " season, " + player + " had " + receptions + " receptions, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.");
+                    console.log("During the " + season + " season, " + player + " had " + receptions + " " + receptions_metric + ", for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " " + receiving_tds_metric + ", to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.");
                     speechOutput = {
-                        speech: "During the " + season + " season, " + player + " had " + receptions + " receptions, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.",
+                        speech: "During the " + season + " season, " + player + " had " + receptions + " " + receptions_metric + ", for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " " + receiving_tds_metric + ", to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.",
                         type: AlexaSkill.speechOutputType.PLAIN_TEXT
                     };
                     cardTitle = "season stats for " + player + " in " + season;
-                    cardContent = receptions + " receptions, " + receiving_yards + " receiving yards, " + receiving_touchdowns + " receiving touchdowns, " + fantasy_points + " fantasy points, " + fantasy_points_per_game + " fantasy points per game";
+                    cardContent = receptions + " " + receptions_metric + ", " + receiving_yards + " receiving yards, " + receiving_touchdowns + " " + receiving_tds_metric + ", " + fantasy_points + " fantasy points, " + fantasy_points_per_game + " fantasy points per game";
                     response.tellWithCard(speechOutput, cardTitle, cardContent);
                 }
             } else {
                 if (Keys[week] && (metric === "game log")) {
-                    console.log("During " + week + " of the " + season + " season, " + player + " had " + receptions + " receptions, on " + targets + " targets, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + " fantasy points, and " + ppr_points + " ppr points.");
+                    console.log("During " + week + " of the " + season + " season, " + player + " had " + receptions + " " + receptions_metric + ", on " + targets + " " + targets_metric + ", for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " " + receiving_tds_metric + ", to finish with " + fantasy_points + " fantasy points, and " + ppr_points + " ppr points.");
                     speechOutput = {
-                        speech: "During " + week + " of the " + season + " season, " + player + " had " + receptions + " receptions, on " + targets + " targets, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + " fantasy points, and " + ppr_points + " ppr points.",
+                        speech: "During " + week + " of the " + season + " season, " + player + " had " + receptions + " " + receptions_metric + ", on " + targets + " " + targets_metric + ", for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " " + receiving_tds_metric + ", to finish with " + fantasy_points + " fantasy points, and " + ppr_points + " ppr points.",
                         type: AlexaSkill.speechOutputType.PLAIN_TEXT
                     };
                     cardTitle = "game log for " + player + " in " + week + " of " + season;
-                    cardContent = receptions + " receptions, " + targets + " targets, " + receiving_yards + " receiving yards, " + receiving_touchdowns + " receiving touchdowns, " + fantasy_points + " fantasy points, " + ppr_points + " ppr points";
+                    cardContent = receptions + " " + receptions_metric + ", " + targets + " " + targets_metric + ", " + receiving_yards + " receiving yards, " + receiving_touchdowns + " " + receiving_tds_metric + ", " + fantasy_points + " fantasy points, " + ppr_points + " ppr points";
                     response.tellWithCard(speechOutput, cardTitle, cardContent);
                 } else if (metric === "season stats") {
-                    console.log("During the " + season + " season, " + player + " had " + receptions + " receptions, on " + targets + " targets, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.");
+                    console.log("During the " + season + " season, " + player + " had " + receptions + " " + receptions_metric + ", on " + targets + " " + targets_metric + ", for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " " + receiving_tds_metric + ", to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.");
                     speechOutput = {
-                        speech: "During the " + season + " season, " + player + " had " + receptions + " receptions, on " + targets + " targets, for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " receiving touchdowns, to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.",
+                        speech: "During the " + season + " season, " + player + " had " + receptions + " " + receptions_metric + ", on " + targets + " " + targets_metric + ", for " + receiving_yards + " receiving yards, and " + receiving_touchdowns + " " + receiving_tds_metric + ", to finish with " + fantasy_points + " total fantasy points, and " + fantasy_points_per_game + " fantasy points per game.",
                         type: AlexaSkill.speechOutputType.PLAIN_TEXT
                     };
                     cardTitle = "season stats for " + player + " in " + season;
-                    cardContent = receptions + " receptions, " + targets + " targets, " + receiving_yards + " receiving yards, " + receiving_touchdowns + " receiving touchdowns, " + fantasy_points + " fantasy points, " + fantasy_points_per_game + " fantasy points per game";
+                    cardContent = receptions + " " + receptions_metric + ", " + targets + " " + targets_metric + ", " + receiving_yards + " receiving yards, " + receiving_touchdowns + " " + receiving_tds_metric + ", " + fantasy_points + " fantasy points, " + fantasy_points_per_game + " fantasy points per game";
                     response.tellWithCard(speechOutput, cardTitle, cardContent);
                 }
             }
@@ -200,7 +216,7 @@ module.exports = function getMetricRequest(intent, session, response) {
             response.tellWithCard(speechOutput, cardTitle, cardContent);
         }
     } else {
-        if ((metric === "targets" || metric === "yards per target" || metric === "targets per game" || metric === "catch rate") && (2000 < parseInt(season) < 2014)) {
+        if ((metric === "targets" || metric === "yards per target" || metric === "targets per game" || metric === "catch rate") && (parseInt(season) > 2000 && parseInt(season) < 2014)) {
             console.log("I'm sorry, but target metrics are only available for players beginning from the 2014 season.");
             speechOutput = {
                 speech: "I'm sorry, but target metrics are only available for players beginning from the 2014 season.",
@@ -219,13 +235,13 @@ module.exports = function getMetricRequest(intent, session, response) {
             cardContent = metric + " is not a valid request when providing a week number";
             response.tellWithCard(speechOutput, cardTitle, cardContent);
         } else if (metric === "games played" && metric_value) {
-            console.log("During the " + season + " season, " + player + " played in " + games_played + " games.");
+            console.log("During the " + season + " season, " + player + " played in " + games_played + " " + games + ".");
             speechOutput = {
-                speech: "During the " + season + " season, " + player + " played in " + games_played + " games.",
+                speech: "During the " + season + " season, " + player + " played in " + games_played + " " + games + ".",
                 type: AlexaSkill.speechOutputType.PLAIN_TEXT
             };
             cardTitle = metric + " for " + player + " in " + season;
-            cardContent = metric_value + " " + metric;
+            cardContent = metric_value + " " + games;
             response.tellWithCard(speechOutput, cardTitle, cardContent);
         } else if ((metric === "catch rate" || metric === "completion percentage") && Keys[week] && metric_value) {
             console.log("During " + week + " of the " + season + " season, " + player + " had a " + metric_value + "% " + metric + ".");
