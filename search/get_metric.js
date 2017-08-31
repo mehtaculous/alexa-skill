@@ -4,8 +4,6 @@ var AlexaSkill = require('../AlexaSkill');
 
 var Keys = require('../data_keys');
 
-var pluralize = require('pluralize');
-
 module.exports = function getMetricRequest(intent, session, response) {
     var player = session.attributes.playerName,
         metric = session.attributes.metricName,
@@ -38,7 +36,7 @@ module.exports = function getMetricRequest(intent, session, response) {
         cardTitle,
         cardContent;
 
-    if ((parseFloat(metric_value) > 0 && parseFloat(metric_value) <= 1) && (metric != "games played")) { metric = metric.slice(0, -1); }
+    if ((parseFloat(metric_value) === 1) && (metric != "games played")) { metric = metric.slice(0, -1); }
 
     var games = "games",
         targets_metric = "targets",
@@ -102,7 +100,7 @@ module.exports = function getMetricRequest(intent, session, response) {
             type: AlexaSkill.speechOutputType.PLAIN_TEXT
         };
         cardTitle = "did not play";
-        cardContent = player + " did not play in a single game during the " + season + " season";
+        cardContent = player + " did not play in a single game during " + season;
         response.tellWithCard(speechOutput, cardTitle, cardContent);
     } else if (metric === "game log" || metric === "season stats") {
         if ((metric === "season stats") && Keys[week]) {
