@@ -1,4 +1,4 @@
-## [FantasyMetrix](http://alexa.amazon.com/spa/index.html#skills/dp/B073XDD8V4/?ref=skill_dsk_skb_sr_4)
+## [FantasyMetrix](https://www.amazon.com/mehtaculous-FantasyMetrix/dp/B073XDD8V4/ref=sr_1_1?ie=UTF8&qid=1526586431&sr=8-1&keywords=fantasymetrix)
 
 A voice-enabled skill for Amazon's Alexa platform which provides past and present, weekly and season-long, statistics along with advanced metrics derived from NFL players using the Yahoo Fantasy Sports API
 
