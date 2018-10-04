@@ -180,6 +180,7 @@ module.exports = {
         "2014": "twenty_fourteen",
         "2015": "twenty_fifteen",
         "2016": "twenty_sixteen",
-        "2017": "twenty_seventeen"
+        "2017": "twenty_seventeen",
+        "2018": "twenty_eighteen"
     }
 };

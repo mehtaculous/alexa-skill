@@ -29,7 +29,8 @@ var Schedules = {
     "twenty_fourteen": require('../schedules/2014'),
     "twenty_fifteen": require('../schedules/2015'),
     "twenty_sixteen": require('../schedules/2016'),
-    "twenty_seventeen": require('../schedules/2017')
+    "twenty_seventeen": require('../schedules/2017'),
+    "twenty_eighteen": require('../schedules/2018')
 };
 
 var trackEvent = require('./track_event');
@@ -136,7 +137,7 @@ module.exports = function yahooSearch(intent, session, response) {
                             targets = parseFloat(data["stats"]["stats"][key]["value"]);
                         }
                     }
-                    
+
                     console.log("Yahoo Week Search...");
                     console.log("Team: " + team);
                     console.log("Position: " + position);
@@ -164,7 +165,7 @@ module.exports = function yahooSearch(intent, session, response) {
                     half_ppr_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receptions * 0.5) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
 
                     ppr_points = ((passing_yards / 25) + (passing_touchdowns * 4) + (interceptions * -1) + (rushing_yards / 10) + (rushing_touchdowns * 6) + (receptions * 1) + (receiving_yards / 10) + (receiving_touchdowns * 6) + (return_touchdowns * 6) + (two_point_conversions * 2) + (fumbles * -2)).toFixed(1);
-                    
+
                     completion_percentage = ((completions / passing_attempts) * 100).toFixed(1);
                     total_touchdowns = (passing_touchdowns + rushing_touchdowns + receiving_touchdowns + return_touchdowns);
                     yards_from_scrimmage = (rushing_yards + receiving_yards);
@@ -173,7 +174,7 @@ module.exports = function yahooSearch(intent, session, response) {
                     yards_per_reception = (receiving_yards / receptions).toFixed(1);
                     yards_per_target = (receiving_yards / targets).toFixed(1);
                     catch_rate = ((receptions / targets) * 100).toFixed(1);
-                    
+
                     console.log("Fantasy Points: " + fantasy_points);
                     console.log("Half PPR Points: " + half_ppr_points)
                     console.log("PPR Points: " + ppr_points);
@@ -298,7 +299,7 @@ module.exports = function yahooSearch(intent, session, response) {
                             targets = parseFloat(data["stats"]["stats"][key]["value"]);
                         }
                     }
-                    
+
                     console.log("Yahoo Season Search...");
                     console.log("Team: " + team);
                     console.log("Position: " + position);
@@ -347,7 +348,7 @@ module.exports = function yahooSearch(intent, session, response) {
                     yards_per_reception = (receiving_yards / receptions).toFixed(1);
                     yards_per_target = (receiving_yards / targets).toFixed(1);
                     catch_rate = ((receptions / targets) * 100).toFixed(1);
-                    
+
                     console.log("Fantasy Points: " + fantasy_points);
                     console.log("Half PPR Points: " + half_ppr_points);
                     console.log("PPR Points: " + ppr_points);
@@ -432,7 +433,7 @@ module.exports = function yahooSearch(intent, session, response) {
                         half_ppr_points_per_game = "0";
                         ppr_points_per_game = "0";
                     }
-                    
+
                     session.attributes.metric_value = metric_value;
                     session.attributes.team = team;
                     session.attributes.position = position;

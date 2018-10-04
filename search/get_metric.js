@@ -84,7 +84,7 @@ module.exports = function getMetricRequest(intent, session, response) {
     console.log("Fantasy Points Per Game: " + fantasy_points_per_game);
     console.log("Finish Metric Request");
 
-    if (Keys[player] && (2000 < parseInt(season) < 2018) && Keys[week] && (did_not_play === 0)) {
+    if (Keys[player] && (2000 < parseInt(season) < 2019) && Keys[week] && (did_not_play === 0)) {
         console.log("I'm sorry, but " + player + " did not play in " + week + " of the " + season + " season.");
         speechOutput = {
             speech: "I'm sorry, but " + player + " did not play in " + week + " of the " + season + " season.",
@@ -93,7 +93,7 @@ module.exports = function getMetricRequest(intent, session, response) {
         cardTitle = "did not play";
         cardContent = player + " did not play in " + week + " of " + season;
         response.tellWithCard(speechOutput, cardTitle, cardContent);
-    } else if (Keys[player] && (2000 < parseInt(season) < 2018) && (did_not_play === 0)) {
+    } else if (Keys[player] && (2000 < parseInt(season) < 2019) && (did_not_play === 0)) {
         console.log("I'm sorry, but " + player + " did not play in a single game during the " + season + " season.");
         speechOutput = {
             speech: "I'm sorry, but " + player + " did not play in a single game during the " + season + " season.",

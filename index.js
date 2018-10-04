@@ -53,12 +53,12 @@ FantasyMetrix.prototype.intentHandlers = {
             metricName = metricSlot.value.toLowerCase();
             session.attributes.metricName = metricName;
         }
-            
+
         if (seasonSlot && seasonSlot.value){
             seasonNumber = seasonSlot.value.toLowerCase();
             session.attributes.seasonNumber = seasonNumber;
         }
-           
+
         if (weekSlot && weekSlot.value){
             weekNumber = weekSlot.value.toLowerCase();
             session.attributes.weekNumber = weekNumber;
@@ -88,7 +88,7 @@ FantasyMetrix.prototype.intentHandlers = {
                 handleMissingSeasonRequest(intent, session, response);
             } else {
                 yahooSearch(intent, session, response);
-            }  
+            }
         });
     },
 
@@ -120,7 +120,7 @@ FantasyMetrix.prototype.intentHandlers = {
         if (seasonSlot && seasonSlot.value) {
             seasonNumber = seasonSlot.value.toLowerCase();
             session.attributes.seasonNumber = seasonNumber;
-        } 
+        }
 
         if (weekSlot && weekSlot.value) {
             weekNumber = weekSlot.value.toLowerCase();
@@ -189,7 +189,7 @@ FantasyMetrix.prototype.intentHandlers = {
 
         var strLogData = ["scheduleTeamIntent: " + teamName, "scheduleWeekIntent: " + weekNumber, "scheduleSeasonIntent: " + seasonNumber];
 
-        if (teamName === undefined || weekNumber === undefined || seasonNumber === undefined || (parseInt(seasonNumber) < 2002 || parseInt(seasonNumber) > 2017)) {
+        if (teamName === undefined || weekNumber === undefined || seasonNumber === undefined || (parseInt(seasonNumber) < 2002 || parseInt(seasonNumber) > 2018)) {
             var speechOutput = "I'm sorry, but the information you have provided is invalid. Please check the Voice Feedback in the Alexa App to make sure I heard you correctly.",
                 cardTitle = "the information you have provided is invalid",
                 cardContent = "please check the voice feedback to see what alexa heard";
@@ -221,7 +221,7 @@ FantasyMetrix.prototype.intentHandlers = {
                 if (err) {
                     console.log(err);
                 }
-            var speechText = "<speak>For player metrics, please provide the name of a current NFL player who has played in at least one game, a valid metric correlating to that player's position, and the year of an NFL season ranging from two thousand and one through two thousand and seventeen. Providing a regular season week number, ranging from one through seventeen, is merely optional. You can ask something like <break time=\"0.618s\"/> How many passing touchdowns did Tom Brady have in two thousand and seven? <break time=\"1.618s\"/> For team schedules, please provide the name or city of a current NFL team, a regular season week number ranging from one through seventeen, and the year of an NFL season ranging from two thousand and two through two thousand and seventeen. You can ask something like <break time=\"0.618s\"/> Who do the Atlanta Falcons play in week seven of twenty seventeen?</speak>";
+            var speechText = "<speak>For player metrics, please provide the name of a current NFL player who has played in at least one game, a valid metric correlating to that player's position, and the year of an NFL season ranging from two thousand and one through two thousand and eighteen. Providing a regular season week number, ranging from one through seventeen, is merely optional. You can ask something like <break time=\"0.618s\"/> How many passing touchdowns did Tom Brady have in two thousand and seven? <break time=\"1.618s\"/> For team schedules, please provide the name or city of a current NFL team, a regular season week number ranging from one through seventeen, and the year of an NFL season ranging from two thousand and two through two thousand and eighteen. You can ask something like <break time=\"0.618s\"/> Who do the Atlanta Falcons play in week seven of twenty eighteen?</speak>";
 
             var repromptText = "<speak>Here is the full list of available football metrics: Carries, Catch Rate, Completions, Completion Percentage, Fantasy Points, Fantasy Points Per Game, Fumbles, Game Log, Games Played, Half PPR Points, Half PPR Points Per Game, Interceptions, Passing Attempts, Passing Attempts Per Game, Passing Touchdowns, Passing Yards, Passing Yards Per Game, PPR Points, PPR Points Per Game, Receiving Touchdowns, Receiving Yards, Receiving Yards Per Game, Receptions, Receptions Per Game, Return Touchdowns, Rushing Attempts, Rushing Attempts Per Game, Rushing Touchdowns, Rushing Yards, Rushing Yards Per Game, Season Stats, Targets, Targets Per Game, Total Touchdowns, Two Point Conversions, Yards From Scrimmage, Yards From Scrimmage Per Game, Yards Per Attempt, Yards Per Carry, Yards Per Reception, Yards Per Target. <break time=\"0.618s\"/> Now, what can I help you with today?</speak>";
 
@@ -299,7 +299,7 @@ function handleMissingSeasonRequest(intent, session, response) {
         player = playerName;
     }
 
-    var speechOutput = "Please provide the year of an NFL season, ranging from two thousand and one through two thousand and seventeen, in which " + player + " has played in at least one game.",
+    var speechOutput = "Please provide the year of an NFL season, ranging from two thousand and one through two thousand and eighteen, in which " + player + " has played in at least one game.",
         repromptText = "You can say something like, 'twenty sixteen'.";
     response.ask(speechOutput, repromptText);
 }

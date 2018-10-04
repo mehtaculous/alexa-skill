@@ -28,7 +28,7 @@ module.exports = function getScheduleRequest(intent, session, response) {
     console.log("Away: " + away);
     console.log("Finish Schedule Request");
 
-    if (seasonNumber === "2017") {
+    if (seasonNumber === "2018") {
         if (opponent_abbr != "BYE") {
             if (away) {
                 console.log("For " + weekNumber + " of the " + seasonNumber + " season, the " + teamName + " play the " + opponent_name + " in " + opponent_city + ".");
